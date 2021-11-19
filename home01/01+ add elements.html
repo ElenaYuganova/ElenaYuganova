@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <a name="nachalo"></a>
+    <h1>Дополнительные теги</h1>
+    <h3>Содержание</h3>
+    <h4>
+      <ol>
+        <li>
+          <a href="#ancor01">dl, dt,dd</a>
+        </li>
+        <li>
+          <a href="#ancor02"> pre </a>
+        </li>
+        <li>
+          <a href="#ancor03">code</a>
+        </li>
+        <li>
+          <a href="#ancor04">tt</a>
+        </li>
+        <li>
+          <a href="#ancor05">kdb</a>
+        </li>
+        <li>
+          <a href="#ancor06">var</a>
+        </li>
+        <li>
+          <a href="#ancor07">sup, sub</a>
+        </li>
+        <li>
+          <a href="#ancor08">blockquote</a>
+        </li>
+        <li>
+          <a href="#ancor09">q</a>
+        </li>
+        <li>
+          <a href="#ancor10">ins, del</a>
+        </li>
+        <li>
+          <a href="#ancor11">address</a>
+        </li>
+        <li>
+          <a href="#ancor12">nobr, wbr</a>
+        </li>
+      </ol>
+    </h4>
+    <p>
+      <a name="ancor01"></a>
+      1. Тег
+      <a
+        title="ссылка на сайт htmlbook.ru"
+        target="ccc"
+        href="http://htmlbook.ru/html/dl"
+      >
+        <strong> &lsaquo;dl&rsaquo;</strong></a
+      >
+      входит в тройку элементов
+      <strong
+        >&lsaquo;dl&rsaquo;, &lsaquo;dt&rsaquo;, &lsaquo;dd&rsaquo;,</strong
+      >
+      предназначенных для создания списка определений. Каждый такой список
+      начинается с контейнера <strong>&lsaquo;dl&rsaquo;</strong>, куда входит
+      тег <strong>&lsaquo;dt&rsaquo;</strong> создающий термин и тег
+      <strong>&lsaquo;dd&rsaquo;</strong> задающий определение этого термина.
+    </p>
+    <p><strong>Пример:</strong></p>
+    <dl>
+      <dt>HTML</dt>
+      <dd>
+        &ndash; стандартизированный язык разметки документов для просмотра
+        веб-страниц в браузере. Веб-браузеры получают HTML документ от сервера
+        по протоколам HTTP/HTTPS или открывают с локального диска, далее
+        интерпретируют код в интерфейс, который будет отображаться на экране
+        монитора.
+      </dd>
+      <dt>CSS</dt>
+      <dd>
+        &ndash; технология описания внешнего вида документа, преимущественно
+        использующаяся как средство оформления веб-страниц.
+      </dd>
+    </dl>
+    <hr />
+
+    <p>
+      <a name="ancor02"></a>
+      2. Тег
+      <a
+        title="ссылка на сайт htmlbook.ru"
+        target="ccc"
+        href="http://htmlbook.ru/html/pre"
+        ><strong> &lsaquo;pre&rsaquo;</strong></a
+      >
+      определяет блок предварительно форматированного текста. Такой текст
+      отображается обычно моноширинным шрифтом и со всеми пробелами между
+      словами. По умолчанию, любое количество пробелов идущих в коде подряд, на
+      веб-странице показывается как один. Тег
+      <strong> &lsaquo;pre&rsaquo;</strong> позволяет обойти эту особенность и
+      отображать текст как требуется разработчику.
+    </p>
+    <p><strong>Пример:</strong></p>
+    <pre>
+              .-.
+        __   /   \   __
+       (  `'.\   /.'`  )
+        '-._.(;;;)._.-'
+        .-'  ,`"`,  '-.
+       (__.-'/   \'-.__)
+             \   /\
+              '-'  \
+                    |
+               |\   |
+               \ |  |
+                | \ /
+                 \|/    _.
+                  /  __/ /
+                 | _/ _.'
+                 |/__/
+                  \
+    </pre>
+    <hr />
+
+    <p>
+      <a name="ancor03"></a>
+      3. Тег
+      <a
+        title="ссылка на сайт htmlbook.ru"
+        target="ccc"
+        href="http://htmlbook.ru/html/code"
+        ><strong> &lsaquo;code&rsaquo;</strong></a
+      >
+      предназначен для отображения одной или нескольких строк текста, который
+      представляет собой программный код. Сюда относятся имена переменных,
+      ключевые слова, тексты функции и т.д. Браузеры обычно отображают
+      содержимое контейнера <strong> &lsaquo;code&rsaquo;</strong> как
+      моноширинный текст уменьшенного размера. <br />В отличие от тега
+      <strong> &lsaquo;pre&rsaquo;</strong> дополнительные пробелы внутри
+      контейнера <strong> &lsaquo;code&rsaquo;</strong> не учитываются, так же,
+      как и переносы текста. Поэтому используйте тег
+      <strong> &lsaquo;br&rsaquo;</strong> или
+      <strong> &lsaquo;p&rsaquo;</strong> для создания переносов.
+    </p>
+    <p><strong>Пример:</strong></p>
+    <code>
+      h3 { <br />
+      font-family: Roboto, sans-serif; <br />
+      font-size: 72px;<br />
+      color: #ffffff;<br />
+      text-align: center;<br />
+      margin: 0;<br />
+      }
+    </code>
+    <hr />
+
+    <p>
+      <a name="ancor04"></a>
+      4. Тег
+      <a
+        title="ссылка на сайт htmlbook.ru"
+        target="ccc"
+        href="http://htmlbook.ru/html/tt"
+        ><strong> &lsaquo;tt&rsaquo;</strong></a
+      >
+      отображает текст моноширинным текстом. Этот тег относится к группе тегов
+      физического форматирования.
+    </p>
+    <p><strong>Внимание: данный тег не поддерживается HTML5.0.</strong></p>
+    <hr />
+
+    <p>
+      <a name="ancor05"></a>
+      5. Тег
+      <a
+        title="ссылка на сайт htmlbook.ru"
+        target="ccc"
+        href="http://htmlbook.ru/html/kbd"
+        ><strong> &lsaquo;kbd&rsaquo;</strong></a
+      >
+      используется для обозначения текста, который набирается на клавиатуре или
+      для названия клавиш. Браузеры обычно помечают текст в контейнере
+      <strong> &lsaquo;kbd&rsaquo;</strong> моноширинным шрифтом.
+    </p>
+    <p><strong>Пример:</strong></p>
+    <p>
+      Чтобы отформатировать код в Visual Studio Code, нажми
+      <kbd>Shift + Alt + F</kbd> на Windows и Mac, и
+      <kbd>Ctrl + Shift + I</kbd> на Linux
+    </p>
+    <hr />
+
+    <p>
+      <a name="ancor06"></a>
+      6. Тег
+      <a
+        title="ссылка на сайт htmlbook.ru"
+        target="ccc"
+        href="http://htmlbook.ru/html/var"
+        ><strong> &lsaquo;var&rsaquo;</strong></a
+      >
+      используется для выделения переменных компьютерных программ. Браузеры
+      обычно помечают текст в контейнере
+      <strong> &lsaquo;var&rsaquo;</strong> курсивным начертанием.
+    </p>
+    <p><strong>Пример:</strong></p>
+    <p>
+      HTML (от англ. <var>HyperText Markup Language</var> — язык гипертекстовой
+      разметки)
+    </p>
+    <hr />
+
+    <p>
+      <a name="ancor07"></a>
+      7. Тег
+      <a
+        title="ссылка на сайт htmlbook.ru"
+        target="ccc"
+        href="http://htmlbook.ru/html/sup"
+        ><strong> &lsaquo;sup&rsaquo;</strong></a
+      >
+      отображает шрифт в виде верхнего индекса. Шрифт при этом отображается выше
+      базовой линии текста и уменьшенного размера.<br />
+      Тег
+      <a
+        title="ссылка на сайт htmlbook.ru"
+        target="ccc"
+        href="http://htmlbook.ru/html/sub"
+        ><strong> &lsaquo;sub&rsaquo;</strong></a
+      >
+      отображает шрифт в виде нижнего индекса. Текст при этом располагается ниже
+      базовой линии остальных символов строки и уменьшенного размера.
+    </p>
+    <p><strong>Пример:</strong></p>
+    <p>
+      При использовании <strong>sup</strong> текст становится
+      <sup>верхним индексом</sup>. При использовании <strong>sub</strong> текст
+      становится <sub>нижним индексом</sub>.
+    </p>
+    <hr />
+
+    <p>
+      <a name="ancor08"></a>
+      8. Тег
+      <a
+        title="ссылка на сайт htmlbook.ru"
+        target="ccc"
+        href="http://htmlbook.ru/html/blockquote"
+        ><strong> &lsaquo;blockquote&rsaquo;</strong></a
+      >
+      предназначен для выделения длинных цитат внутри документа. Текст,
+      обозначенный этим тегом, традиционно отображается как выровненный блок с
+      отступами слева и справа (примерно по 40 пикселов), а также с отбивкой
+      сверху и снизу.
+    </p>
+    <p><strong>Пример:</strong></p>
+    <blockquote>
+      Вопрос не в том, кто мне разрешит, а в том, кто сможет мне запретить.<br /><em
+        >Айн Рэнд</em
+      >
+    </blockquote>
+    <blockquote>
+      Жизнь - это то, что с тобой происходит, пока ты строишь планы.<br /><em
+        >Джон Леннон</em
+      >
+    </blockquote>
+    <hr />
+
+    <p>
+      <a name="ancor09"></a>
+      9. Тег
+      <a
+        title="ссылка на сайт htmlbook.ru"
+        target="ccc"
+        href="http://htmlbook.ru/html/q"
+        ><strong> &lsaquo;q&rsaquo;</strong></a
+      >
+      используется для выделения в тексте цитат. Содержимое контейнера
+      автоматически отображается в браузере в кавычках.
+    </p>
+    <p><strong>Пример:</strong></p>
+    <p>
+      Уинстон Черчилль всегда говорил:
+      <q
+        >Успех — это способность идти от поражения к поражению, не теряя
+        оптимизма.</q
+      >
+    </p>
+    <hr />
+
+    <p>
+      <a name="ancor10"></a>
+      10. Тег
+      <a
+        title="ссылка на сайт htmlbook.ru"
+        target="ccc"
+        href="http://htmlbook.ru/html/ins"
+        ><strong> &lsaquo;ins&rsaquo;</strong></a
+      >
+      предназначен для выделения текста, который был добавлен в новую версию
+      документа. Подобное форматирование позволяет отследить, какие изменения в
+      тексте документа были сделаны. Браузеры обычно помечают текст в контейнере
+      <strong> &lsaquo;ins&rsaquo;</strong> как подчеркнутый.<br />
+      Тег
+      <a
+        title="ссылка на сайт htmlbook.ru"
+        target="ccc"
+        href="http://htmlbook.ru/html/del"
+        ><strong> &lsaquo;del&rsaquo;</strong></a
+      >
+      используется для выделения текста, который был удален в новой версии
+      документа. Подобное форматирование позволяет отследить, какие изменения в
+      тексте документа были сделаны. Браузеры обычно помечают текст в контейнере
+      <strong> &lsaquo;del&rsaquo;</strong> как перечеркнутый.
+    </p>
+    <p><strong>Пример:</strong></p>
+    <p>
+      Мой любимый цвет <del>красный</del> <ins>синий</ins>!<br />
+      А какой твой любимый <del>фрукт</del> <ins>цвет</ins>?
+    </p>
+    <hr />
+
+    <p>
+      <a name="ancor11"></a>
+      11. Тег
+      <a
+        title="ссылка на сайт htmlbook.ru"
+        target="ccc"
+        href="http://htmlbook.ru/html/address"
+        ><strong> &lsaquo;address&rsaquo;</strong></a
+      >
+      предназначен для хранения информации об авторе и может включать в себя
+      любые элементы HTML вроде ссылок, текста, выделений и т.д. Планируется,
+      что поисковые системы будут анализировать содержимое этого тега для сбора
+      информации об авторах сайтов.<br />
+      По умолчанию текст внутри контейнера
+      <strong> &lsaquo;address&rsaquo;</strong> отображается курсивным
+      начертанием. Если эта особенность не требуется, используйте стили для
+      изменения начертания шрифта.
+    </p>
+    <p><strong>Пример:</strong></p>
+    <address>
+      Автор статьи: Юганова Елена<br />
+      <a href="https://www.instagram.com/helenayuganova/" target="_blank"
+        >Связаться с автором</a
+      >
+    </address>
+    <hr />
+    <p>
+      <a name="ancor12"></a>
+      12. Тег
+      <a
+        title="ссылка на сайт htmlbook.ru"
+        target="ccc"
+        href="http://htmlbook.ru/html/nobr"
+        ><strong> &lsaquo;nobr&rsaquo;</strong></a
+      >
+      уведомляет браузер отображать текст без переносов. Если этого тега в коде
+      документа нет, а также имеются переводы строки, они игнорируются и текст
+      выравнивается по левому краю окна браузера или родительского элемента. При
+      этом браузер переводы строк расставляет автоматически, чтобы текст
+      полностью поместился по ширине окна. Использование тега
+      <strong> &lsaquo;nobr&rsaquo;</strong> заставляет отображать текст без
+      переносов, одной строкой, что может привести к появлению горизонтальной
+      полосы прокрутки. Пользователям придется прокручивать текст по
+      горизонтали, чтобы увидеть его полностью, чего обычно делать никто не
+      любит.<br />
+      Тег
+      <a
+        title="ссылка на сайт htmlbook.ru"
+        target="ccc"
+        href="http://htmlbook.ru/html/wbr"
+        ><strong> &lsaquo;wbr&rsaquo;</strong></a
+      >
+      указывает браузеру место, где допускается делать перенос строки в тексте,
+      <em>если этого требует ширина родительского элемента.</em>
+    </p>
+    <br />
+    <a href="#nachalo">Вернуться в начало статьи</a>
+  </body>
+</html>
