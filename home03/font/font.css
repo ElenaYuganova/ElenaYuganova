@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'AmaticSC-Regular';
+  src: url('AmaticSC-Regular.eot');
+  src: url('AmaticSC-Regular.eot?#iefix') format('embedded-opentype'),
+       url('AmaticSC-Regular.svg#AmaticSC-Regular') format('svg'),
+       url('AmaticSC-Regular.ttf') format('truetype'),
+       url('AmaticSC-Regular.woff') format('woff'),
+       url('AmaticSC-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AmaticSC-Bold';
+  src: url('AmaticSC-Bold.eot');
+  src: url('AmaticSC-Bold.eot?#iefix') format('embedded-opentype'),
+       url('AmaticSC-Bold.svg#AmaticSC-Bold') format('svg'),
+       url('AmaticSC-Bold.ttf') format('truetype'),
+       url('AmaticSC-Bold.woff') format('woff'),
+       url('AmaticSC-Bold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}

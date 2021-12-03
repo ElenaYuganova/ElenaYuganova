@@ -1,0 +1,32 @@
+body {
+    background-image: url(img/aibolit1.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+* {
+  font-size: 22px;
+  padding-left: 10px;
+
+}
+h2 {
+  font-family: "AmaticSC-Bold";
+  font-size: 30px;
+  color: blue;
+}
+
+p {
+  font-family: "Caveat", cursive;
+  color: darkgreen;
+}
+
+div p {
+  font-family: "AmaticSC-Bold";
+  color: indigo;
+  letter-spacing: 1.5px;
+}
+.numbers {
+  font-family: "Fredericka the Great", cursive;
+  font-size: 30px;
+  text-indent: 3cm;
+  margin: 0;
+}
