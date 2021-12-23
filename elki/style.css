@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 1140px;
+    border: 1px solid;
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+li {
+    list-style-type: none;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+}
+.clearfix::after {content: ""; display: block;
+
+}
+
+/*header*/
+
+.header {
+
+}
+.header-top {
+
+}
+.header-top ul {
+    padding-top: 29px;
+}
+.header ul li {
+
+}
