@@ -56,7 +56,6 @@ table {
     padding-left: 0px;
     border: none;
 }
-
 .third-line a::before {
     content:'';
     border-left: 3px solid red;
@@ -70,50 +69,65 @@ table {
     padding: 0px;
     border: none;
 }
-.four-line a {
+.four-line span a {
     vertical-align: 16px;
-    padding-right: 10px;
-    padding-left: 10px;
+   
 }
+.four-line span img {
+    padding-left: 11px;
+    padding-right: 12px;
+}
+
 
     </style>
 </head>
 <body>
-    
+<!--Способ: маркированный список. Ссылки вставлены в одну строку с помощью float. Разделитель через border.
+    Преимущества: небольшой код в css, адаптивность. 
+    !!!Мне понравился больше всего.-->
     <div class="first-line">
         <ul>
-            <li><a href="">первая ссылка</a></li>
-            <li><a href="">вторая ссылка</a></li>
-            <li><a href="">третья ссылка</a></li>
-            <li><a href="">четвертая ссылка</a></li>
-            <li><a href="">пятая ссылка</a></li>
+            <li><a href="https://www.it-academy.by/" target="aaa">первая ссылка</a></li>
+            <li><a href="https://www.it-academy.by/" target="aaa">вторая ссылка</a></li>
+            <li><a href="https://www.it-academy.by/" target="aaa">третья ссылка</a></li>
+            <li><a href="https://www.it-academy.by/" target="aaa">четвертая ссылка</a></li>
+            <li><a href="https://www.it-academy.by/" target="aaa">пятая ссылка</a></li>
         </ul>
     </div>
     <div class="clearfix"></div>
 
+ <!--Способ: строка таблицы. Красный разделитель - это границы таблицы.
+    Недостатки: таблица плохо адаптивна для меню.-->
     <div class="second-line">
         <table>
             <tr>
-                <td><a href="">первая ссылка</a></td>
-                <td><a href="">вторая ссылка</a></td>
-                <td><a href="">третья ссылка</a></td>
-                <td><a href="">четвертая ссылка</a></td>
-                <td><a href="">пятая ссылка</a></td>
+                <td><a href="https://www.it-academy.by/" target="aaa">первая ссылка</a></td>
+                <td><a href="https://www.it-academy.by/" target="aaa">вторая ссылка</a></td>
+                <td><a href="https://www.it-academy.by/" target="aaa">третья ссылка</a></td>
+                <td><a href="https://www.it-academy.by/" target="aaa">четвертая ссылка</a></td>
+                <td><a href="https://www.it-academy.by/" target="aaa">пятая ссылка</a></td>
             </tr>
         </table>
     </div>
 
+ <!--Способ: последовательно идущие друг за другом ссылки. Разделитель сделан с помощью псевдоэлемента ::before (вставлен в его контент).
+    Недостатки: при переносе меню на другую строку, края разделителей залязят на контент, который расположен выше.
+    Чтобы корректно отображались padding между разделителями, нужно писать все ссылки без пробелов, код получается неудобным в чтении.-->
     <div class="third-line">
-        <a href="">первая ссылка</a><a href="">вторая ссылка</a><a href="">третья ссылка</a><a href="">четвертая ссылка</a><a href="">пятая ссылка</a>
+        <a href="https://www.it-academy.by/" target="aaa">первая ссылка</a><a href="https://www.it-academy.by/" target="aaa">вторая ссылка</a><a href="https://www.it-academy.by/" target="aaa">третья ссылка</a><a href="https://www.it-academy.by/" target="aaa">четвертая ссылка</a><a href="https://www.it-academy.by/" target="aaa">пятая ссылка</a>
     </div>
     <div class="clearfix"></div>
+
+ <!--Способ: после ссылки вставлен img с картинкой красного разделителя. 
+    Недостатки: некорректное отображение разделителей в виде img: при определенном масштабе какие-то границы каждутся более жирными, чем прочие. 
+    При изменении шрифта высота разделителя не меняется автоматически. Нужно загружать картинку (границу), помимо прочего контента.
+    !!!Понравился меньше всего.-->    
     <div class="four-line">
-                <span><a href="">первая ссылка</a><img src="img/border.png" alt="border"></span>
-                <span><a href="">вторая ссылка</a><img src="img/border.png" alt="border"></span>
-                <span><a href="">третья ссылка</a><img src="img/border.png" alt="border"></span>
-                <span><a href="">четвертая ссылка</a><img src="img/border.png" alt="border"></span>
-                <span><a href="">пятая ссылка</a></span>
-           
+                <span><a href="https://www.it-academy.by/" target="aaa">первая ссылка</a><img src="img/border.png" alt="border"></span>
+                <span><a href="https://www.it-academy.by/" target="aaa">вторая ссылка</a><img src="img/border.png" alt="border"></span>
+                <span><a href="https://www.it-academy.by/" target="aaa">третья ссылка</a><img src="img/border.png" alt="border"></span>
+                <span><a href="https://www.it-academy.by/" target="aaa">четвертая ссылка</a><img src="img/border.png" alt="border"></span>
+                <span><a href="https://www.it-academy.by/" target="aaa">пятая ссылка</a></span>   
     </div>
 
 </body>
