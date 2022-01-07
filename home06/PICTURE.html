@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picture</title>
+    <style>
+        source, img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+    <picture>
+        <source media="(min-width: 1200px)" srcset="img/extra-big-dog.jpg">
+        <source media="(min-width: 992px)" srcset="img/big-dog.jpg">
+        <source media="(min-width: 700px)" srcset="img/medium-dog.jpg">
+        <source media="(min-width: 500px)" srcset="img/medium-dog1.jpg">
+        <source media="(min-width: 320px)" srcset="img/small-dog.jpg">
+        <img src="img/medium-dog.jpg" alt="dog" >
+    </picture>
+</body>
+</html>
