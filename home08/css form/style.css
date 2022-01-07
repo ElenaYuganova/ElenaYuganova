@@ -1,0 +1,77 @@
+div p {
+    margin-bottom: 15px;
+  }
+.row {
+    overflow: hidden;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+.row > div {
+   float: left;
+   box-sizing: border-box;
+}
+.row .label {
+   width: 12%;
+}
+.row .input {
+   width: 88%;
+}
+.row .input_radio div {
+   display: inline-block;
+}
+.row .input input {
+   width: 100%;
+   box-sizing: border-box;
+}
+.row .input textarea {
+   width: 100%;
+   box-sizing: border-box;
+}
+.textarea {
+   width: 100%;
+}
+.textarea textarea {
+   width: 100%;
+   box-sizing: border-box;
+}
+@media all and (max-width: 1200px) {
+.row .label {
+   width: 16%;
+}
+.row .input {
+   width: 84%;
+}
+}
+@media all and (max-width: 930px) {
+.row .label {
+   width: 21%;
+}
+.row .input {
+   width: 79%;
+}
+}
+@media all and (max-width: 700px) {
+.row .label {
+   width: 28%;
+}
+.row .input {
+   width: 72%;
+}
+}
+@media all and (max-width: 490px) {
+.row .label {
+   width: 100%;
+}
+.row .input {
+   width: 100%;
+}
+.row .input select {
+   width: 100%;
+}
+.row .input_radio div {
+   display: block;
+}
+.row .input_check, .label.check {
+   width: auto;
+}    
+}

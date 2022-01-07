@@ -4,55 +4,66 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css form/style.css">
     <title>FORM</title>
-    <style>
-      label {
-        
-        margin-top: 3px;
-        margin-bottom: 3px;
-      }
-      div p {
-        margin-bottom: 15px;
-      }
-   
-   
-    </style>
   </head>
   <body>
     <div>
       <p>Для публикации вашей статьи заполните, пожалуйста, следующую форму:</p>
     </div>
-    <form method="get" action="https://fe.it-academy.by/TestForm.php">
-     
-    <label>Название статьи:
-        <input  type="text" name="name" /> 
-    </label> <br>
 
-    <label>Рубрика:
-        <select name="rubric">
-          <option value="1">компьютерная техника</option>
-          <option value="2">графика и дизайн</option>
-          <option value="3">программирование</option>
-        </select>
-      </label>
-      <br />
-      <label
-        >Публикация: <input type="radio" name="publication" value="site" />на
-        сайте <input type="radio" name="publication" value="magazine" />в
-        журнале <input type="radio" name="publication" value="both" />на сайте и
-        в журнале
-      </label>
-      <br />
-      <label
-        >Разрешить комментарии:
-        <input type="checkbox" name="allow" value="yes" checked /> </label
-      ><br />
-      <label>
-        Текст статьи:<br />
-        <textarea name="text"></textarea>
-      </label>
-      <br />
-      <input type="submit" value="Опубликовать" />
+    <form method="get" action="https://fe.it-academy.by/TestForm.php">
+     <div class="row">
+       <div class="label"> 
+           <label>Название статьи:</label> 
+       </div>
+       <div class="input"> 
+           <input type="text" name="name"> 
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="label">
+            <label>Рубрика:</label>
+        </div>
+        <div class="input">
+            <select name="rubric">
+                <option value="1">компьютерная техника</option>
+                <option value="2">графика и дизайн</option>
+                <option value="3">программирование</option>
+            </select>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="label">
+            <label>Публикация:</label> 
+        </div>
+        <div class="input_radio">
+           <div><input type="radio" name="publication" value="site">на сайте </div>
+           <div><input type="radio" name="publication" value="magazine">в журнале </div>
+           <div><input type="radio" name="publication" value="both">на сайте и в журнале</div>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="label check">
+            <label>Разрешить комментарии:</label>
+        </div>
+        <div class="input_check">   
+            <input type="checkbox" name="allow" value="yes" checked />
+        </div> 
+    </div>
+      
+    <div class="row">
+       <div>
+            <label>Текст статьи:</label> <br>
+        </div>
+        <div class="textarea">
+            <textarea name="text"></textarea>
+        </div>
+    </div>
+    <input type="submit" value="Опубликовать" />
     </form>
   </body>
 </html>
