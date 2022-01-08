@@ -1,0 +1,44 @@
+div p {
+   margin-bottom: 15px;
+ }
+.row {
+   margin-top: 3px;
+   margin-bottom: 3px;
+}
+.row label {
+  float: left;
+  width: 180px;
+}
+.row .input_radio div {
+  display: inline;
+}
+.row .input input {
+  width: 100%;
+  box-sizing: border-box;
+}
+.row .input {
+  margin-left: 180px;
+}
+.row .textarea textarea {
+  width: 100%;
+  box-sizing: border-box;
+}
+@media all and (max-width: 610px) {
+  .row .input_radio div {
+     display: block;
+  }
+  .row label {
+     float: none;
+     width: 100%;
+  }
+  .row .input {
+     width: 100%;
+     margin-left: 0px;
+  }
+  .row .input select {
+     width: 100%;
+  }
+  .row div {
+     display: inline;
+  }
+}

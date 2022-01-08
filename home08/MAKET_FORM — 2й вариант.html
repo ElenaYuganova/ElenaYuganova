@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css form/style2.css">
+    <title>FORM2</title>
+  </head>
+  <body>
+    <div>
+      <p>Для публикации вашей статьи заполните, пожалуйста, следующую форму:</p>
+    </div>
+
+    <form method="get" action="https://fe.it-academy.by/TestForm.php">
+    <div class="row">
+        <div> <label>Название статьи:</label></div> 
+        <div class="input"> 
+            <input type="text" name="name"> 
+        </div>
+    </div>
+
+    <div class="row">
+        <div> <label>Рубрика:</label></div>
+        <div class="input">
+            <select name="rubric">
+                <option value="1">компьютерная техника</option>
+                <option value="2">графика и дизайн</option>
+                <option value="3">программирование</option>
+            </select>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div><label>Публикация:</label> </div>
+        <div class="input_radio">
+           <div><input type="radio" name="publication" value="site">на сайте </div>
+           <div><input type="radio" name="publication" value="magazine">в журнале </div>
+           <div><input type="radio" name="publication" value="both">на сайте и в журнале</div>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div><label>Разрешить комментарии:</label></div>
+        <div>   
+            <input type="checkbox" name="allow" value="yes" checked />
+        </div> 
+    </div>
+      
+    <div class="row">
+        <label>Текст статьи:</label> <br>
+        <div class="textarea">
+            <textarea name="text"></textarea>
+        </div>
+    </div>
+    <input type="submit" value="Опубликовать" />
+    </form>
+  </body>
+</html>
