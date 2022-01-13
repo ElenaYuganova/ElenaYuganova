@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Camera</title>
+</head>
+<body>
+    <div class="header">
+        <div class="header-top clearfix">
+                <div class="container">
+                    <ul class="header-top-left">
+                        <li><a href="">
+                            <img src="img/map.svg" alt="map">
+                            <span>Минск</span>
+                        </a></li>
+                        <li><a href="">Магазины</a></li>
+                        <li><a href="">Доставка</a></li>
+                    </ul>
+                    <ul class="header-top-right"> 
+                        <li><a href="">Кредит и рассрочка</a></li>
+                        <li><a href="">Для бизнеса</a></li>
+                        <li><a href="">
+                            <img src="img/phone.svg" alt="phone">
+                            <span>375-29-299-99-91</span>
+                            </a></li>
+                    </ul>
+                </div>
+        </div>
+        <div class="header-search clearfix">
+                <div class="container">
+                    <div class="header-search-left">
+                        <img src="img/logo.png" alt="logo">
+                        <img src="img/logo2.png" alt="logo">
+                        <button>
+                           <span> 
+                               <img src="img/catalog.svg" alt="catalog">
+                               Каталог</span>
+                        </button>
+                        <div class="search">
+                            <div >
+                            <img src="img/search.svg" alt="search">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="header-search-right">
+                        <ul>
+                            <li><a href="">
+                                <div>
+                                    <img src="img/status.svg" alt="status">
+                                </div>
+                                <div>Статус заказа</div>
+                            </a></li>
+                            <li><a href="">
+                                <div>
+                                    <img src="img/comein.svg" alt="come-in">
+                                </div>
+                                <div>Войти</div>   
+                            </a></li>
+                            <li><a href="">
+                                <div>
+                                <img src="img/compare.svg" alt="compare">
+                                </div>
+                                <div>Сравнение</div>
+                            </a></li>
+                            <li><a href="">
+                                <div>
+                                <img src="img/heart.svg" alt="heart">
+                                </div>
+                                <div>Избранное</div>
+                            </a></li>
+                            <li><a href="">
+                                <div>
+                                <img src="img/basket.svg" alt="basket">
+                                </div>
+                                <div>Корзина</div>
+                            </a></li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+        <div class="header-bottom clearfix">
+            <div class="border"></div>
+            <div class="container">
+                <ul class="clearfix">
+                    <li><a href="">ФОТОАППАРАТЫ</a></li>
+                    <li><a href="">ОБЪЕКТИВЫ</a></li>
+                    <li><a href="">СВЕТ</a></li>
+                    <li><a href="">ШТАТИВЫ</a></li>
+                    <li><a href="">ВИДЕОКАМЕРЫ</a></li>
+                    <li><a href="">КОМПЛЕКТУЮЩИЕ</a></li>
+                    <li><a href="">СКИДКИ</a></li>
+                    <li><a href="">ВСЕ АКЦИИ</a></li>
+                </ul>
+                <p>Главная &mdash; Фотоаппараты &mdash; Беззеркальные фотоаппараты</p>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="container">
+            <div class="content-top clearfix">
+                <h2>Беззеркальные фотоаппараты</h2>
+                <span>55</span>
+            </div>
+            <div class="clearfix">
+                <div class="content-forms">
+                    <form method="get" action="https://fe.it-academy.by/TestForm.php">
+                        <h4>Бренд</h4> 
+                        <div>
+                            <label>
+                                <input type="checkbox" name="Brand[]" value="Sony">Sony
+                            </label>
+                        </div>
+                        <div>
+                            <label>
+                                <input type="checkbox" name="Brand[]" value="Panasonic">Panasonic
+                            </label>
+                        </div>
+                        <div>
+                            <label>
+                                <input type="checkbox" name="Brand[]" value="Nikon">Nikon
+                            </label>  
+                        </div>
+                        <div>
+                            <label>
+                                <input type="checkbox" name="Brand[]" value="Canon">Canon <br>
+                            </label>
+                        </div>
+                        <div>
+                            <label>
+                                <input type="checkbox" name="Brand[]" value="Fujifilm">Fujifilm <br>
+                            </label>
+                        </div>
+                        <div class="border"></div>
+                        <h4>Цена</h4> 
+                        <div class="border"></div>
+                        <h4>Доступность</h4> 
+                        <div>
+                            <label>
+                                <input type="checkbox" name="Availability[]" value="pickup-15min">Доступные к самовывозу через 15 минут
+                            </label> 
+                        </div>
+                        <div>
+                            <label>
+                                <input type="checkbox" name="Availability[]" value="delivery">Доступные к доставке
+                            </label>
+                        </div>
+                        <div>
+                            <label>
+                                <input type="checkbox" name="Availability[]" value="with-sale">Товары со скидкой
+                            </label>
+                        </div>
+                        <div class="border"></div>
+                        <h4>Назначение</h4> 
+                        <div>
+                            <label>
+                                <input type="checkbox" name="Use[]" value="novice-user">
+                                Для начинающих <br> пользователей 
+                            </label>
+                        </div>  
+                        <div>
+                            <label>
+                                <input type="checkbox" name="Use[]" value="advanced-user">Для продвинутых <br> пользователей 
+                            </label>
+                        </div>
+                        <div class="border"></div>
+                        <h4>Формат матрицы</h4> 
+                        <div>
+                            <label>
+                                <input type="checkbox" name="Matrix[]" value="Full">Full frame 
+                            </label>
+                        </div>
+                        <div>
+                            <label>
+                                <input type="checkbox" name="Matrix[]" value="APS-C">APS-C 
+                            </label>
+                        </div>
+                        <div>
+                            <label>
+                                <input type="checkbox" name="Matrix[]" value="Micro">Micro 4/3
+                            </label>
+                        </div>
+                    </form>
+                </div>
+                <div class="content-main">
+                    <div class="content-main-sort">
+                    <div>
+                            <div>
+                                <p>Сначала популярные</p>
+                            </div>
+                            <img src="img/sort.svg" alt="sort">
+                            <button>
+                                <div></div>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="border"></div>
+                    <div class="content-main-blocks clearfix">
+                        <div class="block">
+                            <a href="">
+                                <img src="img/camera01.png" alt="camera">
+                                <h4>Фотоаппарат Sony Alpha 7 ILCE-7M3 Body</h4>
+                            </a>
+                            <div class="review">
+                                <img src="img/star.svg" alt="star">
+                                <p>4.8</p>
+                                <a href="">35 отзывов</a> 
+                            </div>
+                            <div class="price">
+                                <h3>5650,00 p.</h3>
+                                <h5>5820,00 p.</h5>
+                            </div>
+                            <div class="basket">
+                                <button>
+                                    <img src="img/basket2.svg" alt="basket">
+                                    В корзину
+                                </button>
+                                <img src="img/heart2.svg" alt="heart">
+                                <img src="img/compare22.svg" alt="compare">
+                            </div>
+                        </div>
+                        <div class="block">
+                            <a href="">
+                                <img src="img/camera022.png" alt="camera">
+                                <h4>Фотоаппарат Sony Alpha 7 ILCE-7SM3 Body</h4>
+                            </a>
+                            <div class="review">
+                                <img src="img/star.svg" alt="star">
+                                <p>5.0</p>
+                                <a href="">6 отзывов</a>
+                            </div>
+                            <div class="price">
+                                <h3>10909,00 p.</h3>
+                                <h5>11500,00 p.</h5>
+                            </div>
+                            <div class="basket">
+                                <button>
+                                    <img src="img/basket2.svg" alt="basket">
+                                    В корзину
+                                </button>
+                                <img src="img/heart2.svg" alt="heart">
+                                <img src="img/compare22.svg" alt="compare">
+                            </div>
+                        </div>
+                        <div class="block">
+                            <a href="">
+                                <img src="img/camera033.png" alt="camera">
+                                <h4>Фотоаппарат Panasonic Lumix DC-S1 Body</h4>
+                            </a>
+                            <div class="review">
+                                <img src="img/star.svg" alt="star">
+                                <p>4.8</p>
+                                <a href="">10 отзывов</a>
+                            </div>
+                            <div class="price">
+                                <h3>6100,00 p.</h3>
+                                <h5>6500,00 p.</h5>
+                            </div>
+                            <div class="basket">
+                                <button>
+                                    <img src="img/basket2.svg" alt="basket">
+                                    В корзину
+                                </button>
+                                <img src="img/heart2.svg" alt="heart">
+                                <img src="img/compare22.svg" alt="compare">
+                            </div>
+                        </div>
+                        <div class="block">
+                            <a href="">
+                                <img src="img/camera04.png" alt="camera">
+                                <h4>Фотоаппарат Panasonic Lumix DC-GH5 Body</h4>
+                            </a>
+                            <div class="review">
+                                <img src="img/star.svg" alt="star">
+                                <p>4.7</p>
+                                <a href="">20 отзывов</a>
+                            </div>
+                            <div class="price">
+                                <h3>3840,00 p.</h3>
+                                <h5>4000,00 p.</h5>
+                            </div>
+                            <div class="basket">
+                                <button>
+                                    <img src="img/basket2.svg" alt="basket">
+                                    В корзину
+                                </button>
+                                <img src="img/heart2.svg" alt="heart">
+                                <img src="img/compare22.svg" alt="compare">
+                            </div>
+                        </div>
+                        <div class="block">
+                            <a href="">
+                                <img src="img/camera05.png" alt="camera">
+                                <h4>Фотоаппарат Fujifilm X-T4 Body Silver</h4>
+                            </a>
+                            <div class="review">
+                                <img src="img/star.svg" alt="star">
+                                <p>4.5</p>
+                                <a href="">9 отзывов</a>
+                            </div>
+                            <div class="price">
+                                <h3>4500,00 p.</h3>
+                                <h5>4750,00 p.</h5>
+                            </div>
+                            <div class="basket">
+                                <button>
+                                    <img src="img/basket2.svg" alt="basket">
+                                    В корзину
+                                </button>
+                                <img src="img/heart2.svg" alt="heart">
+                                <img src="img/compare22.svg" alt="compare">
+                            </div>
+                        </div>
+                        <div class="block">
+                            <img src="img/mavic-air.png" alt="mavic-air">
+                        </div>
+                        <div class="block">
+                            <a href="">
+                                <img src="img/camera066.png" alt="camera">
+                                <h4>Фотоаппарат Sony Alpha 7 ILCE-7M2 Body</h4>
+                            </a>
+                            <div class="review">
+                                <img src="img/star.svg" alt="star">
+                                <p>4.5</p>
+                                <a href="">21 отзыв</a>
+                            </div>
+                            <div class="price">
+                                <h3>2750,00 p.</h3>
+                                <h5>2900,00 p.</h5>
+                            </div>
+                            <div class="basket">
+                                <button>
+                                    <img src="img/basket2.svg" alt="basket">
+                                    В корзину
+                                </button>
+                                <img src="img/heart2.svg" alt="heart">
+                                <img src="img/compare22.svg" alt="compare">
+                            </div>
+                        </div>
+                        <div class="block">
+                            <a href="">
+                                <img src="img/camera077.png" alt="camera">
+                                <h4>Фотоаппарат Nikon Z6 Body</h4>
+                            </a>
+                            <div class="review">
+                                <img src="img/star.svg" alt="star">
+                                <p>4.5</p>
+                                <a href="">21 отзыв</a>
+                            </div>
+                            <div class="price">
+                                <h3>5300,00 p.</h3>
+                                <h5>5500,00 p.</h5>
+                            </div>
+                            <div class="basket">
+                                <button>
+                                    <img src="img/basket2.svg" alt="basket">
+                                    В корзину
+                                </button>
+                                <img src="img/heart2.svg" alt="heart">
+                                <img src="img/compare22.svg" alt="compare">
+                            </div>
+                        </div>
+                        <div class="block">
+                            <a href="">
+                                <img src="img/camera088.png" alt="camera">
+                                <h4>Фотоаппарат Sony Alpha 7 ILCE-7M2 Body</h4>
+                            </a>
+                            <div class="review">
+                                <img src="img/star.svg" alt="star">
+                                <p>4.5</p>
+                                <a href="">21 отзыв</a>
+                            </div>
+                            <div class="price">
+                                <h3>2750,00 p.</h3>
+                                <h5>2900,00 p.</h5>
+                            </div>
+                            <div class="basket">
+                                <button>
+                                    <img src="img/basket2.svg" alt="basket">
+                                    В корзину
+                                </button>
+                                <img src="img/heart2.svg" alt="heart">
+                                <img src="img/compare22.svg" alt="compare">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-main-bottom clearfix">
+                        <div class="content-main-bottom-left">
+                            <img src="img/arrow-left.svg" alt="arrow">
+                            <button>1</button>
+                            <button>2</button>
+                            <img src="img/arrow-right.svg" alt="arrow">
+                        </div>
+                        <div class="content-main-bottom-right">
+                            <button>Показывать по 9
+                                <img src="img/arrow-bottom.svg" alt="">
+                            </button>
+
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="content-news clearfix">
+                <h3>Популярные новости</h3>
+                <div class="content-news-block">
+                    <button>
+                        <img src="img/arrow-left-big.svg" alt="arrow">
+                    </button>
+                   <ul>
+                       <li><a href="">
+                           <img src="img/news1.jpg" alt="news">
+                           <div>Как пользоваться VR шлемом и очками</div>
+                       </a></li>
+                       <li><a href="">
+                            <img src="img/news2.jpg" alt="news">
+                            <div>Mavic Mini 2: что нового в миниатюрном дроне от DJI</div>
+                        </a></li>
+                        <li><a href="">
+                            <img src="img/news3.jpg" alt="news">
+                            <div>10 лучших объективов Sony для различных задач</div>
+                        </a></li>
+                        <li><a href="">
+                            <img src="img/news4.jpg" alt="news">
+                            <div>Первый взгляд на DJI Pocket 2: увеличенная матрица, улучшенный автофокус и звук</div>
+                        </a></li>
+                   </ul>
+                    <button>
+                        <img src="img/arrow-right-big.svg" alt="arrow">
+                    </button>
+                </div>
+
+            </div>
+        </div>
+        <div class="content-subscribe clearfix">
+            <div class="container">
+                <p>Получайте самые интересные <br> предложения первыми!</p>
+                <form method="post" action="https://fe.it-academy.by/TestForm.php">
+                    <input type="text" name="email" value="Email">
+                    <input type="submit" value="Подписаться">
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="footer clearfix">
+        <div class="container">
+            <ul class="help">
+                <li><a href="">Помощь</a></li>
+                <li><a href="">Статус заказа по номеру</a></li>
+                <li><a href="">Центр поддержки</a></li>
+                <li><a href="">Как оформить заказ</a></li>
+                <li><a href="">Условия доставки</a></li>
+                <li><a href="">Мои заказы</a></li>
+                <li><a href="">Возврат</a></li>
+                <li><a href="">Публичная оферта</a></li>
+                <li><a href="">Программа лояльности</a></li>
+            </ul>
+           
+            <ul class="networks">
+                <li><a href="">Мы в соцсетях</a></li>
+                <li><a href="">
+                    <img src="img/vk.JPG" alt="vk">
+                </a></li>
+                <li><a href="">
+                    <img src="img/facebook.JPG" alt="facebook">
+                </a></li>
+                <li><a href="">
+                    <img src="img/inctagram.JPG" alt="inctagram">
+                </a></li>
+                <li><a href="">
+                    <img src="img/twitter.JPG" alt="">
+                </a></li>
+                <ul class="service">
+                    <li>Сервисный центр</li>
+                    <li>+375 (29) 778-12-12</li>
+                    <li>+375 (25) 778-12-12</li>
+                    <li>+375 (44) 778-12-12</li>
+                </ul>
+            </ul>
+            <ul class="payment">
+                <li>Способ оплаты</li>
+                <li><img src="img/payment.JPG" alt="payment"></li>
+                <li>Наличными или банковской картой, через систему (ЕРИП), онлайн банковской картой через систему bePaid</li>
+            </ul>
+            <div class="mobile-app">
+                <p>Для мобильных устройств</p>
+                <a href="">
+                    <img src="img/apple.JPG" alt="apple">
+                </a>
+                <a href="">
+                    <img src="img/google.JPG" alt="google">
+                </a>
+                <p>Вы также можете <br> перейти на мобильную <br> версию сайта.</p>
+
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+</html>
+
