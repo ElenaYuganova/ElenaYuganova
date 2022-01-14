@@ -1,0 +1,385 @@
+@media all and (max-width: 1180px) {
+    .container {
+        width: 900px;
+    }
+    .header-search-left div.search {
+        width: 293px;
+    }
+    .header-search-right ul li {
+        padding-left: 11px;
+    }
+    .header-search-left div.search {
+        padding-left: 14px;
+        margin-right: 0;
+    }
+    .header-search-left > img:nth-child(2) {
+        margin-right: 13px;
+    }
+    .header-search-left button {
+        margin-right: 13px;
+    }
+    .header-bottom ul li {
+        padding-right: 32px;
+    }
+    .header-bottom ul li:last-child {
+        padding-right: 0;
+    }
+    .content-main-blocks .block {
+        margin-left: 80px;
+    }
+    .content-news-block button {
+        width: 42px;
+        height: 42px;
+    }
+    .content-news-block ul li:first-child {
+        margin-left: 15px;
+    }
+    .content-news-block ul li:last-child {
+        margin-right: 15px;
+    }
+    .content-news-block ul li {
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 181px;
+    }
+    .content-news-block ul li img {
+        width: 181px;
+    }
+    .content-subscribe p{
+        width: 344px;
+    }
+    .content-news h3,
+    .content-subscribe p,
+    .footer .help {
+        padding-left: 56px;
+    }
+    .footer .mobile-app a {
+        padding-right: 0px;
+    }
+    .footer .help {
+        padding-right: 70px;
+    }
+    .footer ul.service {
+        padding-right: 65px;
+    }
+    .footer .mobile-app a:nth-child(2) img {
+        margin-right: 15px;
+    }
+    .footer .payment li:last-child {
+        margin-right: 47px;
+    }
+}
+@media all and (max-width: 940px) {
+    .container {
+        width: 700px;
+    }
+    .content-main-blocks .block {
+        margin-left: 17px;
+    }
+    .content-main {
+        margin-left: 200px;
+    }
+    .content-forms {
+        width: 200px;
+    }
+    .content-forms .price input:last-child {
+        width: 200px;
+    }
+    .content-forms .price input:not(:last-child) {
+        width: 84px;
+    }
+    .header-search-left > img:nth-child(2),
+    .header-search-left button {
+        margin-right: 30px;
+    }
+    .header-search-left div.search {
+        width: 400px;
+    }
+    .header-search-right {
+        float: left;
+        margin-left: 95px;
+    }
+    .header-search-right ul li {
+        padding-left: 35px;
+        padding-top: 15px;
+    }
+    .header-bottom ul li {
+        padding-right: 32px;
+    }
+    .header-bottom ul li:nth-child(6) {
+        padding-right: 0px;
+    }
+    .content-main-sort button {
+        margin-left: 15px;
+    }
+    .content-news-block button {
+        width: 55px;
+        height: 55px;
+    }
+    .content-news-block ul li {
+        margin-left: 22px;
+        margin-right: 22px;
+        width: 220px;
+    }
+    .content-news-block ul li:first-child {
+        margin-left: 45px;
+    }
+    .content-news-block ul li:last-child {
+        margin-right: 45px;
+    }
+    .content-news-block ul li img {
+        width: 220px;
+    }
+    .content-news-block ul li {
+        margin-left: 44px;
+        margin-right: 15px;
+    }
+    .content-news-block ul li:nth-child(3),
+    .content-news-block ul li:last-child {
+        margin-top: 20px;
+    }
+    .content-news h3 {
+        padding-left: 100px;
+    }
+    .content-subscribe p, .footer .help {
+        padding-left: 0px;
+    }
+    .content-subscribe p {
+        width: 287px;
+    }
+    .content-subscribe form input:first-child {
+        margin-left: 22px;
+        margin-right: 21px;
+    }
+    .footer ul.service {
+        padding-right: 45px;
+    }
+    .footer .help {
+        padding-right: 37px;
+    }
+    .footer .payment li:last-child {
+        margin-right: 35px;
+        width: 146px;
+    }
+    .footer .mobile-app a {
+        display: block;
+    }
+    .footer .mobile-app a:nth-child(3) img {
+        padding-top: 0px;
+        padding-bottom: 24px;
+    }
+}
+@media all and (max-width: 730px) {
+    .container {
+        width: 530px;
+    }
+    .header-top ul.header-top-right li {
+        margin-left: 12px;
+    }
+    .header-top ul.header-top-right li:first-child {
+        margin-left: 0px;
+    }
+    .header-top ul.header-top-left li {
+        margin-right: 12px;
+    }
+    .header-top ul.header-top-left li:last-child {
+        margin-right: 0px;
+    }
+    .header-search-left div.search {
+        width: 250px;
+    }
+    .header-search-left > img:nth-child(2), .header-search-left button {
+        margin-right: 20px;
+    }
+    .header-search-right {
+        margin-left: 15px;
+    }
+    .header-bottom ul li, 
+    .header-bottom ul li:nth-child(6) {
+        padding-right: 30px;
+    }
+    .header-bottom ul li:nth-child(5) {
+        padding-right: 0;
+    }
+    .content-main-blocks .block {
+        margin-left: 50px;
+    }
+    .content-main-sort button {
+        margin-left: 100px;
+    }
+    .content-main-sort > div {
+        margin-top: 16px;
+    }
+    .content-news-block ul li {
+        margin-left: 11px;
+        margin-right: 11px;
+    }
+    .content-news-block button {
+        width: 45px;
+        height: 45px;
+    }
+    .content-news-block ul li:first-child {
+        margin-left: 25px;
+    }
+    .content-news-block ul li:last-child {
+        margin-right: 25px;
+    }
+    .content-news-block ul li, 
+    .content-news-block ul li img {
+        width: 181px;
+    }
+    .content-news-block ul li:nth-child(3) {
+        margin-left: 26px;
+    }
+    .content-news h3 {
+        padding-left: 69px;
+    }
+    .content-subscribe p {
+        width: 100%;
+    }
+    .content-subscribe form input {
+        margin-top: 0px;
+        margin-bottom: 30px;
+    }
+    .content-subscribe form input:first-child {
+        margin-left: 61px;
+    }
+    .content-subscribe p {
+        padding-top: 30px;
+        padding-bottom: 10px;
+    }
+    .footer .help {
+        padding-right: 100px;
+    }
+    ul.payment, .footer .mobile-app {
+        padding-top: 0;
+    }
+    .footer .payment li:last-child {
+        margin-right: 73px;
+        width: 170px;
+    }
+} 
+@media all and (max-width: 560px) {
+    .container {
+        width: 300px;
+    }
+    .header-top ul.header-top-left li {
+        margin-right: 30px;
+    }
+    .header-top ul.header-top-right {
+        margin-top: 0px;
+    }
+    .header-top ul.header-top-right li {
+        margin-left: 30px;
+    }
+    .header-top ul.header-top-right li:last-child {
+        margin-left: 0px;
+        margin-top: 9px;
+    }
+    .header-search-left button {
+        margin-right: 0px;
+    }
+    .header-search-left > img:nth-child(2) {
+        margin-right: 60px;
+    }
+    .header-search-left div.search {
+        width: 100%;
+        margin-top: 10px;
+    }
+    .header-search-right {
+        margin-left: 0px;
+    }
+    .header-search-right ul li {
+        padding-left: 61px;
+    }
+    .header-search-right ul li:first-child {
+        padding-left: 0;
+    }
+    .header-bottom ul li, .header-bottom ul li:nth-child(6) {
+        padding-right: 17px;
+    }
+    .content-forms {
+        width: 100%;
+        float: none;
+    }
+    .content-main {
+        margin-left: 0;
+    }
+    .content-main-sort button {
+        margin-left: 71px;
+    }
+    .content-main-blocks .block {
+        margin-left: 32px;
+    }
+    .content-main-bottom-left {
+        margin-left: 10px;
+    }
+    .content-main-bottom-right button {
+        margin-top: 11px;
+    }
+    .content-news h3 {
+        padding-left: 28px;
+    }
+    .content-news-block button {
+        display: none;
+    }
+    .content-news-block ul li,
+    .content-news-block ul li:nth-child(3),
+    .content-news-block ul li:last-child {
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 0;
+        width: 100%;
+    }
+    .content-news-block ul li:first-child {
+        margin-left: 0px;
+    }
+    .content-news-block ul li img {
+        width: 100%;
+    }
+    .content-news-block ul li div {
+        padding-bottom: 20px;
+        padding-top: 0;
+    }
+    .content-subscribe form input:first-child {
+        margin-left: 0px;
+        width: 100%;
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+    .footer ul {
+        float: none;
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+    .footer ul.service {
+        padding-bottom: 0;
+    }
+    .footer .payment li img {
+        padding-bottom: 15px;
+    }
+    .footer .payment li:last-child {
+        margin-right: 0px;
+        width: 250px;
+    }
+    ul.payment, .footer .mobile-app {
+        padding-top: 30px;
+    }
+    .content-forms .price input:not(:last-child) {
+        width: 134px;
+    }
+    .content-forms .price input:last-child {
+        width: 100%;
+    }
+    .header-search-right ul li a > div:first-child,
+    .header-search-right ul li a > div:last-child {
+        display: inline-block;
+    }
+    .header-search-right ul li {
+        float: none;
+        padding-left: 0;
+    }
+    .header-search-right ul li a > div:last-child {
+        padding-left: 5px;
+    }
+}    

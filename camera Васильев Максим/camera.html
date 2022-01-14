@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.2, minimum-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
     <title>Camera</title>
 </head>
 <body>
@@ -43,11 +44,9 @@
                                Каталог</span>
                         </button>
                         <div class="search">
-                            <div >
-                            <img src="img/search.svg" alt="search">
-                            </div>
+                            <input type="text" placeholder="Поиск">
+                            <span></span>
                         </div>
-
                     </div>
                     <div class="header-search-right">
                         <ul>
@@ -86,8 +85,8 @@
                 </div>
         </div>
         <div class="header-bottom clearfix">
-            <div class="border"></div>
             <div class="container">
+                <div class="border"></div>
                 <ul class="clearfix">
                     <li><a href="">ФОТОАППАРАТЫ</a></li>
                     <li><a href="">ОБЪЕКТИВЫ</a></li>
@@ -109,7 +108,7 @@
                 <span>55</span>
             </div>
             <div class="clearfix">
-                <div class="content-forms">
+                <div class="content-forms clearfix">
                     <form method="get" action="https://fe.it-academy.by/TestForm.php">
                         <h4>Бренд</h4> 
                         <div>
@@ -139,6 +138,12 @@
                         </div>
                         <div class="border"></div>
                         <h4>Цена</h4> 
+                        <div class="price">
+                            <input type=number value=500 step=100>
+                            <span> &mdash;</span>
+                            <input type=number value=10000 step=10>
+                            <input type="range" min="0" max="10000" step="100">
+                        </div>
                         <div class="border"></div>
                         <h4>Доступность</h4> 
                         <div>
@@ -440,7 +445,7 @@
         </div>
         <div class="content-subscribe clearfix">
             <div class="container">
-                <p>Получайте самые интересные <br> предложения первыми!</p>
+                <p>Получайте самые интересные предложения первыми!</p>
                 <form method="post" action="https://fe.it-academy.by/TestForm.php">
                     <input type="text" name="email" value="Email">
                     <input type="submit" value="Подписаться">

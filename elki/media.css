@@ -1,0 +1,18 @@
+@media all and (max-width: 1180px) {
+    .container {
+        width: 900px;
+    }
+    .header-top-icons li {
+        margin-right: 12px;
+    }
+    .header-top ul.header-top-menu li {
+        margin-right: 20px;
+    }
+    .header-top ul.header-top-menu {
+        margin-right: 23px;
+    }
+    .header-search .search {
+        width: 462px;
+    }
+
+}

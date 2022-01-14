@@ -93,6 +93,7 @@ a {
     border: none;
     border-radius: 5px;
     margin-right: 16px;
+    cursor: pointer;
 } 
 .header-search-left button span img {
     padding-right: 6px;
@@ -105,23 +106,28 @@ a {
     color: #FFFFFF;
 } 
 .header-search-left div.search {
+    position: relative;
     float: left;
     width: 437px;
     height: 32px;
     border: 1px solid #D8D9DB;
     border-radius: 5px;
 }
-.header-search-left div.search div {
-    float: right;
-    margin-top: 3.5px;
-    margin-right: 5px;
+.header-search-left div.search input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: transparent;
+    padding-left: 7px;
+}
+.header-search-left div.search span {
+    position: absolute;
+    top: 3.5px;
+    right: 5px;
     width: 22px;
     height: 23px;
-    background: #E91F39;
+    background: #E91F39 url(img/search.svg) no-repeat center;
     border-radius: 5px;
-}
-.header-search-left div.search div img {
-    margin: 6px 0 0 6px;
 }
 /*header-search-right*/
 .header-search-right {
@@ -208,10 +214,25 @@ a {
 .content-forms form h4:first-child {
     margin-top: 24px;
 }
-
 .content-forms form .border {
     margin-top: 18px;
     margin-bottom: 18px;
+}
+.content-forms .price input:not(:last-child) {
+    width: 120px;
+    height: 36px;
+    border: 1px solid #A1A1A1;  
+    border-radius: 5px;
+    padding-left: 10px;
+    margin-bottom: 17px;
+}
+.content-forms .price span {
+    padding-left: 5px;
+    padding-right: 5px;
+    color: #A1A1A1;
+}
+.content-forms .price input:last-child {
+    width: 272px;
 }
 /*content-main*/
 .content-main {
@@ -260,7 +281,7 @@ a {
     width: 232px;
     height: 328px;
     float: left;
-    margin-left: 57px;
+    margin-left: 56px;
     margin-top: 52px;
     margin-bottom: 20px;
 }
@@ -412,6 +433,7 @@ a {
     background: #F5F5F6;
 }
 .content-subscribe p {
+    width: 378px;
     display: inline-block;
     font-weight: 500;
     font-size: 20px;
