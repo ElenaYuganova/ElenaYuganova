@@ -1,0 +1,22 @@
+<svg width="267" height="300" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with SVG Editor - http://github.com/mzalive/SVG Editor/ -->
+ <g>
+  <title>background</title>
+  <rect fill="#ffffff" id="canvas_background" height="302" width="269" y="-1" x="-1"/>
+  <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+   <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
+  </g>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <rect id="svg_1" height="160" width="211" y="123.982791" x="27.357758" stroke-width="2.5" stroke="#000" fill="#ffffaa"/>
+  <rect id="svg_2" height="79.234962" width="78.142066" y="157.860621" x="94.795557" stroke-width="2.5" stroke="#000" fill="#fcba2a"/>
+  <line stroke="#000" stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_3" y2="236.663369" x2="132.311318" y1="158.407069" x1="132.311318" stroke-width="2.5" fill="none"/>
+  <line stroke="#000" stroke-linecap="null" stroke-linejoin="null" id="svg_5" y2="187.62624" x2="171.866405" y1="187.62624" x1="132.649839" stroke-opacity="null" stroke-width="2.5" fill="none"/>
+  <path stroke="#000" id="svg_6" d="m11.629519,124.052451l121.573609,-115.736063l121.573609,115.736063l-243.147218,0z" stroke-opacity="null" stroke-width="2.5" fill="#bc7503"/>
+  <ellipse ry="16.666667" rx="17.54386" id="svg_8" cy="80.983083" cx="132.857766" stroke-opacity="null" stroke-width="2.5" stroke="#000" fill="#3d2503"/>
+  <line stroke-linecap="null" stroke-linejoin="null" id="svg_12" y2="97.825433" x2="132.711357" y1="64.654709" x1="132.711357" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="none"/>
+  <line stroke-linecap="null" stroke-linejoin="null" id="svg_13" y2="80.861301" x2="149.919983" y1="80.861301" x1="115.477146" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="none"/>
+  <text stroke="#000" transform="matrix(1.3483285903930664,0,0,1,-84.15712501775124,0) " xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_18" y="264.615726" x="114.597476" fill-opacity="null" stroke-opacity="null" stroke-width="2" fill="#000000">Мой дом</text>
+ </g>
+</svg>

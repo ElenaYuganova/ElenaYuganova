@@ -1,0 +1,44 @@
+* {
+    font-family: 'Roboto', sans-serif; 
+    font-size: 18px;
+}
+.head, .foot{
+    text-align: center; background-color: #add8e6; color: blue; font-size: 24px;
+}
+.head {
+    padding: 10px 0;
+}
+.foot {
+    padding: 25px 0;
+}
+.body {
+    display: flex;
+}
+.menu {
+    flex-basis: 250px; 
+    background: #f0e78c;
+    flex-shrink: 0;
+}
+.menu h2 {
+    font-weight: bold; 
+    margin: 20px;
+}
+.menu ul {
+    margin-top: 10px;
+}
+.content {
+    background: url(../img/ball.JPG) repeat-y top right;
+}
+.content img {
+    float: left; 
+    padding: 10px 20px;
+}
+.content h1 {
+    text-align: center;
+    margin: 0;
+    padding: 20px 0 0 0;
+}
+.content p {
+    margin: 0;
+    padding: 10px 20px;
+}

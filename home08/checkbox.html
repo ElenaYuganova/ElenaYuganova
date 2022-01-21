@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHECKBOX</title>
+    <style>
+        .border {
+            margin-left: 30px;
+            margin-top: 20px;
+        }
+        .smile-checkbox {
+            visibility: hidden;
+            position: relative;
+        }
+        .smile-checkbox::before {
+            visibility: visible;
+            content:'';
+            background: url(img/emoticon-wait.gif);
+            width: 50px;
+            height: 57px;
+            background-size: contain;
+            position: absolute;
+        }
+        .smile-checkbox:checked::before {
+            background: url(img/emoticon-click.gif);
+            content:'';
+            width: 50px;
+            height: 57px;
+            background-size: contain;
+        }
+        span {
+            margin-left: 40px;
+            font-size: 25px;
+            vertical-align: -26px;
+        }
+        .smile-checkbox + span {
+            color: blue;
+         }
+         .smile-checkbox:checked + span {
+            color: red;
+         }
+
+
+    </style>
+</head>
+<body>
+<div class="border">
+    <label>
+        <input type="checkbox" class="smile-checkbox">
+        <span>Нажми на меня!</span>
+    </label>
+</div>
+</body>
+</html>

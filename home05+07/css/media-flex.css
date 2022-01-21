@@ -1,0 +1,26 @@
+@import url(style-flex.css);
+
+@media screen and (max-width:600px) {
+    .body {
+        flex-direction: column;
+    }
+    .menu {
+        order: 2;
+        max-width: 100%;
+        background: none;
+        flex-basis: auto;
+        margin-bottom: 20px;
+    }
+    .menu ul {
+        padding-left: 20px;
+    }
+    .menu ul li {
+        list-style-type: none;
+        float: left;
+        padding-right: 20px;
+    }
+    .content {
+        order: 1;
+        background: none;
+    }
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEST_SPRITES</title>
+    <style>
+
+        @keyframes sprites
+        {
+            from { background: url('img/sprite.jpg') 0 0; }
+            to { background: url('img/sprite.jpg') -3930px 0; } /* 4192-262=3930 */
+        }
+        
+        .anim
+        {
+            width: 262px;
+            height: 330px;
+            animation: sprites 1.5s steps(15) infinite;
+        }
+        
+        </style>
+</head>
+<body>
+     
+    <div class='anim'></div>
+ 
+</body>
+</html>
