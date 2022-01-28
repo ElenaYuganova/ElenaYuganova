@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>anketa_oper</title>
+  </head>
+  <body>
+    <script>
+        var surname = prompt("Введите вашу фамилию");
+        console.log(surname);
+        var name = prompt("Введите ваше имя");
+        console.log(name);
+        var fathername = prompt("Введите ваше отчество");
+        console.log(fathername);
+        var age = parseInt(prompt("Ваш возраст в годах"));
+        console.log(age);
+        console.log(age*365);
+        console.log(age+5);
+        var gender = confirm("Ваш пол мужской?");
+        var a= (gender === true) ? 'мужской' : 'женский';
+        console.log(a);
+
+        var b = (gender == 'мужской') ? (age >= 63 ? 'да' : 'нет') : (age>=58 ? 'да' : 'нет');
+        console.log(b);
+
+        alert ('ваше ФИО: '+ surname + ' ' + name + ' ' + fathername + '\n'
+              + 'ваш возраст в годах: ' + age +  '\n'
+              + 'ваш возраст в днях: ' + age*365 + '\n'
+              + 'через 5 лет вам будет: ' + (age+5) + '\n'
+              + 'ваш пол: ' + a + '\n'
+              + 'вы на пенсии: ' + b);
+    </script>
+  </body>
+</html>
