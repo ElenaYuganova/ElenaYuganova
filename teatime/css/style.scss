@@ -417,7 +417,7 @@ h2 {
     background: url(../img/background2.jpg) center no-repeat;
     background-size: cover;
     margin-top: 191px;
-    filter: drop-shadow(-10px -10px 20px rgba(245, 245, 245, 0.7)) drop-shadow(10px 10px 20px rgba(245, 245, 245, 0.7));
+   // filter: drop-shadow(-10px -10px 20px rgba(245, 245, 245, 0.7)) drop-shadow(10px 10px 20px rgba(245, 245, 245, 0.7));
     .container {
         margin-right: 100px;
         & > h2 {
@@ -466,10 +466,7 @@ h2 {
 .footer {
     background: $dark_green;
     height: 339px;
-    position: relative;
-    & > div {
-        position: absolute;
-    }
+   
     li {
         font-weight: $font_normal;
         font-size: $fs18;

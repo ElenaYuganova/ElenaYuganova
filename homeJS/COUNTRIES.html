@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COUNTRIES</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main {
+            display: flex;
+        }
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            
+        }
+        input {
+            width: 330px;
+            height: 60px;
+            margin: 20px;
+            cursor: pointer;
+            border: 2px solid rgb(0, 0, 116);
+            border-radius: 10px;
+            background-color: rgb(182, 182, 253);
+            font-size: 20px;
+            color: rgb(0, 0, 116);
+        }
+        input:hover {
+            background-color: rgb(0, 0, 116);
+            color: rgb(182, 182, 253);
+            transition-duration: 1s;
+        }
+        #all {
+            margin-top: 20px;
+            margin-left: 20px;
+            font-size: 18px;
+            line-height: 30px;
+       }
+    </style>
+</head>
+<body>
+<div class="main">
+    <div class="buttons">
+        <input type="button" value="Перечень всех стран" onclick='listCountrys()'></input>
+        <input type="button" value="Ввод информации о стране" onclick='addCountry()'></input> 
+        <input type="button" value="Получение информации о стране" onclick='getCountryInfo()'></input>        
+        <input type="button" value="Удаление информации о стране" onclick='deleteCountry()'></input>
+    </div>
+    <div id="all"></div>
+</div>
+
+ <script>
+
+    var countrysH={
+        'Германия':'Берлин',
+        'Испания':'Мадрид',
+        'Италия':'Рим',
+        'Греция':'Афины',
+        'Швеция':'Стокгольм',
+    };
+    
+    function addCountry() {
+        var countryName;
+        do {
+            countryName = prompt ('Введите название страны:');
+            //if (countryName)
+                //countryName = countryName.trim();
+        }
+        while (!countryName);
+
+        var capitalName; 
+        do {
+            capitalName = prompt ('Введите название столицы:');
+        }
+        while (!capitalName);
+
+        countrysH[countryName]=capitalName;
+
+        alert ('Страна' + ' ' + countryName + ' ' + 'добавлена, спасибо!');
+        console.log (countrysH)
+    }
+    
+    function getCountryInfo() {
+        var countryName = prompt ('Введите название страны:');
+        if ( countryName in countrysH ) {
+            alert ('Страна: ' + countryName + '.' + '\n' + 'Столица: ' + countrysH[countryName] + '.');
+        }
+        else {
+            alert ('Нет информации о стране ' + countryName + '!' );
+        }
+    }
+
+    function deleteCountry() {
+        var countryName = prompt ('Какую страну вы хотите удалить?');
+        if (countryName in countrysH ) { delete countrysH[countryName];
+            alert ('Страна' + ' ' + countryName + ' ' + 'удалена из списка!');
+        }
+        else {
+            alert ('Страны ' + countryName + ' нет в списке!' );
+        }
+        console.log (countrysH)
+    }
+    
+    function listCountrys() {
+        var list ='';
+        for ( countryName in countrysH ) 
+           list += 'Страна: ' + countryName + '.' + ' Столица: ' + countrysH[countryName] + '.' + '\n';
+           var elem = document.getElementById('all');
+           elem.innerText = list;       
+    }
+  
+</script>    
+    
+</body>
+</html>
