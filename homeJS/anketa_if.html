@@ -7,32 +7,39 @@
     <title>anketa_if</title>
   </head>
   <body>
+    <!--в JS в условии if (gender === true)  можно оставить только if (gender), т.к. по умолчанию и так будет true.
+        console.log после написания кода лучше убирать, чтобы был чистый код. Эти console число для себя-->
     <script>
       var surname = prompt("Введите вашу фамилию");
-      console.log(surname);
+      //console.log(surname);
       var name = prompt("Введите ваше имя");
-      console.log(name);
+      //console.log(name);
       var fathername = prompt("Введите ваше отчество");
-      console.log(fathername);
-      var age = parseInt(prompt("Ваш возраст в годах"));
-      console.log(age);
-      console.log(age*365);
-      console.log(age+5);
-      if (isNaN(age)) {
-        alert("Вы ввели некорректное число!");
-      } else {
-        var gender = confirm("Ваш пол мужской?");
-        if (gender === true) { gender = 'мужской';}
+      //console.log(fathername);
+
+      var age;
+      do {
+        age = parseInt(prompt("Ваш возраст в годах"));
+        if (isNaN(age)) {
+            alert("Вы ввели некорректное число!");
+        }
+      }
+      while (isNaN(age));
+      //console.log(age);
+     // console.log(age*365);
+     // console.log(age+5);
+      var gender = confirm("Ваш пол мужской?");
+        if (gender) { gender = 'мужской';}
         else { gender = 'женский';}
-        console.log(gender);
+       // console.log(gender);
         var retired = "нет";
-        if (gender === true) {
+        if (gender) {
             if (age >= 63) retired = "да";
         } else {
             if (age >= 58) retired = "да";
         }
-        console.log(retired);
-      }
+       // console.log(retired);
+      
       alert ('ваше ФИО: '+ surname + ' ' + name + ' ' + fathername + '\n' 
             + 'ваш возраст в годах: ' + age +  '\n' 
             + 'ваш возраст в днях: ' + age*365 + '\n' 

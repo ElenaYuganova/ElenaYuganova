@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>anketa_extra</title>
+</head>
+<body>
+    <script>
+        var surname = prompt('Введите вашу фамилию');
+        var name = prompt('Введите ваше имя');
+        var fathername = prompt('Введите ваше отчество');
+        var age = parseInt(prompt('Ваш возраст (в годах)'));
+        var mobile = parseInt(prompt('Ваш мобильный телефон (в кодом)'));
+        var city = prompt('Город проживания');
+        var height = parseInt(prompt('Ваш рост (в см)'));
+        var heightM = height/100;
+        var weight = parseFloat(prompt('Ваш вес (в кг)'));
+        var imt = parseFloat(weight / (heightM * heightM));
+        imt = imt.toFixed(2);
+        var gender = confirm ('Ваш пол женский?');
+        var a = (gender) ? 'женский' : 'мужской';
+        var status = '';
+        var status = age < 6 ? 'ребенок' : 
+                     age <= 17 ? 'школьник' : 
+                     age <= 23 ?'студент' : 
+                     ((age < 58 && gender) || (age < 63 && gender === false) ? 'работающий' : 'пенсионер');
+         
+        alert ('ваше ФИО: '+ surname + ' ' + name + ' ' + fathername + '\n' 
+            + 'ваш возраст в годах: ' + age +  '\n' 
+            + 'ваш мобильный телефон: ' + mobile + '\n' 
+            + 'ваш город проживания: ' + city + '\n' 
+            + 'ваш рост в см: ' + height + 'см' + '\n'
+            + 'ваш рост в метрах: ' + heightM + 'м' + '\n'
+            + 'ваш вес в кг: ' + weight + 'кг' + '\n'
+            + 'ваш вес в граммах: ' + (weight * 1000) + 'гр' + '\n'
+            + 'индекс массы тела: ' + imt + '\n'
+            + 'ваш пол: ' + a + '\n'
+            + 'ваш статус: ' + status);
+    </script>
+    
+</body>
+</html>
