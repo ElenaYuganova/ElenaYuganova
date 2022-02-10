@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
 @import "variables.scss";
 @import "mixins";
+@import "media.scss";
 
 * {
     margin: 0;
@@ -38,6 +39,14 @@ h2 {
     .container {
         display: flex;
         justify-content: space-between;
+        & > img {
+            display: none;
+        }
+        #humb_button {
+            img {
+                display: none;
+            }
+        }
         ul {
             display: flex;
             align-items: center;
@@ -65,6 +74,9 @@ h2 {
                     margin-right: 17px;
                     border-right: 1px solid $gray;
                 }
+            }
+            & > a {
+                display: none;
             }
 
         }
@@ -117,6 +129,13 @@ h2 {
                             }
                         }
                     }
+                }
+                & > a {
+                    border: 1px solid $dark_green;
+                   padding: 5px 10px ;
+                   border-radius: 10px;
+                   cursor: pointer;
+                   display: none;
                 }
     
                 input {
@@ -201,6 +220,7 @@ h2 {
             line-height: 25px;
             color: $light_text;
             margin-bottom: 44px;
+            width: 389px;
 
         }
         button {
@@ -288,80 +308,91 @@ h2 {
                 box-shadow: -10px -10px 20px rgba(245, 245, 245, 0.7), 10px 10px 20px rgba(245, 245, 245, 0.7);
                 border-radius: 20px;
                 padding: 25px;
-    
-                & div:nth-child(2) {
-                    display: flex;
-                    justify-content: center;
-                    flex-basis: 161px;
-                    
-                    
-                }
+                display: flex;
+                flex-direction: column;
+
+
                 .card_top {
                     display: flex;
-                    justify-content: space-between;
-                    margin-bottom: 25px;
-                   
-                    span {
-                        position: relative;
-                        padding-left: 33px;
-                        font-weight: $font_normal;
-                        font-size: $fs18;
-                        line-height: 25px;
-                        color: $light_text;
-                       
-                        &::before {
-                            position: absolute;
-                            content: '';
-                            width: 26px;
-                            height: 26px;
-                            left: 0;
-                            top: -2px;
-                            background: url(../img/star.svg) center no-repeat;
+                    flex-direction: column;
+                    
+                    & > div:first-child {
+                        display: flex;
+                        justify-content: space-between;
+                        margin-bottom: 25px;
+                    
+                        span {
+                            position: relative;
+                            padding-left: 33px;
+                            font-weight: $font_normal;
+                            font-size: $fs18;
+                            line-height: 25px;
+                            color: $light_text;
+                        
+                            &::before {
+                                position: absolute;
+                                content: '';
+                                width: 26px;
+                                height: 26px;
+                                left: 0;
+                                top: -2px;
+                                background: url(../img/star.svg) center no-repeat;
+                            }
+                        }
+                        & > img {
+                            width: 29px;
+                        }
+                    
+                    }
+                    & div:nth-child(2) {
+                        margin-left: auto;
+                        margin-right: auto;
+                        img {
+                            width: 162px;
                         }
                     }
-                    & > img {
-                        width: 29px;
-                    }
-                  
                 }
-                h4 {
-                    margin-top: 40px;
-                    font-weight: $semi_bold;
-                    font-size: $fs21;
-                    line-height: 29px;
-                    color: $header_text;
-                    margin-bottom: 16px;
-                }
-                h5 {
-                    font-weight: $semi_bold;
-                    font-size: $fs16;
-                    line-height: 22px;
-                    color: $light_text;
-                    margin-bottom: 2px;
-                }
-                p.descr {
-                    line-height: 19px;
-                    font-size: $fs14;
-                    color: $light_text;
-                    margin-bottom: 19px;
-                }
-                p.price {
-                    font-size: $fs18;
-                    line-height: 25px;
-                    color: $header_text;
-    
-                    span {
+                .card_bottom {    
+                    h4 {
+                        margin-top: 40px;
                         font-weight: $semi_bold;
                         font-size: $fs21;
                         line-height: 29px;
                         color: $header_text;
+                        margin-bottom: 16px;
                     }
-                }
-                button {
-                    margin-top: 27px;
-                    @include btn(239px);
-                }    
+                    h5 {
+                        font-weight: $semi_bold;
+                        font-size: $fs16;
+                        line-height: 22px;
+                        color: $light_text;
+                        margin-bottom: 2px;
+                    }
+                    p.descr {
+                        line-height: 19px;
+                        font-size: $fs14;
+                        color: $light_text;
+                        margin-bottom: 15px;
+                    }
+                    p.price {
+                        font-size: $fs18;
+                        line-height: 25px;
+                        color: $header_text;
+        
+                        span {
+                            font-weight: $semi_bold;
+                            font-size: $fs21;
+                            line-height: 29px;
+                            color: $header_text;
+                        }
+                    }
+                    button {
+                        margin-top: 27px;
+                        @include btn(239px);
+                    } 
+                }   
             }
+
         }
         #card-wrap {
             .card {
@@ -419,46 +450,50 @@ h2 {
     margin-top: 191px;
    // filter: drop-shadow(-10px -10px 20px rgba(245, 245, 245, 0.7)) drop-shadow(10px 10px 20px rgba(245, 245, 245, 0.7));
     .container {
-        margin-right: 100px;
-        & > h2 {
-            font-weight: $bold;
-            font-size: $fs30;
-            line-height: 41px;
-            text-align: left;
-            color: $header_text;
-            padding-top: 126px;
-            padding-bottom: 15px;
-            margin-top: 0;
-            margin-bottom: 0;
-        }
-        p {
-            font-weight: $font_normal;
-            font-size: $fs18;
-            line-height: 25px;
-            color: $light_text;
-            padding-bottom: 40px;
-        }
-        .email {
-            position: relative;
-            input {
-                width: 325px;
-                height: 53px;
-                background: $white;
-                border-radius: 42px;
-                border: none;
+        & > div {
+            margin-left: 100px;
+                
+            & > h2 {
+                font-weight: $bold;
+                font-size: $fs30;
+                line-height: 41px;
+                text-align: left;
+                color: $header_text;
+                padding-top: 126px;
+                padding-bottom: 15px;
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            p {
                 font-weight: $font_normal;
                 font-size: $fs18;
                 line-height: 25px;
-                padding-left: 40px;
+                color: $light_text;
+                padding-bottom: 40px;
+                width: 390px;
             }
-            input::placeholder {
-                color: $email_text;
-            }
-            button {
-                @include btn (203px); 
-                position: absolute;
-                z-index: 1;
-                left: 229px;
+            .email {
+                position: relative;
+                input {
+                    width: 325px;
+                    height: 53px;
+                    background: $white;
+                    border-radius: 42px;
+                    border: none;
+                    font-weight: $font_normal;
+                    font-size: $fs18;
+                    line-height: 25px;
+                    padding-left: 40px;
+                }
+                input::placeholder {
+                    color: $email_text;
+                }
+                button {
+                    @include btn (203px); 
+                    position: absolute;
+                    z-index: 1;
+                    left: 229px;
+                }
             }
         }
     }
@@ -542,3 +577,5 @@ h2 {
     }
 }
 
+//импортируемый медиа-файл ложим в самый КОНЕЦ, иначе медиа-запросы не сработают
+@import "media.scss";

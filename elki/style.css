@@ -32,12 +32,6 @@ a {
 
 /*header*/
 
-.header {
-
-}
-.header-top {
-    
-}
 .header-top ul.header-top-menu {
     padding-top: 26px;
     float: left;
@@ -82,9 +76,7 @@ a {
     vertical-align: 7px;
 }
 /*header-search*/
-.header-search {
 
-}
 .header-search img[alt="humb"] {
     float: left;
     margin-top: 65px;
@@ -135,6 +127,7 @@ a {
     font-size: 16px;
     line-height: 22px;
     color: #FFFFFF;
+    cursor: pointer;
 }
 .header-search button span:first-child {
     display: inline-block;
@@ -162,7 +155,7 @@ a {
     float: left;
     margin-left: 29px;
 }
-.header-bottom-menu li.active {
+.header-bottom-menu li:hover {
     color: #FF715B;;
 }
 
@@ -292,6 +285,13 @@ a {
     line-height: 19px;
     color: rgba(0, 0, 0, 0.5);
     margin-left: 19px;
+}
+.add-elki h2 {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 36px;
+    line-height: 49px;
+    margin-bottom: 12px;
+    margin-top: 40px;
 }
 /*catalog-sort*/
 .catalog .catalog-sort {
@@ -445,16 +445,16 @@ a {
     padding-bottom: 28px;
     background: rgba(218, 218, 218, 0.3);
 }
-.footer ul {
+.footer .main-string {
     float: left;
 }
-.footer ul:first-child {
+.footer .main-string:first-child {
     margin-right: 126px;
 }
-.footer ul:nth-child(2) {
+.footer .main-string:nth-child(2) {
     margin-right: 110px;
 }
-.footer ul:nth-child(3) {
+.footer .main-string:nth-child(3) {
     margin-right: 91px;
 }
 .footer ul li {
@@ -466,7 +466,8 @@ a {
     line-height: 22px;
     color: rgba(0, 0, 0, 0.8);
 }
-.footer ul li:first-child {
+.footer .main-string span {
+    display: inline-block;
     margin-bottom: 12px;
     font-family: 'Noto Sans', sans-serif;
     font-style: normal;
@@ -495,6 +496,22 @@ a {
     font-size: 10px;
     line-height: 160%;
     color: rgba(0, 0, 0, 0.5);
+}
+/*стили для кнопки humb. на большой экране будет спрятана,
+на маленьком будет появляться*/
+
+#hide_button {
+    display: none;
+    background: #81B43F;
+    font-size: 25px;
+    color: white;
+    width: 80px;
+    height: 45px;
+    padding-top: 5px;
+    padding-left: 10px;
+    border-radius: 10px;
+    margin-top: 25px;
+    cursor: pointer;
 }
 
 

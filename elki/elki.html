@@ -53,7 +53,7 @@
                 </p>
             </div>
             <div class="header-search clearfix">
-                <img src="img/humb.svg" alt="humb">
+                <a href="" title="Каталог"><img src="img/humb.svg" alt="humb"></a> 
                 <img src="img/logo.png" alt="logo">
                 <div class="search">
                     <img src="img/search.svg" alt="search">
@@ -64,21 +64,28 @@
                     <span>3</span>
                 </button>
             </div>
+            <!--создаем div для применения кнопки humb-->
+            <div id="hide_button">
+                <span id="open">open</span>
+                <span id="close">close</span> 
+                
+            </div>
+            <!--в нижнем 'ul' находятся ссылки, по которым будем потом скролить страницу вниз-->
             <ul class="header-bottom-menu clearfix">
                 <li>
-                    <a href="">Все для сада и огорода</a>
+                    <a href="#one">Фильтры</a>
                 </li>
                 <li>
-                    <a href="">Техника</a>
+                    <a href="#two">Всем по елке!</a>
                 </li>
                 <li>
-                    <a href="">Инструменты</a>
+                    <a href="#three">Новогодние игрушки</a>
                 </li>
                 <li>
-                    <a href="">Хозяйственные товары</a>
+                    <a href="#four">Еще больше елок</a>
                 </li>
-                <li class="active">
-                    <a href="">Акции</a>
+                <li>
+                    <a href="#five">Услуги</a>
                 </li>
 
             </ul>
@@ -95,7 +102,7 @@
     </div>
     <div class="filters-wrap">
         <div class="container clearfix">
-            <div class="filter">
+            <div class="filter" id="one">
                 <img src="img/filter.svg" alt="filter">
                 <span>Фильтры</span>
             </div>
@@ -133,7 +140,7 @@
                         </li>
                         <li><a href="" class="active">Всем по елке!</a></li>
                     </ul>
-                    <h2>Всем по елке!
+                    <h2 id="two">Всем по елке!
                         <span>96 товаров</span>
                     </h2>
                 </div>
@@ -295,10 +302,13 @@
                     </div>
                 </div>
             </div>
-            <div class="christmas-toys">
+            <div class="christmas-toys" id="three">
                 <h2>Новогодние игрушки</h2>
                 <button class="btn">Посмотреть товары</button>
             </div>
+            <div class="add-elki" id="four">
+                <h2>Еще больше елок!</h2>
+             </div>
             <div class="catalog-items clearfix">
                 <div class="catalog-item">
                     <div class="catalog-item-img">
@@ -521,41 +531,55 @@
             <p>Отображается 20 из 96</p>
         </div>
     </div>
-    <div class="footer">
-        <div class="container clearfix">
-            <ul>
-                <li><a href="">Услуги</a></li>
-                <li><a href="">Как сделать заказ</a></li>
-                <li><a href="">Способы оплаты</a></li>
-                <li><a href="">Доставка и самовывоз</a></li>
-                <li><a href="">Возврат товаров</a></li>
-                <li><a href="">Правила продажи</a></li>
-                <li><a href="">Возврат средств</a></li>
-            </ul>
-            <ul>
-                <li><a href="">О компании</a></li>
-                <li><a href="">О нас</a></li>
-                <li><a href="">Контакты</a></li>
-                <li><a href="">Вакансии</a></li>
-                <li><a href="">Пункты самовывоза</a></li>
-            </ul>
-            <ul>
-                <li><a href="">Каталог</a></li>
-                <li><a href="">Все для сада и огорода</a></li>
-                <li><a href="">Техника</a></li>
-                <li><a href="">Инструменты</a></li>
-                <li><a href="">Хозяйственные товары</a></li>
-                <li><a href="">Акции</a></li>
-            </ul>
-            <ul>
-                <li>Мобильные приложения</li>
-                <li><a href="">
-                    <img src="img/google.JPG" alt="google">
-                </a></li>
-                <li><a href="">
-                    <img src="img/apple.JPG" alt="apple">
-                </a></li>
-            </ul>
+    <div class="footer" id="five">x
+        <div class="clearfix container">
+            <div class="main-string">
+                    <span>Услуги</span>
+                    <ul class="string">
+                        <li><a href="">Как сделать заказ</a></li>
+                        <li><a href="">Способы оплаты</a></li>
+                        <li><a href="">Доставка и самовывоз</a></li>
+                        <li><a href="">Возврат товаров</a></li>
+                        <li><a href="">Правила продажи</a></li>
+                        <li><a href="">Возврат средств</a></li>
+                    </ul>
+            </div>
+            <div class="main-string">
+                
+                    <span>О компании</span>
+                    <ul class="string">
+                        <li><a href="">О нас</a></li>
+                        <li><a href="">Контакты</a></li>
+                        <li><a href="">Вакансии</a></li>
+                        <li><a href="">Пункты самовывоза</a></li>
+                    </ul>
+                
+            </div>
+            <div class="main-string">
+                
+                    <span>Каталог</span>
+                    <ul class="string">
+                        <li><a href="">Все для сада и огорода</a></li>
+                        <li><a href="">Техника</a></li>
+                        <li><a href="">Инструменты</a></li>
+                        <li><a href="">Хозяйственные товары</a></li>
+                        <li><a href="">Акции</a></li>
+                    </ul>
+               
+            </div>
+            <div class="main-string">
+                
+                    <span>Мобильные приложения</span>
+                    <ul class="string">
+                        <li><a href="">
+                            <img src="img/google.JPG" alt="google">
+                        </a></li>
+                        <li><a href="">
+                            <img src="img/apple.JPG" alt="apple">
+                        </a></li>
+                    </ul>
+                
+            </div>
 
         </div>
         <div class="social">
@@ -566,6 +590,52 @@
         <p>2001-2021 &copy; Ферма - интернет-магазин товаров для сада и огорода.
             <br> Все права защищены.</p>
     </div>
+
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+    
+    <script>
+        $(document).ready(function() { //чтобы сначала закгрузился документ, а уже в самом конце script
+            $('.header-bottom-menu').on('click', 'a', function(e) { //обрабатываем клик тега 'a', который находится внутри элемента с id menu. 'e' - объект с информацией о клике, который делаем
+                e.preventDefault(); //отменили действия, которые были по умолчанию. но клик обрабатывавется
+                var id = $(this).attr('href'); //
+                var top = $(id).offset().top; //просчитывается расстояние от верха до нужного div с идентификатором id
+                $('html, body').animate({scrollTop: top}, 1500); //анимируем плавный скролл за 1,5с в body документа html  
+            })
+            $('#open').click(function() {
+                $('.header-bottom-menu').toggle(150, 'linear').css('transform', 'translate(0)');
+                $(this).hide();
+                $('#close').show();
+            })
+            $('#close').click(function() {
+                $('.header-bottom-menu').css('transform', 'translate(170%)').toggle(500);
+                $(this).hide();
+                $('#open').show();
+            })
+            
+            $('.main-string').click(function(){
+		        $(this).children('.string').slideToggle(500); //дочерние li (.children) разворачиваются только когда срабатывает клик по определенному родителю ($(this))
+		    return false;
+	        });
+
+
+           /* $('#hide_button').click(function(){
+                $('.header-bottom-menu').slideToggle(1000, function(){
+                    if ($(this).is(':hidden')) {
+                        $('#hide_button').html('open');
+                    } else {
+                        $('#hide_button').html('close');
+                    }							
+                });
+		        return false;
+	        });*/
+
+
+
+        })
+    </script>
 </body>
 </html>
 

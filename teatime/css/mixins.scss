@@ -13,3 +13,16 @@
     cursor: pointer;
 }
 
+@mixin btn2 ($w) {
+    width: $w;
+    height: 42px;
+    background-color: $green;
+    font-weight: $font_light;
+    font-size: $fs14;
+    line-height: 19px;
+    color: $white;
+    border-radius: 42px;
+    border: none;
+    cursor: pointer;
+}
+

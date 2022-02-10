@@ -11,23 +11,34 @@
     
 <div class="header_top">
     <div class="container">
-        <ul>
-            <li><a href="#">Доставка и оплата</a></li>
-            <li><a href="#">Отзывы</a></li>
-            <li><a href="#">О магазине</a></li>
-            <li><a href="#">Контакты</a></li>
-        </ul>
+        <div>
+            <div id="humb_button">
+                <a href="#">
+                    <img src="img/humb.svg" alt="humb">
+                </a>
+            </div>
+            <ul id="humb_header_top">
+                <li><a href="#">Доставка и оплата</a></li>
+                <li><a href="#">Отзывы</a></li>
+                <li><a href="#">О магазине</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </div>
         <div>
             <div class="auth">
                 <span>Вход</span>
                 <span>Регистрация</span>
+                <a href="#">
+                    <img src="img/login.svg" alt="login" title="Личный кабинет">
+                </a>
             </div>
             <button>
                 <a href="#">
-                    <img src="img/basket.svg" alt="basket">
+                    <img src="img/basket.svg" alt="basket" title="Корзина">
                 </a> 
             </button>
-        </div>    
+        </div>  
+        <img src="img/logo2.svg" alt="logo">  
     </div>
 </div>
 <div class="header">
@@ -38,6 +49,7 @@
                 <label>
                     <input type="text" placeholder="Поиск">
                 </label>
+                <a href="#" id="humb_button_2">!!!</a>
                 <ul>
                     <li><a href="tel:+375297654565">+375 (29) 765 45 65</a></li>
                     <li>Пн - пт   с 9:00 до 19:00</li>
@@ -45,13 +57,13 @@
                 </ul>
             </div>
         </div>
-        <ul>
-            <li><a href="#">Чай</a></li>
-            <li><a href="#">Кофе</a></li>
-            <li><a href="#">Сладенькое</a></li>
-            <li><a href="#">Атрибуты</a></li>
-            <li><a href="#">Наборы</a></li>
-            <li><a href="#">Акции</a></li>
+        <ul id="menu">
+            <li><a href="#one">Каталог</a></li>
+            <li><a href="#two">Лучшее</a></li>
+            <li><a href="#three">Акции</a></li>
+            <li><a href="#four">Подписка</a></li>
+            <li><a href="#five">Информация</a></li>
+           <!-- <li><a href="#">Акции</a></li> -->
         </ul>
         
     </div>
@@ -59,13 +71,13 @@
 <div class="slider">
     <div class="container">
         <h1>Шу пуэр</h1>
-        <p>Давно выяснено, что при оценке дизайна и <br> композиции читаемый текст мешает <br> сосредоточиться.</p>
+        <p>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться.</p>
         <button>Перейти в раздел</button>
     </div>
 </div>
 <div class="catalog">
     <div class="container">
-        <h2>Каталог продукции</h2>
+        <h2 id="one">Каталог продукции</h2>
         <div class="catalog_top">
             <div>
                 <h3>Чай</h3>
@@ -89,13 +101,13 @@
 </div>
 <div class="best_product">
     <div class="container">
-        <h2>Лучшие товары</h2>
+        <h2 id="two">Лучшие товары</h2>
         <div id="card-wrap"></div>
         <div class="arrow">
             <img src="img/arrow-left.svg" alt="arrow">
             <img src="img/arrow-right.svg" alt="arrow">
         </div>
-        <h2>Акции</h2>
+        <h2 id="three">Акции</h2>
         <div id="card-wrap2"></div>
         <div class="arrow">
             <img src="img/arrow-left.svg" alt="arrow">
@@ -198,36 +210,67 @@ var str = "";
 for(let i=0; i<card.length; i++) {
     var item = card[i];
     str += `<div class="card">
-            <div class="card_top">
-                <span>${item.rating}</span>
-                <img src="img/heart.svg" alt="heart">
-            </div>
-            <div>
-                <img src="${item.imgUrl}" alt="cat">
-            </div>
-            <h4>${item.title}</h4>
-            <h5>${item.titleSmall}</h5>
-            <p class="descr">${item.descr}</p>
-            <p class="price">${item.weight}<span>${item.price}</span><span>${item.priceSale}</span></p>
-            
-            <button>В корзину</button>
+                <div class="card_top">
+                    <div>
+                        <span>${item.rating}</span>
+                        <img src="img/heart.svg" alt="heart">
+                    </div>
+                    <div>
+                        <img src="${item.imgUrl}" alt="cat">
+                    </div>
+                </div>
+                <div class="card_bottom">
+                    <h4>${item.title}</h4>
+                    <h5>${item.titleSmall}</h5>
+                    <p class="descr">${item.descr}</p>
+                    <p class="price">${item.weight}<span>${item.price}</span><span>${item.priceSale}</span></p>
+                    <button>В корзину</button>
+                </div>
             </div>`;    
 }
     cardWrap.innerHTML = str;
     cardWrap2.innerHTML = str;
 
 </script>
+<!--для плавного вертикального слайдера-->
+<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+    
+    <script>
+        $(document).ready(function() { //чтобы сначала закгрузился документ, а уже в самом конце script
+            $('#menu').on('click', 'a', function(e) { //обрабатываем клик тега 'a', который находится внутри элемента с id menu. 'e' - объект с информацией о клике, который делаем
+                e.preventDefault(); //отменили действия, которые были по умолчанию. но клик обрабатывавется
+                var id = $(this).attr('href'); //
+                var top = $(id).offset().top; //просчитывается расстояние от верха до нужного div с идентификатором id
+                $('html, body').animate({scrollTop: top}, 1500); //анимируем плавный скролл за 1,5с в body документа html  
+            })
+
+            $('#humb_button').click(function(){
+                $('#humb_header_top').slideToggle(500);      
+                return false;
+                });
+
+            $('#humb_button_2').click(function(){
+                $('#menu').slideToggle(500);      
+                return false;
+                });
+        })
+    </script>
 
 
-<div class="subscribe">
+<div class="subscribe" id="four">
     <div class="container">
-        <h2>Подпишись и получи <br> скидку на всю продукцию</h2>
-        <p>Давно выяснено, что при оценке дизайна и <br> композиции читаемый текст мешает <br> сосредоточиться.</p>
-        <div class="email">
-            <label>
-                <input type="text" placeholder="E-mail">
-            </label>
-            <button>Отправить</button>
+        <div >
+            <h2>Подпишись и получи <br> скидку на всю продукцию</h2>
+            <p>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться.</p>
+            <div class="email">
+                <label>
+                    <input type="text" placeholder="E-mail">
+                </label>
+                <button>Отправить</button>
+            </div>
         </div>
     </div>
 </div>
@@ -251,7 +294,7 @@ for(let i=0; i<card.length; i++) {
             </div>
 
         </div>
-        <ul class="footer_inform">
+        <ul class="footer_inform" id="five">
             <li><a href="#">Информация</a></li>
             <li><a href="#">Доставка и оплата</a></li>
             <li><a href="#">Отзывы</a></li>

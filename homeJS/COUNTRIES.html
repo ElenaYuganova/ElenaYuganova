@@ -47,9 +47,9 @@
 <body>
 <div class="main">
     <div class="buttons">
-        <input type="button" value="Перечень всех стран" onclick='listCountrys()'></input>
+        <input type="button" value="Перечень всех стран" onclick='showListCountrys()'></input>
         <input type="button" value="Ввод информации о стране" onclick='addCountry()'></input> 
-        <input type="button" value="Получение информации о стране" onclick='getCountryInfo()'></input>        
+        <input type="button" value="Получение информации о стране" onclick='showCountryInfo()'></input>        
         <input type="button" value="Удаление информации о стране" onclick='deleteCountry()'></input>
     </div>
     <div id="all"></div>
@@ -85,16 +85,6 @@
         alert ('Страна' + ' ' + countryName + ' ' + 'добавлена, спасибо!');
         console.log (countrysH)
     }
-    
-    function getCountryInfo() {
-        var countryName = prompt ('Введите название страны:');
-        if ( countryName in countrysH ) {
-            alert ('Страна: ' + countryName + '.' + '\n' + 'Столица: ' + countrysH[countryName] + '.');
-        }
-        else {
-            alert ('Нет информации о стране ' + countryName + '!' );
-        }
-    }
 
     function deleteCountry() {
         var countryName = prompt ('Какую страну вы хотите удалить?');
@@ -107,13 +97,42 @@
         console.log (countrysH)
     }
     
-    function listCountrys() {
-        var list ='';
-        for ( countryName in countrysH ) 
-           list += 'Страна: ' + countryName + '.' + ' Столица: ' + countrysH[countryName] + '.' + '\n';
-           var elem = document.getElementById('all');
-           elem.innerText = list;       
+    
+   //основная функция, которую мы будем вызывать во всех местах, которые нам нужны
+    function getCountryInfo(countryName) {
+        if ( countryName in countrysH ) {
+            return 'Страна: ' + countryName + '.' + ' Столица: ' + countrysH[countryName] + '.';
+        }
+        else {
+            return 'Нет информации о стране ' + countryName + '!' ;
+        }
     }
+
+    //по нажатию на кнопку "Получение информации о стране" пользователю выдается результат (строка)
+    //ОСНОВНОЙ функции (которую написали выше)
+    function showCountryInfo() {
+        var countryName = prompt ('Введите название страны:');
+        alert(getCountryInfo(countryName));
+    }
+    
+    //с помощью ОСНОВНОЙ функции создаем список из всех стран, имеющихся на данный момент в хэшэ
+    //(после манипуляций пользователя) 
+    function ListCountrys() {
+        var list ='';
+        for ( countryName in countrysH ) {
+           list += getCountryInfo(countryName) + '\n';
+        }
+        return list;
+    } 
+    //1.по нажатию на книпку выводим на экран полученный в предыдущей функции список (для пользователя)
+    //2.также выводим этот список для себя в консоль (последняя строка)
+    function showListCountrys() {
+        var elem = document.getElementById('all');
+        elem.innerText = ListCountrys();  
+
+        console.log ('список стран: ' +  '\n' + ListCountrys());
+    }
+        
   
 </script>    
     

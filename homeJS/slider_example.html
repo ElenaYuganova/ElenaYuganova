@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            height: 10000px;
+        }
+        div {
+            height: 500px;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #one {
+            background-color: red;
+            margin-top: 20.3px;
+        }
+        #two {
+            background-color: yellow;
+        }
+        #three {
+            background-color: green;
+        }
+        #four {
+            background-color: royalblue ;
+        }
+        ul {
+            display: flex;
+            justify-content: center;
+            background: rgb(248, 220, 96);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+        li {
+            list-style-type: none;
+            border: 1px solid blue;
+            margin-left: 20px;
+            margin-right: 20px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <ul id="menu">
+        <li><a href="#one">one</a></li>
+        <li><a href="#two">two</a></li>
+        <li><a href="#three">three</a></li>
+        <li><a href="#four">four</a></li>
+    </ul>
+    <div id="one"></div>
+    <div id="two"></div>
+    <div id="three"></div>
+    <div id="four"></div>
+
+    <!--подключили библиотеку jquery.com > jQuery 3.x > jQuery Core 3.6.0 > minified!-->
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+    
+    <script>
+        $(document).ready(function() { //чтобы сначала закгрузился документ, а уже в самом конце script
+            $('#menu').on('click', 'a', function(e) { //обрабатываем клик тега 'a', который находится внутри элемента с id menu. 'e' - объект с информацией о клике, который делаем
+                e.preventDefault(); //отменили действия, которые были по умолчанию. но клик обрабатывавется
+                var id = $(this).attr('href'); //
+                var top = $(id).offset().top; //просчитывается расстояние от верха до нужного div с идентификатором id
+                $('html, body').animate({scrollTop: top}, 1500); //анимируем плавный скролл за 1,5с в body документа html  
+            })
+        })
+    </script>
+
+</body>
+</html>
