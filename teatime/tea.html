@@ -232,33 +232,6 @@ for(let i=0; i<card.length; i++) {
     cardWrap2.innerHTML = str;
 
 </script>
-<!--для плавного вертикального слайдера-->
-<script
-  src="https://code.jquery.com/jquery-3.6.0.min.js"
-  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-  crossorigin="anonymous"></script>
-    
-    <script>
-        $(document).ready(function() { //чтобы сначала закгрузился документ, а уже в самом конце script
-            $('#menu').on('click', 'a', function(e) { //обрабатываем клик тега 'a', который находится внутри элемента с id menu. 'e' - объект с информацией о клике, который делаем
-                e.preventDefault(); //отменили действия, которые были по умолчанию. но клик обрабатывавется
-                var id = $(this).attr('href'); //
-                var top = $(id).offset().top; //просчитывается расстояние от верха до нужного div с идентификатором id
-                $('html, body').animate({scrollTop: top}, 1500); //анимируем плавный скролл за 1,5с в body документа html  
-            })
-
-            $('#humb_button').click(function(){
-                $('#humb_header_top').slideToggle(500);      
-                return false;
-                });
-
-            $('#humb_button_2').click(function(){
-                $('#menu').slideToggle(500);      
-                return false;
-                });
-        })
-    </script>
-
 
 <div class="subscribe" id="four">
     <div class="container">
@@ -277,7 +250,9 @@ for(let i=0; i<card.length; i++) {
 <div class="footer">  
     <div class="container"> 
         <div class="footer_networks">
-            <img src="img/logo2.svg" alt="logo">
+            <div>
+                <img src="img/logo2.svg" alt="logo">
+            </div>
             <div>
                 <a href="#">
                     <img src="img/instagram.svg" alt="instagram">
@@ -294,37 +269,84 @@ for(let i=0; i<card.length; i++) {
             </div>
 
         </div>
-        <ul class="footer_inform" id="five">
-            <li><a href="#">Информация</a></li>
-            <li><a href="#">Доставка и оплата</a></li>
-            <li><a href="#">Отзывы</a></li>
-            <li><a href="#">О магазине</a></li>
-            <li><a href="#">Контакты</a></li>
-        </ul>
-        <ul class="footer_categories">
-            <li><a href="#">Категории</a></li>
-            <li><a href="#">Чай</a></li>
-            <li><a href="#">Кофе</a></li>
-            <li><a href="#">Сладенькое</a></li>
-            <li><a href="#">Атрибуты</a></li>
-            <li><a href="#">Наборы</a></li>
-            <li><a href="#">Акции</a></li>
-        </ul> 
+            <div >
+                <span class="main-string">Информация</span>
+                <ul class="footer_inform string" id="five" >
+                    <li><a href="#">Информация</a></li>
+                    <li><a href="#">Доставка и оплата</a></li>
+                    <li><a href="#">Отзывы</a></li>
+                    <li><a href="#">О магазине</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+            <div >
+                <span class="main-string">Категории</span>
+                <ul class="footer_categories string">
+                    <li><a href="#">Категории</a></li>
+                    <li><a href="#">Чай</a></li>
+                    <li><a href="#">Кофе</a></li>
+                    <li><a href="#">Сладенькое</a></li>
+                    <li><a href="#">Атрибуты</a></li>
+                    <li><a href="#">Наборы</a></li>
+                    <li><a href="#">Акции</a></li>
+                </ul> 
+            </div>
         <div class="footer_contacts">
-            <ul class="number">
-                <li><a href="tel:+375297654565">+375 (29) 765 45 65</a></li>
-                <li>Пн - пт   с 9:00 до 19:00</li>
-                <li>Сб - вс выходной</li>
-            </ul>
-            <ul class="adress">
-                <li><a href="#">Адрес</a></li>
-                <li>Дмитровское ш., <br> д. 125, стр. 1, офис 5
-                </li>
-            </ul>
+            <div >
+                <span class="main-string">Телефон, время работы</span>
+                <ul class="number string">
+                    <li><a href="tel:+375297654565">+375 (29) 765 45 65</a></li>
+                    <li>Пн - пт   с 9:00 до 19:00</li>
+                    <li>Сб - вс выходной</li>
+                </ul>
+            </div>
+            <div >
+                <span class="main-string">Адрес</span>
+                <ul class="adress string">
+                    <li><a href="#">Адрес</a></li>
+                    <li>Дмитровское ш., <br> д. 125, стр. 1, офис 5
+                    </li>
+                </ul>
+            </div>
 
         </div>
     </div>
 </div>
+
+<!--для плавного вертикального слайдера-->
+<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+    
+    <script>
+        $(document).ready(function() { //чтобы сначала закгрузился документ, а уже в самом конце script
+            $('#menu').on('click', 'a', function(e) { //обрабатываем клик тега 'a', который находится внутри элемента с id menu. 'e' - объект с информацией о клике, который делаем
+                e.preventDefault(); //отменили действия, которые были по умолчанию. но клик обрабатывавется
+                var id = $(this).attr('href'); //
+                var top = $(id).offset().top; //просчитывается расстояние от верха до нужного div с идентификатором id
+                $('html, body').animate({scrollTop: top}, 1500); //анимируем плавный скролл за 1,5с в body документа html  
+            })
+
+            $('#humb_button').click(function(){
+                $('#humb_header_top').slideToggle(500);      
+                return false;
+            });
+
+            $('#humb_button_2').click(function(){
+                $('#menu').slideToggle(500);      
+                return false;
+            });
+
+            $('.main-string').click(function(){
+                $(this).parent().find('.string').toggle(500);
+		        return false;
+	        });
+
+
+           
+        })
+    </script>
 
 </body>
 </html>

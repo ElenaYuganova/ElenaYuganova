@@ -508,10 +508,14 @@ h2 {
         line-height: 30px;
         color: $light_gray;
     }
-    li:first-child {
+    li:first-child,
+    span {
         color: $white;
         font-weight: $semi_bold;
         padding-bottom: 3px;
+    }
+    span {
+        display: none;
     }
     .container {
         display: flex;
@@ -542,37 +546,40 @@ h2 {
         }
         .footer_contacts {
             padding-left: 28px;
-            .number {
-                padding-bottom: 29px;
-                li:first-child {
-                    position: relative;
-                    padding-left: 27px;
-                    &:before {
-                        content: '';
-                        width: 19px;
-                        height: 19px;
-                        background: url("../img/phone2.svg") center no-repeat;
-                        position: absolute;
-                        left: 0;
-                        top: 4px;
+                .number {
+                    padding-bottom: 29px;
+                    li:first-child {
+                        position: relative;
+                        padding-left: 27px;
+                        &:before {
+                            content: '';
+                            width: 19px;
+                            height: 19px;
+                            background: url("../img/phone2.svg") center no-repeat;
+                            position: absolute;
+                            left: 0;
+                            top: 4px;
+                        }
                     }
                 }
-            }
-            .adress {
-                li:first-child {
-                    position: relative;
-                    padding-left: 27px;
-                    &:before {
-                        content: '';
-                        width: 19px;
-                        height: 19px;
-                        background: url("../img/map.svg") center no-repeat;
-                        position: absolute;
-                        left: 0;
-                        top: 4px;
+            
+                .adress {
+                    li:first-child {
+                        position: relative;
+                        padding-left: 27px;
+                        &:before {
+                            content: '';
+                            width: 19px;
+                            height: 19px;
+                            background: url("../img/map.svg") center no-repeat;
+                            position: absolute;
+                            left: 0;
+                            top: 4px;
+                        }
                     }
                 }
-            }
+            
+            
         }
     }
 }

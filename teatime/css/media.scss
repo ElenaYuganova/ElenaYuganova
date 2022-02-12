@@ -428,50 +428,53 @@
         }
     }
     .footer {
-        li {
+        li, span {
             font-size: $fs16;
             line-height: 175%;
         }
         .container {
-            position: relative;
             padding-top: 65px;
-            flex-direction: row;   
-            ul {
-                padding-left: 16px;
-                padding-right: 16px;
-            }         
+            flex-direction: column; 
+            position: relative;
+            div{
+                ul {
+                    padding-left: 40px;
+                    display: none;
+                    li:first-child {
+                        display: none;
+                    }
+                } 
+                span {
+                    display: block;
+                    padding-left: 16px;
+                    background: url(../img/arrow-bottom.svg) right center no-repeat;
+                } 
+            }  
+                 
             .footer_networks {
                 margin-top: 16px;
                 margin-bottom: 11px;
-                & > img {
+                & > div:first-child {
+                    width: 100%;
                     position: absolute;
-                    top: 12px;
-                    left: 16px;
-                    width: 111px;
-                    height: 41px;
+                    top: 20px;
+                    img {
+                        width: 111px;
+                        height: 41px;
+                        padding-left: 16px;
+                    }
                 }
-            }
-            .footer_inform {
-                width: 100%;
-                border-top: 1px solid rgba(255, 255, 255, 0.05);
-                
-            }
-            .footer_categories {
-                width: 100%;
-                border-top: 1px solid rgba(255, 255, 255, 0.05);
             }
             .footer_contacts {
-                width: 100%;
-                border-top: 1px solid rgba(255, 255, 255, 0.05);
                 padding-left: 0;
                 .number {
-                    padding-bottom: 0px;
-                }
-                .adress {
-                    border-top: 1px solid rgba(255, 255, 255, 0.05);
-                    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+                    padding-bottom: 0;
                 }
             }
+            .main-string {
+                border-top: 1px solid rgba(255, 255, 255, 0.1);
+            }
         }
+
     }
 }

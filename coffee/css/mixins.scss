@@ -1,0 +1,61 @@
+@import "variables.scss";
+
+@mixin btn-orange {
+    background-color: $orange;
+    font-weight: $semi-bold;
+    color: $white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+@mixin btn-big ($w) {
+    width: $w;
+    height: 80px;
+    font-size: $fs30;
+    line-height: 36px;
+    @include btn-orange;
+}
+
+@mixin btn-product ($w) {
+    width: $w;
+    height: 60px;
+    font-size: $fs-main;
+    line-height: 30px;
+    @include btn-orange;
+}
+
+@mixin btn-card ($w) {
+    width: $w;
+    height: 48px;
+    font-size: $fs-card;
+    line-height: 22px;
+    @include btn-orange;
+}
+
+@mixin btn-select ($w) {
+    width: $w;
+    height: 60px;
+    background-color: $gray-select;
+    border: 1px solid $gray2-border;
+    font-weight: $medium;
+    font-size: $fs-main;
+    line-height: 30px;
+    color: $orange;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@mixin btn-select-hover ($w) {
+    width: $w;
+    height: 60px;
+    background-color: $light-pink;
+    font-weight: $medium;
+    font-size: $fs-main;
+    line-height: 30px;
+    color: $orange;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
