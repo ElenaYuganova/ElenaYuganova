@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.2, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/style-common.css">
+    <link rel="stylesheet" href="css/style-catalog.css">
+    <title>Catalog-coffee</title>
+</head>
+<body>
+    <div class="header-top">
+        <div class="container">
+            <div>
+                <img src="img/logo.png" alt="logo">
+            </div>
+            <ul>
+                <li><a href="catalog-coffee.html">Каталог товаров</a></li>
+                <li><a href="#">Блог</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="img/search.svg" alt="search" title="Поиск">
+                    </a>
+                </li>
+                <li>
+                    <a href="basket.html">
+                        <img src="img/basket.svg" alt="basket" title="Корзина">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/account.svg" alt="account" title="Вход в аккаунт">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="sorting-coffee">
+        <div class="container">
+            <div class="sorting-coffee-top">
+                <div>
+                    <a href="#">Главная &bull; </a>
+                    <a href="#">Каталог товаров &bull; </a>
+                    <a href="#">Свежеобжаренный кофе</a>
+                </div>
+                <h2>Свежеобжаренный кофе</h2>
+                <img src="img/coffee-grains-top.png" alt="coffee">
+            </div>
+            <div class="sorting-coffee-middle">
+                <div>
+                    <h5>Степень обжарки</h5>
+                    <form method="post" action="https://fe.it-academy.by/TestForm.php">
+                        <label>
+                            <input type="radio" name="roast" value="5" checked>
+                            <img src="img/5grains.svg" alt="roast">
+                        </label>
+                        <label>
+                            <input type="radio" name="roast" value="4">
+                            <img src="img/4grains.svg" alt="roast">
+                        </label>
+                        <label>
+                            <input type="radio" name="roast" value="3">
+                            <img src="img/3grains.svg" alt="roast">
+                        </label>
+                        <label>
+                            <input type="radio" name="roast" value="2">
+                            <img src="img/2grains.svg" alt="roast">
+                        </label>
+                        <label>
+                            <input type="radio" name="roast" value="1">
+                            <img src="img/1grain.svg" alt="roast">
+                        </label>
+                    </form>
+                </div>
+                <div>
+                    <div class="geography">
+                        <h6>География</h6>
+                        <form method="post" action="https://fe.it-academy.by/TestForm.php">
+                            <label>
+                                <input type="radio" name="geography" value="1" checked>Африка<br>
+                            </label>
+                            <label>
+                                <input type="radio" name="geography" value="2">Йемен<br>
+                            </label>
+                            <label> 
+                                <input type="radio" name="geography" value="3">Уганда<br>
+                            </label>
+                            <label> 
+                                <input type="radio" name="geography" value="4">Эфиопия<br>
+                            </label>
+                            <label>
+                                <input type="radio" name="geography" value="5">Азия<br>
+                            </label>
+                            <label> 
+                                <input type="radio" name="geography" value="6">Центр. Америка<br>
+                            </label>
+                            <label>  
+                                <input type="radio" name="geography" value="7">Лат. Америка<br>
+                            </label>
+                        </form>
+                    </div>
+                    <div>
+                        <div class="sour">
+                            <h6>Кислинка</h6>
+                            <form method="post" action="https://fe.it-academy.by/TestForm.php">
+                                <label>
+                                    <input type="radio" name="sour" value="1" checked>Низкая<br>
+                                </label>    
+                                <label>  
+                                    <input type="radio" name="sour" value="2">Средняя<br>
+                                </label>    
+                                <label>  
+                                    <input type="radio" name="sour" value="3">Высокая<br>
+                                </label>  
+                            </form>
+                        </div>
+                        <div class="processing">
+                            <h6>Способ <br> обработки</h6>
+                            <form method="post" action="https://fe.it-academy.by/TestForm.php">
+                                <label>   
+                                    <input type="radio" name="processing" value="1" checked>Сухая<br>
+                                </label>    
+                                <label>
+                                    <input type="radio" name="processing" value="2">Мытая<br>
+                                </label>    
+                                <label>   
+                                    <input type="radio" name="processing" value="3">Прочие<br>
+                                </label>    
+                            </form>
+                        </div>
+                    </div>
+                    <div class="special">
+                        <h6>Особые</h6>
+                        <form method="post" action="https://fe.it-academy.by/TestForm.php">
+                            <label>    
+                                <input type="radio" name="special" value="1" checked>Популярное<br>
+                            </label>    
+                            <label>  
+                                <input type="radio" name="special" value="2">Новый урожай<br>
+                            </label>    
+                            <label> 
+                                <input type="radio" name="special" value="3">Ваш выбор<br>
+                            </label>    
+                            <label>    
+                                <input type="radio" name="special" value="4">Микролот<br>
+                            </label>    
+                            <label>   
+                                <input type="radio" name="special" value="5">Сорт недели<br>
+                            </label>    
+                            <label>    
+                                <input type="radio" name="special" value="6">Скидки<br>
+                            </label>    
+                            <label>    
+                                <input type="radio" name="special" value="7">Новинка<br>
+                            </label>
+                        </form>
+                    </div>
+                    <div class="sort">
+                        <h6>Вид кофе</h6>
+                        <form method="post" action="https://fe.it-academy.by/TestForm.php">
+                            <label>     
+                                <input type="radio" name="sort" value="1" checked>Арабика<br>
+                            </label>    
+                            <label>     
+                                <input type="radio" name="sort" value="2">Робуста<br>
+                            </label>    
+                            <label>     
+                                <input type="radio" name="sort" value="3">Смесь арабик<br>
+                            </label>    
+                            <label>     
+                                <input type="radio" name="sort" value="4">Смесь арабика/робуста<br>
+                            </label>    
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+            <div class="sorting-coffee-bottom">
+                <div>
+                    <span>Турка</span>
+                    <img src="img/turka.svg" alt="method">
+                </div>
+                <div>
+                    <span>Френч-пресс</span>
+                    <img src="img/french-press.svg" alt="method">
+                </div>
+                <div>
+                    <span>Мока</span>
+                    <img src="img/mokka.svg" alt="method">
+                </div>
+                <div>
+                    <span>Эспрессо</span>
+                    <img src="img/espresso.svg" alt="method">
+                </div>
+                <div>
+                    <span>Воронка</span>
+                    <img src="img/voronka.svg" alt="method">
+                </div>
+                <div>
+                    <span>Аэропресс</span>
+                    <img src="img/airpress.svg" alt="method">
+                </div>
+                <div>
+                    <span>Чашка</span>
+                    <img src="img/coffee-cup.svg" alt="method">
+                </div>
+                <div>
+                    <span>Автомат</span>
+                    <img src="img/machine.svg" alt="method">
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="items">
+        <div class="container">
+            <div class="sorting">
+                <form method="post" action="https://fe.it-academy.by/TestForm.php">
+                    <span>Сортировка</span>
+                    <select name="sort">
+                        <option value="1">По возрастанию цены</option>
+                        <option value="2" selected>По убыванию цены</option>
+                        <option value="3">По рейтингу</option>
+                        <option value="4">По кислотности</option>
+                    </select>
+                </form>
+
+            </div>
+            <div class="cards-main">
+                <div class="card">
+                        <div class="card-top">
+                            <div>
+                                <span>Популярное</span>
+                                <span>Скидки</span>
+                            </div>
+                            <form method="post" action="https://fe.it-academy.by/TestForm.php">
+                                <select name="weight-item">
+                                    <option value="250">250г.</option>
+                                    <option value="500">500г.</option>
+                                    <option value="1000">1000г.</option>
+                                </select>
+                            </form>
+                        </div>
+                        <div class="card-body">
+                            <img src="img/card01.jpg" alt="coffee">
+                            <div>
+                                <div class="stars">
+                                    <span class="star full"></span><span class="star full"></span><span class="star full"></span><span class="star full"></span><span class="star"></span>
+                                </div>
+                                <div class="rating">
+                                    <span>4.0</span><span>(32 отзыва)</span>
+                                </div>
+                                <div class="grains">
+                                    <span class="grain full"></span>
+                                    <span class="grain full"></span>
+                                    <span class="grain full"></span>
+                                    <span class="grain full"></span>
+                                    <span class="grain"></span>
+                                </div>
+                                <div class="specification">
+                                    <p>Кислинка</p> 
+                                    <p>
+                                        <span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round"></span><span class="round"></span><span class="round"></span>
+                                    </p>
+                                </div>
+                                <div class="specification">
+                                    <p>Горчинка</p>
+                                    <p>
+                                        <span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round"></span><span class="round"></span><span class="round"></span>
+                                    </p>
+                                </div>
+                                <div class="specification">
+                                    <p>Насыщенность</p>
+                                    <p>                                
+                                        <span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round"></span><span class="round"></span><span class="round"></span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <h6>Colombia Supremo</h6>
+                        <p>Свежеобжаренный кофе - описание товара, вкус, аромат</p>
+                        <div class="price">
+                            <span>350 &#8381;</span>
+                            <span>250 &#8381;</span>
+                        </div>
+                        <button> <a href="card-product.html">Показать</a>
+                            </button>
+                </div>
+                <div class="card">
+                        <div class="card-top">
+                            <div>
+                                <span>Популярное</span>
+                                <span>Скидки</span>
+                            </div>
+                            <form method="post" action="https://fe.it-academy.by/TestForm.php">
+                                <select name="weight-item">
+                                    <option value="250">250г.</option>
+                                    <option value="500">500г.</option>
+                                    <option value="1000">1000г.</option>
+                                </select>
+                            </form>
+                        </div>
+                        <div class="card-body">
+                            <img src="img/card01.jpg" alt="coffee">
+                            <div>
+                                <div class="stars">
+                                    <span class="star full"></span><span class="star full"></span><span class="star full"></span><span class="star full"></span><span class="star"></span>
+                                </div>
+                                <div class="rating">
+                                    <span>4.0</span><span>(32 отзыва)</span>
+                                </div>
+                                <div class="grains">
+                                    <span class="grain full"></span>
+                                    <span class="grain full"></span>
+                                    <span class="grain full"></span>
+                                    <span class="grain full"></span>
+                                    <span class="grain"></span>
+                                </div>
+                                <div class="specification">
+                                    <p>Кислинка</p> 
+                                    <p>
+                                        <span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round"></span><span class="round"></span><span class="round"></span>
+                                    </p>
+                                </div>
+                                <div class="specification">
+                                    <p>Горчинка</p>
+                                    <p>
+                                        <span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round"></span><span class="round"></span><span class="round"></span>
+                                    </p>
+                                </div>
+                                <div class="specification">
+                                    <p>Насыщенность</p>
+                                    <p>                                
+                                        <span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round"></span><span class="round"></span><span class="round"></span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <h6>Colombia Supremo</h6>
+                        <p>Свежеобжаренный кофе - описание товара, вкус, аромат</p>
+                        <div class="price">
+                            <span>350 &#8381;</span>
+                            <span>250 &#8381;</span>
+                        </div>
+                        <button>В корзину</button>
+                </div>
+                <div class="card">
+                        <div class="card-top">
+                            <div>
+                                <span>Популярное</span>
+                                <span>Скидки</span>
+                            </div>
+                            <form method="post" action="https://fe.it-academy.by/TestForm.php">
+                                <select name="weight-item">
+                                    <option value="250">250г.</option>
+                                    <option value="500">500г.</option>
+                                    <option value="1000">1000г.</option>
+                                </select>
+                            </form>
+                        </div>
+                        <div class="card-body">
+                            <img src="img/card01.jpg" alt="coffee">
+                            <div>
+                                <div class="stars">
+                                    <span class="star full"></span><span class="star full"></span><span class="star full"></span><span class="star full"></span><span class="star"></span>
+                                </div>
+                                <div class="rating">
+                                    <span>4.0</span><span>(32 отзыва)</span>
+                                </div>
+                                <div class="grains">
+                                    <span class="grain full"></span>
+                                    <span class="grain full"></span>
+                                    <span class="grain full"></span>
+                                    <span class="grain full"></span>
+                                    <span class="grain"></span>
+                                </div>
+                                <div class="specification">
+                                    <p>Кислинка</p> 
+                                    <p>
+                                        <span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round"></span><span class="round"></span><span class="round"></span>
+                                    </p>
+                                </div>
+                                <div class="specification">
+                                    <p>Горчинка</p>
+                                    <p>
+                                        <span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round"></span><span class="round"></span><span class="round"></span>
+                                    </p>
+                                </div>
+                                <div class="specification">
+                                    <p>Насыщенность</p>
+                                    <p>                                
+                                        <span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round"></span><span class="round"></span><span class="round"></span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <h6>Colombia Supremo</h6>
+                        <p>Свежеобжаренный кофе - описание товара, вкус, аромат</p>
+                        <div class="price">
+                            <span>350 &#8381;</span>
+                            <span>250 &#8381;</span>
+                        </div>
+                        <button>В корзину</button>
+                </div>
+                <div class="card">
+                        <div class="card-top">
+                            <div>
+                                <span>Популярное</span>
+                                <span>Скидки</span>
+                            </div>
+                            <form method="post" action="https://fe.it-academy.by/TestForm.php">
+                                <select name="weight-item">
+                                    <option value="250">250г.</option>
+                                    <option value="500">500г.</option>
+                                    <option value="1000">1000г.</option>
+                                </select>
+                            </form>
+                        </div>
+                        <div class="card-body">
+                            <img src="img/card01.jpg" alt="coffee">
+                            <div>
+                                <div class="stars">
+                                    <span class="star full"></span><span class="star full"></span><span class="star full"></span><span class="star full"></span><span class="star"></span>
+                                </div>
+                                <div class="rating">
+                                    <span>4.0</span><span>(32 отзыва)</span>
+                                </div>
+                                <div class="grains">
+                                    <span class="grain full"></span>
+                                    <span class="grain full"></span>
+                                    <span class="grain full"></span>
+                                    <span class="grain full"></span>
+                                    <span class="grain"></span>
+                                </div>
+                                <div class="specification">
+                                    <p>Кислинка</p> 
+                                    <p>
+                                        <span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round"></span><span class="round"></span><span class="round"></span>
+                                    </p>
+                                </div>
+                                <div class="specification">
+                                    <p>Горчинка</p>
+                                    <p>
+                                        <span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round"></span><span class="round"></span><span class="round"></span>
+                                    </p>
+                                </div>
+                                <div class="specification">
+                                    <p>Насыщенность</p>
+                                    <p>                                
+                                        <span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round"></span><span class="round"></span><span class="round"></span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <h6>Colombia Supremo</h6>
+                        <p>Свежеобжаренный кофе - описание товара, вкус, аромат</p>
+                        <div class="price">
+                            <span>350 &#8381;</span>
+                            <span>250 &#8381;</span>
+                        </div>
+                        <button>В корзину</button>
+                </div>
+                <div class="card">
+                        <div class="card-top">
+                            <div>
+                                <span>Популярное</span>
+                                <span>Скидки</span>
+                            </div>
+                            <form method="post" action="https://fe.it-academy.by/TestForm.php">
+                                <select name="weight-item">
+                                    <option value="250">250г.</option>
+                                    <option value="500">500г.</option>
+                                    <option value="1000">1000г.</option>
+                                </select>
+                            </form>
+                        </div>
+                        <div class="card-body">
+                            <img src="img/card01.jpg" alt="coffee">
+                            <div>
+                                <div class="stars">
+                                    <span class="star full"></span><span class="star full"></span><span class="star full"></span><span class="star full"></span><span class="star"></span>
+                                </div>
+                                <div class="rating">
+                                    <span>4.0</span><span>(32 отзыва)</span>
+                                </div>
+                                <div class="grains">
+                                    <span class="grain full"></span>
+                                    <span class="grain full"></span>
+                                    <span class="grain full"></span>
+                                    <span class="grain full"></span>
+                                    <span class="grain"></span>
+                                </div>
+                                <div class="specification">
+                                    <p>Кислинка</p> 
+                                    <p>
+                                        <span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round"></span><span class="round"></span><span class="round"></span>
+                                    </p>
+                                </div>
+                                <div class="specification">
+                                    <p>Горчинка</p>
+                                    <p>
+                                        <span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round"></span><span class="round"></span><span class="round"></span>
+                                    </p>
+                                </div>
+                                <div class="specification">
+                                    <p>Насыщенность</p>
+                                    <p>                                
+                                        <span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round"></span><span class="round"></span><span class="round"></span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <h6>Colombia Supremo</h6>
+                        <p>Свежеобжаренный кофе - описание товара, вкус, аромат</p>
+                        <div class="price">
+                            <span>350 &#8381;</span>
+                            <span>250 &#8381;</span>
+                        </div>
+                        <button>В корзину</button>
+                </div>
+                <div class="card">
+                        <div class="card-top">
+                            <div>
+                                <span>Популярное</span>
+                                <span>Скидки</span>
+                            </div>
+                            <form method="post" action="https://fe.it-academy.by/TestForm.php">
+                                <select name="weight-item">
+                                    <option value="250">250г.</option>
+                                    <option value="500">500г.</option>
+                                    <option value="1000">1000г.</option>
+                                </select>
+                            </form>
+                        </div>
+                        <div class="card-body">
+                            <img src="img/card01.jpg" alt="coffee">
+                            <div>
+                                <div class="stars">
+                                    <span class="star full"></span><span class="star full"></span><span class="star full"></span><span class="star full"></span><span class="star"></span>
+                                </div>
+                                <div class="rating">
+                                    <span>4.0</span><span>(32 отзыва)</span>
+                                </div>
+                                <div class="grains">
+                                    <span class="grain full"></span>
+                                    <span class="grain full"></span>
+                                    <span class="grain full"></span>
+                                    <span class="grain full"></span>
+                                    <span class="grain"></span>
+                                </div>
+                                <div class="specification">
+                                    <p>Кислинка</p> 
+                                    <p>
+                                        <span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round"></span><span class="round"></span><span class="round"></span>
+                                    </p>
+                                </div>
+                                <div class="specification">
+                                    <p>Горчинка</p>
+                                    <p>
+                                        <span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round"></span><span class="round"></span><span class="round"></span>
+                                    </p>
+                                </div>
+                                <div class="specification">
+                                    <p>Насыщенность</p>
+                                    <p>                                
+                                        <span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round"></span><span class="round"></span><span class="round"></span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <h6>Colombia Supremo</h6>
+                        <p>Свежеобжаренный кофе - описание товара, вкус, аромат</p>
+                        <div class="price">
+                            <span>350 &#8381;</span>
+                            <span>250 &#8381;</span>
+                        </div>
+                        <button>В корзину</button>
+                </div>
+                <div class="card">
+                        <div class="card-top">
+                            <div>
+                                <span>Популярное</span>
+                                <span>Скидки</span>
+                            </div>
+                            <form method="post" action="https://fe.it-academy.by/TestForm.php">
+                                <select name="weight-item">
+                                    <option value="250">250г.</option>
+                                    <option value="500">500г.</option>
+                                    <option value="1000">1000г.</option>
+                                </select>
+                            </form>
+                        </div>
+                        <div class="card-body">
+                            <img src="img/card01.jpg" alt="coffee">
+                            <div>
+                                <div class="stars">
+                                    <span class="star full"></span><span class="star full"></span><span class="star full"></span><span class="star full"></span><span class="star"></span>
+                                </div>
+                                <div class="rating">
+                                    <span>4.0</span><span>(32 отзыва)</span>
+                                </div>
+                                <div class="grains">
+                                    <span class="grain full"></span>
+                                    <span class="grain full"></span>
+                                    <span class="grain full"></span>
+                                    <span class="grain full"></span>
+                                    <span class="grain"></span>
+                                </div>
+                                <div class="specification">
+                                    <p>Кислинка</p> 
+                                    <p>
+                                        <span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round"></span><span class="round"></span><span class="round"></span>
+                                    </p>
+                                </div>
+                                <div class="specification">
+                                    <p>Горчинка</p>
+                                    <p>
+                                        <span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round"></span><span class="round"></span><span class="round"></span>
+                                    </p>
+                                </div>
+                                <div class="specification">
+                                    <p>Насыщенность</p>
+                                    <p>                                
+                                        <span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round"></span><span class="round"></span><span class="round"></span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <h6>Colombia Supremo</h6>
+                        <p>Свежеобжаренный кофе - описание товара, вкус, аромат</p>
+                        <div class="price">
+                            <span>350 &#8381;</span>
+                            <span>250 &#8381;</span>
+                        </div>
+                        <button>В корзину</button>
+                </div>
+                <div class="card">
+                        <div class="card-top">
+                            <div>
+                                <span>Популярное</span>
+                                <span>Скидки</span>
+                            </div>
+                            <form method="post" action="https://fe.it-academy.by/TestForm.php">
+                                <select name="weight-item">
+                                    <option value="250">250г.</option>
+                                    <option value="500">500г.</option>
+                                    <option value="1000">1000г.</option>
+                                </select>
+                            </form>
+                        </div>
+                        <div class="card-body">
+                            <img src="img/card01.jpg" alt="coffee">
+                            <div>
+                                <div class="stars">
+                                    <span class="star full"></span><span class="star full"></span><span class="star full"></span><span class="star full"></span><span class="star"></span>
+                                </div>
+                                <div class="rating">
+                                    <span>4.0</span><span>(32 отзыва)</span>
+                                </div>
+                                <div class="grains">
+                                    <span class="grain full"></span>
+                                    <span class="grain full"></span>
+                                    <span class="grain full"></span>
+                                    <span class="grain full"></span>
+                                    <span class="grain"></span>
+                                </div>
+                                <div class="specification">
+                                    <p>Кислинка</p> 
+                                    <p>
+                                        <span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round"></span><span class="round"></span><span class="round"></span>
+                                    </p>
+                                </div>
+                                <div class="specification">
+                                    <p>Горчинка</p>
+                                    <p>
+                                        <span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round"></span><span class="round"></span><span class="round"></span>
+                                    </p>
+                                </div>
+                                <div class="specification">
+                                    <p>Насыщенность</p>
+                                    <p>                                
+                                        <span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round"></span><span class="round"></span><span class="round"></span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <h6>Colombia Supremo</h6>
+                        <p>Свежеобжаренный кофе - описание товара, вкус, аромат</p>
+                        <div class="price">
+                            <span>350 &#8381;</span>
+                            <span>250 &#8381;</span>
+                        </div>
+                        <button>В корзину</button>
+                </div>
+                <div class="card">
+                        <div class="card-top">
+                            <div>
+                                <span>Популярное</span>
+                                <span>Скидки</span>
+                            </div>
+                            <form method="post" action="https://fe.it-academy.by/TestForm.php">
+                                <select name="weight-item">
+                                    <option value="250">250г.</option>
+                                    <option value="500">500г.</option>
+                                    <option value="1000">1000г.</option>
+                                </select>
+                            </form>
+                        </div>
+                        <div class="card-body">
+                            <img src="img/card01.jpg" alt="coffee">
+                            <div>
+                                <div class="stars">
+                                    <span class="star full"></span><span class="star full"></span><span class="star full"></span><span class="star full"></span><span class="star"></span>
+                                </div>
+                                <div class="rating">
+                                    <span>4.0</span><span>(32 отзыва)</span>
+                                </div>
+                                <div class="grains">
+                                    <span class="grain full"></span>
+                                    <span class="grain full"></span>
+                                    <span class="grain full"></span>
+                                    <span class="grain full"></span>
+                                    <span class="grain"></span>
+                                </div>
+                                <div class="specification">
+                                    <p>Кислинка</p> 
+                                    <p>
+                                        <span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round"></span><span class="round"></span><span class="round"></span>
+                                    </p>
+                                </div>
+                                <div class="specification">
+                                    <p>Горчинка</p>
+                                    <p>
+                                        <span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round"></span><span class="round"></span><span class="round"></span>
+                                    </p>
+                                </div>
+                                <div class="specification">
+                                    <p>Насыщенность</p>
+                                    <p>                                
+                                        <span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round"></span><span class="round"></span><span class="round"></span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <h6>Colombia Supremo</h6>
+                        <p>Свежеобжаренный кофе - описание товара, вкус, аромат</p>
+                        <div class="price">
+                            <span>350 &#8381;</span>
+                            <span>250 &#8381;</span>
+                        </div>
+                        <button>В корзину</button>
+                </div>
+                <div class="card">
+                        <div class="card-top">
+                            <div>
+                                <span>Популярное</span>
+                                <span>Скидки</span>
+                            </div>
+                            <form method="post" action="https://fe.it-academy.by/TestForm.php">
+                                <select name="weight-item">
+                                    <option value="250">250г.</option>
+                                    <option value="500">500г.</option>
+                                    <option value="1000">1000г.</option>
+                                </select>
+                            </form>
+                        </div>
+                        <div class="card-body">
+                            <img src="img/card01.jpg" alt="coffee">
+                            <div>
+                                <div class="stars">
+                                    <span class="star full"></span><span class="star full"></span><span class="star full"></span><span class="star full"></span><span class="star"></span>
+                                </div>
+                                <div class="rating">
+                                    <span>4.0</span><span>(32 отзыва)</span>
+                                </div>
+                                <div class="grains">
+                                    <span class="grain full"></span>
+                                    <span class="grain full"></span>
+                                    <span class="grain full"></span>
+                                    <span class="grain full"></span>
+                                    <span class="grain"></span>
+                                </div>
+                                <div class="specification">
+                                    <p>Кислинка</p> 
+                                    <p>
+                                        <span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round"></span><span class="round"></span><span class="round"></span>
+                                    </p>
+                                </div>
+                                <div class="specification">
+                                    <p>Горчинка</p>
+                                    <p>
+                                        <span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round"></span><span class="round"></span><span class="round"></span>
+                                    </p>
+                                </div>
+                                <div class="specification">
+                                    <p>Насыщенность</p>
+                                    <p>                                
+                                        <span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round"></span><span class="round"></span><span class="round"></span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <h6>Colombia Supremo</h6>
+                        <p>Свежеобжаренный кофе - описание товара, вкус, аромат</p>
+                        <div class="price">
+                            <span>350 &#8381;</span>
+                            <span>250 &#8381;</span>
+                        </div>
+                        <button>В корзину</button>
+                </div>
+                <div class="card">
+                        <div class="card-top">
+                            <div>
+                                <span>Популярное</span>
+                                <span>Скидки</span>
+                            </div>
+                            <form method="post" action="https://fe.it-academy.by/TestForm.php">
+                                <select name="weight-item">
+                                    <option value="250">250г.</option>
+                                    <option value="500">500г.</option>
+                                    <option value="1000">1000г.</option>
+                                </select>
+                            </form>
+                        </div>
+                        <div class="card-body">
+                            <img src="img/card01.jpg" alt="coffee">
+                            <div>
+                                <div class="stars">
+                                    <span class="star full"></span><span class="star full"></span><span class="star full"></span><span class="star full"></span><span class="star"></span>
+                                </div>
+                                <div class="rating">
+                                    <span>4.0</span><span>(32 отзыва)</span>
+                                </div>
+                                <div class="grains">
+                                    <span class="grain full"></span>
+                                    <span class="grain full"></span>
+                                    <span class="grain full"></span>
+                                    <span class="grain full"></span>
+                                    <span class="grain"></span>
+                                </div>
+                                <div class="specification">
+                                    <p>Кислинка</p> 
+                                    <p>
+                                        <span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round"></span><span class="round"></span><span class="round"></span>
+                                    </p>
+                                </div>
+                                <div class="specification">
+                                    <p>Горчинка</p>
+                                    <p>
+                                        <span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round"></span><span class="round"></span><span class="round"></span>
+                                    </p>
+                                </div>
+                                <div class="specification">
+                                    <p>Насыщенность</p>
+                                    <p>                                
+                                        <span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round"></span><span class="round"></span><span class="round"></span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <h6>Colombia Supremo</h6>
+                        <p>Свежеобжаренный кофе - описание товара, вкус, аромат</p>
+                        <div class="price">
+                            <span>350 &#8381;</span>
+                            <span>250 &#8381;</span>
+                        </div>
+                        <button>В корзину</button>
+                </div>
+                <div class="card">
+                        <div class="card-top">
+                            <div>
+                                <span>Популярное</span>
+                                <span>Скидки</span>
+                            </div>
+                            <form method="post" action="https://fe.it-academy.by/TestForm.php">
+                                <select name="weight-item">
+                                    <option value="250">250г.</option>
+                                    <option value="500">500г.</option>
+                                    <option value="1000">1000г.</option>
+                                </select>
+                            </form>
+                        </div>
+                        <div class="card-body">
+                            <img src="img/card01.jpg" alt="coffee">
+                            <div>
+                                <div class="stars">
+                                    <span class="star full"></span><span class="star full"></span><span class="star full"></span><span class="star full"></span><span class="star"></span>
+                                </div>
+                                <div class="rating">
+                                    <span>4.0</span><span>(32 отзыва)</span>
+                                </div>
+                                <div class="grains">
+                                    <span class="grain full"></span>
+                                    <span class="grain full"></span>
+                                    <span class="grain full"></span>
+                                    <span class="grain full"></span>
+                                    <span class="grain"></span>
+                                </div>
+                                <div class="specification">
+                                    <p>Кислинка</p> 
+                                    <p>
+                                        <span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round"></span><span class="round"></span><span class="round"></span>
+                                    </p>
+                                </div>
+                                <div class="specification">
+                                    <p>Горчинка</p>
+                                    <p>
+                                        <span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round"></span><span class="round"></span><span class="round"></span>
+                                    </p>
+                                </div>
+                                <div class="specification">
+                                    <p>Насыщенность</p>
+                                    <p>                                
+                                        <span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round"></span><span class="round"></span><span class="round"></span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <h6>Colombia Supremo</h6>
+                        <p>Свежеобжаренный кофе - описание товара, вкус, аромат</p>
+                        <div class="price">
+                            <span>350 &#8381;</span>
+                            <span>250 &#8381;</span>
+                        </div>
+                        <button>В корзину</button>
+                </div>
+                <div class="card-more">
+                        <a href="#">Показать еще</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="subscribe">
+        <div class="container">
+            <h3>Подписка на новости и рассылку</h3>
+            <p>Подпишитесь на нашу рассылку прямо сейчас и будьте в курсе новых поставок, скидок и эксклюзивных предложений.</p>
+            <div class="subscribe-form">
+                <form action="https://fe.it-academy.by/TestForm.php" method="post">
+                    <input type="text" name="email" placeholder="Ваш email">
+                </form>
+                <button>Подписаться</button>
+            </div>
+            <span>Нажимая на кнопку “Подписаться”, вы принимаете правила 
+                <a href="#">пользовательского соглашения</a> </span>
+            <div class="subscribe-pict">
+                <img src="img/coffee-grains-bottom.png" alt="grains">
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <img src="img/logo.png" alt="logo">
+            <ul>
+                <li><a href="#">Каталог товаров</a></li>
+                <li><a href="#">Блог</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

@@ -5,6 +5,7 @@
     font-weight: $semi-bold;
     color: $white;
     border-radius: 5px;
+    font-family: $ff;
     border: none;
     cursor: pointer;
 }
@@ -33,11 +34,9 @@
     @include btn-orange;
 }
 
-@mixin btn-select ($w) {
-    width: $w;
+@mixin btn-select {
     height: 60px;
-    background-color: $gray-select;
-    border: 1px solid $gray2-border;
+    font-family: $ff;
     font-weight: $medium;
     font-size: $fs-main;
     line-height: 30px;
@@ -45,17 +44,18 @@
     border-radius: 5px;
     cursor: pointer;
 }
-
-@mixin btn-select-hover ($w) {
+@mixin btn-not-active ($w) {
     width: $w;
-    height: 60px;
+    background-color: $gray-select;
+    border: 1px solid $gray2-border;
+    @include btn-select;
+}
+
+@mixin btn-active ($w) {
+    width: $w;
     background-color: $light-pink;
-    font-weight: $medium;
-    font-size: $fs-main;
-    line-height: 30px;
-    color: $orange;
-    border-radius: 5px;
-    cursor: pointer;
+    border: 1px solid $orange;
+    @include btn-select;
 }
 
 

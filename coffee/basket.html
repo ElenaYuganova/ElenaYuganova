@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.2, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/style-common.css">
+    <link rel="stylesheet" href="css/style-basket.css">
+    <title>Basket</title>
+</head>
+<body>
+    <div class="header-top">
+        <div class="container">
+            <div>
+                <img src="img/logo.png" alt="logo">
+            </div>
+            <ul>
+                <li><a href="catalog-coffee.html">Каталог товаров</a></li>
+                <li><a href="#">Блог</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="img/search.svg" alt="search" title="Поиск">
+                    </a>
+                </li>
+                <li>
+                    <a href="basket.html">
+                        <img src="img/basket.svg" alt="basket" title="Корзина">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/account.svg" alt="account" title="Вход в аккаунт">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="basket">
+        <div class="container">
+            <div class="basket-top">
+                <a href="index.html">Главная &bull; </a>
+                <a href="#">Корзина</a>
+            </div>
+            <div class="basket-middle">
+                <div>
+                    <h4>2 товара в корзине</h4>
+                    <button>Удалить все</button>
+                </div>
+                <div class="fs-20">
+                    <span>Удалить товар</span>
+                    <span>Наименование товара</span>
+                    <span>Цена</span>
+                    <span>Количество</span>
+                    <span>Скидка (10&percnt;)</span>
+                    <span>Итого</span>
+                </div>
+                <div class="basket-line">
+                    <img src="img/delete.svg" alt="delete">
+                    <div>
+                        <img src="img/card01.jpg" alt="card">
+                        <div>
+                            <h6>Columbia Supremo</h6>
+                            <p class="fs-18">Мытая, натуральная, смесь</p>
+                            <p class="fs-18">250 г.</p>
+                        </div>
+                    </div>
+                    <span>270 &#8381;</span>
+                    <div></div>
+                    <span>27 &#8381;</span>
+                    <span>243 &#8381;</span>
+                </div>
+                <div class="basket-line">
+                    <img src="img/delete.svg" alt="delete">
+                    <div>
+                        <img src="img/card01.jpg" alt="card">
+                        <div>
+                            <h6>Columbia Supremo</h6>
+                            <p class="fs-18">Мытая, натуральная, смесь</p>
+                            <p class="fs-18">250 г.</p>
+                        </div>
+                    </div>
+                    <span>270 &#8381;</span>
+                    <div></div>
+                    <span>27 &#8381;</span>
+                    <span>243 &#8381;</span>
+                </div>
+               
+
+               
+            </div>
+        </div>
+    </div>
+    <div class="basket-delivery">
+        <div class="container">
+            <h5>Доставка</h5>
+            <form action="https://fe.it-academy.by/TestForm.php" method="post">
+                <input type="text" name="name" placeholder="Имя">
+                <input type="text" name="surname" placeholder="Фамилия">
+                <input type="tel" name="phone" placeholder="Телефон">
+                <input type="email" name="email" placeholder="Email">
+                <input type="text" name="name-company" placeholder="Название компании (необязательно)">
+                <input type="text" name="country" placeholder="Страна">
+                <input type="text" name="city" placeholder="Город">
+                <input type="text" name="street" placeholder="Улица, дом">
+                <input type="number" name="zip-code" placeholder="Почтовый индекс">
+                <input type="text" name="comment" placeholder="Комментарий к заказу (необязательно)">
+                <input type="submit" value="Рассчитать доставку">
+            </form>
+        </div>
+    </div>
+    <div class="basket-bottom">
+        <div class="container">
+            <div class="basket-promo">
+                <h5>Промокод</h5>
+                <p class="fs-20">Введите подарочный промокод в поле ниже и получите скидку на заказ до 20%. Скидка не распространяется на доставку</p>
+                <input type="text" name="promo" placeholder="Введите промокод">
+                <button>Ввести промокод</button>
+            </div>
+            <div class="basket-sum">
+                <h5>Итог: 486 &#8381;</h5>
+                <span>Подытог: 540 &#8381;</span>
+                <span>Скидка: 54 &#8381; (10%)</span>
+                <div>
+                    <span>Доставка: </span>
+                    <label>
+                        <input type="radio" name="delivery" value="1" checked>
+                        <span>СДЭК - до двери <b> 390 &#8381;</b></span>
+                    </label>
+                    <label>
+                        <input type="radio" name="delivery" value="2" >
+                        <span>Почта России <b> 300 &#8381;</b></span>
+                    </label>
+                    <label>
+                        <input type="radio" name="delivery" value="3" >
+                        <span>DPD - курьер, 3 дн.<b> 427 &#8381;</b></span>
+                    </label>
+                </div>
+                <button>Оплатить заказ</button>
+                <p class="fs-14">Ваши персональные данные будут использоваться для управления доступом к вашей учетной записи и для других целей, описанных в нашем документе политика конфиденциальности.</p>
+                <div>
+                    <img src="img/master-card.jpg" alt="master-card">
+                    <img src="img/visa.jpg" alt="visa">
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="subscribe">
+        <div class="container">
+            <h3>Подписка на новости и рассылку</h3>
+            <p>Подпишитесь на нашу рассылку прямо сейчас и будьте в курсе новых поставок, скидок и эксклюзивных предложений.</p>
+            <div class="subscribe-form">
+                <form action="https://fe.it-academy.by/TestForm.php" method="post">
+                    <input type="text" name="email" placeholder="Ваш email">
+                </form>
+                <button>Подписаться</button>
+            </div>
+            <span>Нажимая на кнопку “Подписаться”, вы принимаете правила 
+                <a href="#">пользовательского соглашения</a> </span>
+            <div class="subscribe-pict">
+                <img src="img/coffee-grains-bottom.png" alt="grains">
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <img src="img/logo.png" alt="logo">
+            <ul>
+                <li><a href="#">Каталог товаров</a></li>
+                <li><a href="#">Блог</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </div>
+    </div> 
+
+</body>
+</html>

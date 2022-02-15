@@ -1,0 +1,343 @@
+@import "style-common.scss";
+
+.header-top {
+    background: $white;
+    box-shadow: 0px 5px 20px rgba(157, 157, 157, 0.25);
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+}
+.card-coffee {
+    //color: $text-card;
+    background: url(../img/background-pink-1000.svg) top no-repeat;
+    padding-top: 160px;
+    .container {
+        .card-coffee-top {
+            padding-top: 40px;
+            padding-bottom: 40px;
+            a {
+                font-weight: $regular;
+                font-size: 18px;
+                line-height: 21px;
+            }
+        }
+        .card-coffee-main {
+            width: 100%;
+            display: inline-flex;
+            background: $white;
+            border: 1px solid $gray-checkbox;
+            box-shadow: 0px 0px 50px rgba(163, 163, 163, 0.25);
+            border-radius: 20px;
+            padding-top: 73px;
+            padding-left: 132px;
+            .card-coffee-pict {
+                position: relative;
+                margin-bottom: 121px;
+                & > img:last-child {
+                    position: absolute;
+                    border-radius: 100px;
+                    top: 68px;
+                    left: 234px;
+                }
+            }
+            .card-coffee-descr {
+                padding-left: 152px;
+                p {
+                    font-weight: $regular;
+                    font-size: $fs20;
+                    line-height: 24px;
+                }
+                .descr-top {
+                    position: relative;
+                    .grains {
+                        margin-bottom: 20px;
+                        .grain {
+                            display: inline-block;
+                            background: url(../img/grain.svg) no-repeat center;
+                            width: 28px;
+                            height: 27px;
+                            margin-right: 4px;
+                            background-size: contain;
+                        }
+                    }
+                    h4 {
+                        padding-bottom: 20px;
+                    }
+                    
+                    .rating {
+                        display: inline-block;
+                        span:first-child {
+                            font-weight: $semi-bold;
+                            font-size: $fs30;
+                            line-height: 36px;
+                            padding-right: 20px;
+                            padding-left: 20px;
+                        }
+                        span:last-child {
+                            font-weight: $regular;
+                            font-size: $fs16;
+                            line-height: 19px;
+                            color: $dark-gray;
+                        }
+                    }
+                    & > div:nth-child(6) {
+                        font-weight: $semi-bold;
+                        font-size: $fs20;
+                        line-height: 24px;
+                        color: $orange;
+                        position: absolute;
+                        top: 62px;
+                        right: 62px;
+                    }
+                   
+                }
+                .descr-middle {
+                    & > p {
+                        width: 650px;
+                    }
+                    .specification {
+                        display: inline-block;
+                        margin-top: 40px;
+                        margin-bottom: 83px;
+                        & > p {
+                            font-weight: $semi-bold;
+                        }
+                        .round {
+                            width: 13px;
+                            height: 10px;
+                            display: inline-block;
+                            background: url(../img/round-gray.svg) no-repeat center;
+                        }
+                        .round.full {
+                            background: url(../img/round-orange.svg) no-repeat center;
+                        }
+                    }
+                    .specification:nth-child(3) {
+                        padding-left: 100px;
+                        padding-right: 100px;
+                    }
+                    
+                    
+                }
+                .descr-bottom {
+                    button {
+                        @include btn-product (400px);
+                        height: 70px; 
+                        font-weight: $regular;
+                    }
+                    label {
+                        display: inline-block;
+                        font-weight: $regular;
+                        font-size: $fs30;
+                        line-height: 35px;
+                        margin-right: 61px;
+                        margin-bottom: 67px;
+
+                        input {
+                            width: 25px;
+                            height: 25px;
+                            background: $orange;
+                            margin-right: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.slider-vertic {
+    background: url(../img/background9-pink.svg) top no-repeat;
+    margin-top: -350px;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 450px;
+        padding-bottom: 100px;
+        button {
+            @include btn-not-active (400px);
+        }
+        button:focus {
+            @include btn-active (400px);
+        }
+    }
+}
+.coffee-info {
+    .container {
+        & > div:first-child {
+            display: flex;
+            justify-content: space-between;
+            & > div {
+                background: $white;
+                box-shadow: 0px 0px 30px rgba(149, 149, 149, 0.25);
+                border-radius: 20px;
+                padding-top: 60px;
+                padding-left: 80px;
+            }
+            .taste {
+                flex-grow: 2;
+                p {
+                   padding-top: 68px;
+                }
+                p:last-child {
+                    padding-bottom: 74px; 
+                 }
+                p::before {
+                    content: '';
+                    background: url(../img/mokka-black.svg) no-repeat 19px 27px,
+                                url(../img/ellipse-35.svg) no-repeat left;
+                    width: 70px;
+                    height: 70px;
+                    padding-right: 120px;
+                    padding-top: 35px;
+                    padding-bottom: 35px;
+                }
+            }
+            .specific {
+                flex-grow: 7;  
+                margin-left: 20px;
+                h5 {
+                    margin-bottom: 24px;
+                }
+                div {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-right: 140px;
+                    border-bottom: 1px solid $border-small;
+                    align-items: center;
+                    p {
+                        display: inline-block;
+                    }
+                    p:first-child {
+                        font-weight: $semi-bold;
+                        padding-top: 20px;
+                        padding-bottom: 20px;
+                    }
+                    p:last-child {
+                        width: 430px;
+                        text-align: right;
+                    }
+                }
+            }
+        }
+        & > div:nth-child(2) {
+            margin-top: 88px;
+            display: flex;
+            justify-content: space-between;
+            img {
+                margin-left: 160px;
+                margin-bottom: 100px;
+            }
+        }
+    }
+}
+.prepared {
+    border-top: 1px solid $border-big;
+    border-bottom: 1px solid $border-big;
+
+    .container {
+        h4 {
+            margin-top: 50px;
+            margin-bottom: 60px;
+        }
+        .sorting-coffee-bottom {
+            margin-bottom: 100px;
+        }
+    }
+    
+}
+.additional {
+    .container {
+        margin-bottom: 100px;
+        h4 {
+            margin-top: 50px;
+            margin-bottom: 60px;
+        }
+        h5 {
+            margin: 60px 0;
+        }
+        img {
+            margin-top: 70px;
+        }
+        p {
+            width: 80%;
+        }
+    }
+}
+.reviews-top {
+    background: url(../img/background10-gray.svg) no-repeat center;
+    height: 288px;
+    .container {
+        h4 {
+            padding-top: 50px;
+        }
+    }
+}
+.reviews-main {
+    background: $gray-bg;
+    .container {
+        top: -90px;
+            position: relative;
+        .review-card:first-child {
+        }
+        .review-card {
+            
+            background: $white;
+            box-shadow: 0px 0px 30px rgba(149, 149, 149, 0.25);
+            border-radius: 20px;
+            padding-top: 90px;
+            span {
+                font-weight: $regular;
+                font-size: $fs20;
+                line-height: 130%;
+            }
+            & > div:first-child {
+                position: relative;
+                padding-left: 79px;
+                p {
+                    font-weight: $semi-bold;
+                }
+                .stars {
+                    display: block;
+                }
+                & > span:last-child {
+                    position: absolute;
+                    top: 0;
+                    right: 140px;
+                }
+            }
+            & > div:nth-child(2) {
+                background: $light-pink;
+                display: flex;
+                margin-top: 86px;
+                padding-top: 25px;
+                margin-bottom: 70px;
+                img {
+                    padding-right: 50px;
+                    padding-bottom: 20px;
+                    padding-left: 79px;
+                }
+                & > div {
+                    & > span:nth-child(1) {
+                        font-weight: $semi-bold;
+                        padding-bottom: 15px;
+                    }
+                }
+                
+            }
+        }
+        .card-more {
+            height: 70px;
+            width: 100%;
+            background: $white;
+            border: 1px solid #E4E4E4;
+            border-radius: 10px;
+            text-align: center;
+            a {
+                vertical-align: -18px;
+                font-weight: $regular;
+                font-size: $fs20;
+                line-height: 24px;
+            }
+        }
+    }
+}

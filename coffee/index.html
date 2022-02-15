@@ -4,19 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.2, minimum-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-common.css">
+    <link rel="stylesheet" href="css/style-index.css">
     <title>Coffee</title>
 </head>
 <body>
+<div class="bg-right">
     <div class="header-top">
         <div class="container">
             <div>
                 <img src="img/logo.png" alt="logo">
             </div>
             <ul>
-                <li><a href="#">Каталог товаров</a></li>
+                <li><a href="catalog-coffee.html">Каталог товаров</a></li>
                 <li><a href="#">Блог</a></li>
-                <li><a href="#">Контакты</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
             </ul>
             <ul>
                 <li>
@@ -25,7 +27,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="basket.html">
                         <img src="img/basket.svg" alt="basket" title="Корзина">
                     </a>
                 </li>
@@ -35,7 +37,6 @@
                     </a>
                 </li>
             </ul>
-
         </div>
     </div>
     <div class="header">
@@ -44,7 +45,9 @@
                 <h1>Свежеобжаренный кофе</h1>
                 <p>Кофе Калининградской обжарки из разных стран произрастания с доставкой на дом. </p>
                 <p>Мы обжариваем кофе <b>каждые выходные.</b></p>
-                <button>Посмотреть каталог</button>
+                <button>
+                    <a href="catalog-coffee.html">Посмотреть каталог</a>
+                </button>
             </div>
             <div class="header-pict">
                 <img src="img/grains1.png" alt="grains">
@@ -59,22 +62,22 @@
             <div class="cards">
                 <div class="card-type-products">
                     <img src="img/coffee-grains.png" alt="coffee-grains">
-                    <h5>Свежеобжаренный кофе</h5>
+                    <h6>Свежеобжаренный кофе</h6>
                     <button>Купить</button>
                 </div>
                 <div class="card-type-products">
                     <img src="img/teapot.png" alt="teapot">
-                    <h5>Чай и кофейные напитки</h5>
+                    <h6>Чай и кофейные напитки</h6>
                     <button>Купить</button>
                 </div>
                 <div class="card-type-products">
                     <img src="img/vedding-machine.png" alt="vedding">
-                    <h5>Продукция для вендинга</h5>
+                    <h6>Продукция для вендинга</h6>
                     <button>Купить</button>
                 </div>
                 <div class="card-type-products">
                     <img src="img/health-eat.png" alt="health-eat">
-                    <h5>Здоровое питание</h5>
+                    <h6>Здоровое питание</h6>
                     <button>Купить</button>
                 </div>
                 
@@ -117,21 +120,143 @@
                                 <span class="grain full"></span>
                                 <span class="grain"></span>
                             </div>
-                            <div>
-                                <p>Кислинка</p>
-                                <span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round"></span><span class="round"></span><span class="round"></span>
+                            <div class="specification">
+                                <p>Кислинка</p> 
+                                <p>
+                                    <span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round"></span><span class="round"></span><span class="round"></span>
+                                </p>
                             </div>
-                            <div>
+                            <div class="specification">
                                 <p>Горчинка</p>
-                                <span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round"></span><span class="round"></span><span class="round"></span>
+                                <p>
+                                    <span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round"></span><span class="round"></span><span class="round"></span>
+                                </p>
                             </div>
-                            <div>
+                            <div class="specification">
                                 <p>Насыщенность</p>
-                                <span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round"></span><span class="round"></span><span class="round"></span>
+                                <p>                                
+                                    <span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round"></span><span class="round"></span><span class="round"></span>
+                                </p>
                             </div>
                         </div>
                     </div>
-                    <h5>Colombia Supremo</h5>
+                    <h6>Colombia Supremo</h6>
+                    <p>Свежеобжаренный кофе - описание товара, вкус, аромат</p>
+                    <div class="price">
+                        <span>350 &#8381;</span>
+                        <span>250 &#8381;</span>
+                    </div>
+                    <button>В корзину</button>
+                </div>
+                <div class="card">
+                    <div class="card-top">
+                        <div>
+                            <span>Популярное</span>
+                            <span>Скидки</span>
+                        </div>
+                        <form method="post" action="https://fe.it-academy.by/TestForm.php">
+                            <select name="weight-item">
+                                <option value="250">250г.</option>
+                                <option value="500">500г.</option>
+                                <option value="1000">1000г.</option>
+                            </select>
+                        </form>
+                    </div>
+                    <div class="card-body">
+                        <img src="img/card01.jpg" alt="coffee">
+                        <div>
+                            <div class="stars">
+                                <span class="star full"></span><span class="star full"></span><span class="star full"></span><span class="star full"></span><span class="star"></span>
+                            </div>
+                            <div class="rating">
+                                <span>4.0</span><span>(32 отзыва)</span>
+                            </div>
+                            <div class="grains">
+                                <span class="grain full"></span>
+                                <span class="grain full"></span>
+                                <span class="grain full"></span>
+                                <span class="grain full"></span>
+                                <span class="grain"></span>
+                            </div>
+                            <div class="specification">
+                                <p>Кислинка</p> 
+                                <p>
+                                    <span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round"></span><span class="round"></span><span class="round"></span>
+                                </p>
+                            </div>
+                            <div class="specification">
+                                <p>Горчинка</p>
+                                <p>
+                                    <span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round"></span><span class="round"></span><span class="round"></span>
+                                </p>
+                            </div>
+                            <div class="specification">
+                                <p>Насыщенность</p>
+                                <p>                                
+                                    <span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round"></span><span class="round"></span><span class="round"></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <h6>Colombia Supremo</h6>
+                    <p>Свежеобжаренный кофе - описание товара, вкус, аромат</p>
+                    <div class="price">
+                        <span>350 &#8381;</span>
+                        <span>250 &#8381;</span>
+                    </div>
+                    <button>В корзину</button>
+                </div>
+                <div class="card">
+                    <div class="card-top">
+                        <div>
+                            <span>Популярное</span>
+                            <span>Скидки</span>
+                        </div>
+                        <form method="post" action="https://fe.it-academy.by/TestForm.php">
+                            <select name="weight-item">
+                                <option value="250">250г.</option>
+                                <option value="500">500г.</option>
+                                <option value="1000">1000г.</option>
+                            </select>
+                        </form>
+                    </div>
+                    <div class="card-body">
+                        <img src="img/card01.jpg" alt="coffee">
+                        <div>
+                            <div class="stars">
+                                <span class="star full"></span><span class="star full"></span><span class="star full"></span><span class="star full"></span><span class="star"></span>
+                            </div>
+                            <div class="rating">
+                                <span>4.0</span><span>(32 отзыва)</span>
+                            </div>
+                            <div class="grains">
+                                <span class="grain full"></span>
+                                <span class="grain full"></span>
+                                <span class="grain full"></span>
+                                <span class="grain full"></span>
+                                <span class="grain"></span>
+                            </div>
+                            <div class="specification">
+                                <p>Кислинка</p> 
+                                <p>
+                                    <span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round"></span><span class="round"></span><span class="round"></span>
+                                </p>
+                            </div>
+                            <div class="specification">
+                                <p>Горчинка</p>
+                                <p>
+                                    <span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round"></span><span class="round"></span><span class="round"></span>
+                                </p>
+                            </div>
+                            <div class="specification">
+                                <p>Насыщенность</p>
+                                <p>                                
+                                    <span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round"></span><span class="round"></span><span class="round"></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <h6>Colombia Supremo</h6>
                     <p>Свежеобжаренный кофе - описание товара, вкус, аромат</p>
                     <div class="price">
                         <span>350 &#8381;</span>
@@ -146,6 +271,7 @@
             </div>
         </div>
     </div>
+</div>
     <div class="present">
         <div class="present-top">
             <div class="container">
@@ -163,21 +289,21 @@
                     <div>
                         <img src="img/cup.svg" alt="cup">
                         <div>
-                            <h4>Всегда свежая обжарка</h4>
+                            <h5>Всегда свежая обжарка</h5>
                             <p>Подбор степени обжарки под каждый сорт кофе. Всегда свежая обжарка</p>
                         </div>
                     </div>
                     <div>
                         <img src="img/sale.svg" alt="sale">
                         <div>
-                            <h4>Лучшие цены на продукцию</h4>
+                            <h5>Лучшие цены на продукцию</h5>
                             <p>Благодаря крупным объемам производства мы даем лучшие цены на нашу продукцию</p>
                         </div>
                     </div>
                     <div>
                         <img src="img/assistant.svg" alt="assistant">
                         <div>
-                            <h4>Консультации 24/7</h4>
+                            <h5>Консультации 24/7</h5>
                             <p>Наши специалисты готовы всегда помочь 
                                 и подсказать вам с выбором кофе или другой продукции.</p>
                         </div>
@@ -216,14 +342,14 @@
                         <div>
                             <img src="img/news1.jpg" alt="news">
                             <div>
-                                <h5>Танзанийский кофе. Откуда он взялся и почему мы его так любим?</h5>
+                                <h6>Танзанийский кофе. Откуда он взялся и почему мы его так любим?</h6>
                                 <p>Танзания – красивая африканская страна. Именно здесь расположены легендарные географические объекты – вулкан Килиманджаро и озеро Виктория. </p>
                                 <p>Но наш интерес вызван не столько природными красотами, сколько кофе...</p>
                                 <a href="#">Подробнее &rarr;</a>
                             </div>
                         </div>
                         <div>
-                            <h5>Африканский кофе Кения АА</h5>
+                            <h6>Африканский кофе Кения АА</h6>
                             <p>Кения АА – у этого кофе, из африканской страны, репутация одного из самых вкусных и ярких сортов в мире. Многие обжарщики высоко оценивают местные разновидности высокогорной арабики.</p>
                             <a href="#">Подробнее &rarr;</a>
                         </div>
@@ -232,14 +358,14 @@
                         <div>
                             <img src="img/news1.jpg" alt="news">
                             <div>
-                                <h5>Танзанийский кофе. Откуда он взялся и почему мы его так любим?</h5>
+                                <h6>Танзанийский кофе. Откуда он взялся и почему мы его так любим?</h6>
                                 <p>Танзания – красивая африканская страна. Именно здесь расположены легендарные географические объекты – вулкан Килиманджаро и озеро Виктория. </p>
                                 <p>Но наш интерес вызван не столько природными красотами, сколько кофе...</p>
                                 <a href="#">Подробнее &rarr;</a>
                             </div>
                         </div>
                         <div>
-                            <h5>Африканский кофе Кения АА</h5>
+                            <h6>Африканский кофе Кения АА</h6>
                             <p>Кения АА – у этого кофе, из африканской страны, репутация одного из самых вкусных и ярких сортов в мире. Многие обжарщики высоко оценивают местные разновидности высокогорной арабики.</p>
                             <a href="#">Подробнее &rarr;</a>
                         </div>
@@ -290,8 +416,7 @@
             <span>Нажимая на кнопку “Подписаться”, вы принимаете правила 
                 <a href="#">пользовательского соглашения</a> </span>
             <div class="subscribe-pict">
-                <img src="img/grains1.png" alt="grains">
-                <img src="img/coffee1.png" alt="coffee">
+                <img src="img/coffee-grains-bottom.png" alt="grains">
             </div>
         </div>
     </div>

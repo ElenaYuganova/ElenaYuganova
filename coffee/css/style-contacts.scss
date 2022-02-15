@@ -1,0 +1,78 @@
+@import "style-common.scss";
+
+.header-top {
+    background: $white;
+    box-shadow: 0px 5px 20px rgba(157, 157, 157, 0.25);
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+}
+.contacts {
+    background: url(../img/background12-pink.svg) center bottom no-repeat;
+    padding-top: 160px;
+    .container {
+        .contacts-top {
+            position: relative;
+            margin-bottom: 90px;
+            div:first-child {
+                padding-top: 40px;
+                padding-bottom: 50px;
+                a {
+                    font-weight: $regular;
+                    font-size: $fs-card;
+                    line-height: 21px;
+                }
+            }
+            div:nth-child(2) {
+                display: flex;
+                justify-content: space-between;
+                & > button {
+                    @include btn-not-active (50%);
+                    &:first-child {
+                        margin-right: 20px;
+                    }
+                }
+                & > button:focus {
+                    @include btn-active (50%);
+                }
+
+            }
+        }
+        .contacts-middle {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 252px;
+            .contacts-inform {
+                width: 535px;
+                h5 {
+                    font-weight: $bold;
+                    padding-top: 60px;
+                    &:first-child {
+                        padding-top: 0;
+                    }
+                }
+                p {
+                    padding-top: 30px;
+                    &:nth-child(2),
+                    &:nth-child(3) {
+                        padding-top: 10px;
+                    }
+                }
+            }
+            .contacts-shops {
+                display: none;
+                p {
+                    padding-top: 30px;
+                    padding-bottom: 30px;
+                }
+                h5 {
+                    font-weight: $bold;
+                }
+            }
+        }
+    }
+}
+.subscribe {
+    background: url(../img/background4-pink.svg) no-repeat center top,
+                url(../img/background6-orange.svg) no-repeat center 21px;
+}
