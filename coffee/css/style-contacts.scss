@@ -8,7 +8,7 @@
     width: 100%;
 }
 .contacts {
-    background: url(../img/background12-pink.svg) center bottom no-repeat;
+    background: url(../img/background12-pink.svg) center 895px no-repeat;
     padding-top: 160px;
     .container {
         .contacts-top {
@@ -32,16 +32,15 @@
                         margin-right: 20px;
                     }
                 }
-                & > button:focus {
+                & > button:first-child {
                     @include btn-active (50%);
                 }
-
             }
         }
         .contacts-middle {
             display: flex;
             justify-content: space-between;
-            padding-bottom: 252px;
+            padding-bottom: 210px;
             .contacts-inform {
                 width: 535px;
                 h5 {
@@ -53,13 +52,28 @@
                 }
                 p {
                     padding-top: 30px;
-                    &:nth-child(2),
                     &:nth-child(3) {
                         padding-top: 10px;
                     }
                 }
+                & > a {
+                    display: inline-block;
+                    &:hover {
+                        transition: transform 0.5s;
+                        transform: scale(1.3);
+                        @include btn-active (180px);
+                        height: 50px;
+                        margin-top: 7px;
+                        margin-left: 25px;
+                        & > p {
+                            padding-top: 10px;
+                            padding-left: 10px;
+                        }
+                    }
+                }
             }
             .contacts-shops {
+                background: $white;
                 display: none;
                 p {
                     padding-top: 30px;
@@ -68,6 +82,9 @@
                 h5 {
                     font-weight: $bold;
                 }
+            }
+            .contacts-map {
+                border: 1px solid $black;
             }
         }
     }

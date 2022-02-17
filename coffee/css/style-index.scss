@@ -24,6 +24,9 @@
                     margin-top: 53px;
                     margin-bottom: 276px;
                     @include btn-big (400px);
+                    &:hover {
+                        @include btn-orange-hover;
+                    }
                 }
                 
             }
@@ -67,6 +70,9 @@
                     @include btn-product (329px);
                     margin-top: 50px;
                     display: none;
+                    &:hover {
+                        @include btn-orange-hover;
+                    }
                 }
             }
             .card-type-products:hover {
@@ -88,7 +94,7 @@
                 }
             }
             div.card-type-products:nth-child(4):hover {
-                & > h5 {
+                & > h6 {
                     padding-left: 70px;
                     padding-right: 70px;
                 }
@@ -104,22 +110,50 @@
             }
             & > p {
                 width: 1100px;
-                margin-bottom: 80px;
+                margin-bottom: 40px;
                 display: inline-block;
             }
-            .cards-main {
-                justify-content: flex-end;
-                display: flex;
-            }
-            & > div:last-child {
-                cursor: pointer;
-                font-weight: $regular;
-                font-size: $fs20;
-                line-height: 24px;
-                text-align: right;
-                text-decoration-line: underline;
-                margin-top: 58px;
+            & > button {
+                @include btn-show-black;
+                text-align: right;                
+                margin-top: 38px;
                 margin-right: 140px;
+                &:hover {
+                    @include btn-show-active;
+                }
+            }
+            .cards-main {
+                padding-right: 135px;
+                padding-left: 275px;
+                position: relative;
+                .card {
+                    margin-top: 40px;
+                    margin-bottom: 20px;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+                
+                .slick-prev {
+                    border: none;
+                    background: url(../img/arrow-left.svg) no-repeat center left;
+                    width: 70px;
+                    height: 70px;
+                    color: transparent;
+                    position: absolute;
+                    top: 50%;
+                    left: 140px;
+                }
+                .slick-next {
+                    border: none;
+                    background: url(../img/arrow-right.svg) no-repeat center right;
+                    width: 71px;
+                    height: 71px;
+                    color: transparent;
+                    position: absolute;
+                    top: 50%;
+                    right: 0;
+                }
+                
             }
         }
     }
@@ -207,6 +241,9 @@
                     @include btn-big (400px);
                     margin-top: 100px;
                     margin-bottom: 153px;
+                    &:hover {
+                        @include btn-orange-hover;
+                    }
                 }
             }
         }
@@ -230,11 +267,14 @@
                         padding-top: 36px;
                         padding-bottom: 60px;
                     }
-                    a {
-                        font-weight: $regular;
-                        line-height: 130%;
-                        text-decoration-line: underline;
-                        padding-top: 60px;
+                    & > button {
+                        @include btn-show-black;
+                        font-size: $fs-main;
+                        height: 52px;
+                        margin-top: 50px;
+                        &:hover {
+                            @include btn-show-active;
+                        }
                     }
                 }
                 .news-first-str,
@@ -244,11 +284,11 @@
                         background: $white;
                         box-shadow: 0px 0px 30px rgba(146, 146, 146, 0.2);
                         border-radius: 20px;
-                        a {
-                            font-weight: $regular;
-                            font-size: $fs20;
-                            line-height: 24px;
-                            color: $orange;
+                        button {
+                            @include btn-show-orange;
+                            &:hover {
+                                @include btn-show-active;
+                            }
                         }
                         p {
                             font-weight: $regular;
@@ -270,7 +310,7 @@
                             padding-bottom: 30px;
                         }
                         p {
-                            padding-bottom: 30px;
+                            padding-bottom: 27px;
                             padding-right: 81px;
                         }
                     }

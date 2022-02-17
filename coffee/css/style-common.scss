@@ -52,6 +52,7 @@ p {
     font-weight: $regular;
     font-size: $fs20;
     line-height: 25px;
+    font-family: $ff;
 }
 .fs-18 {
     font-weight: $regular;
@@ -91,9 +92,40 @@ p {
             }
         }
         ul:nth-child(3) {
+            height: 59px;
+            padding-top: 9px;
             & > li:nth-child(2) {
                 padding-left: 53px;
                 padding-right: 53px;
+            }
+            & > li:nth-child(1) {
+                position: relative;
+                input {
+                    background: url(../img/search.svg) no-repeat top left;
+                    border: none;
+                    height: 59px;
+                    width: 36px;
+                    cursor: pointer;
+                    &::placeholder {
+                        color: transparent;
+                    }
+                }
+                input:focus {
+                    background: url(../img/search-gray.svg) no-repeat 30px center, $white;
+                    position: absolute;
+                    top: -49px;
+                    right: -20px;
+                    box-shadow: 0px 0px 20px rgba(157, 157, 157, 0.25);
+                    border-radius: 30px;
+                    border: none;
+                    outline:none;
+                    width: 1170px;
+                    padding-left: 90px;
+                    transition-duration: 0.5s;
+                    &::placeholder {
+                        color: $gray-text;
+                    }
+                } 
             }
         }
     }
@@ -116,7 +148,13 @@ p {
         .card-top {
             display: flex;
             justify-content: space-between;
-            div {
+            position: relative;
+            div:nth-child(1) {
+                position: absolute;
+                top: -60px;
+                left: -5px;
+            }
+            div:nth-child(2) {
                 span {
                     display: block;
                     font-weight: $semi-bold;
@@ -236,10 +274,12 @@ p {
             @include btn-card (178px);
             margin-left: 52px;
             margin-top: 30px;
+            &:hover {
+                @include btn-orange-hover;
+            }
         }
 }
 .sorting-coffee-bottom {
-            
     display: flex;
     justify-content: space-between;
     div {
@@ -249,6 +289,14 @@ p {
         box-shadow: 0px 0px 30px rgba(149, 149, 149, 0.25);
         border-radius: 20px;
         text-align: center;
+       
+        &:hover {
+            background: $orange;
+            color: $white;
+            svg {
+                fill: $white;
+            }
+        }
         span {
             display: block;
             padding-top: 28px;
@@ -257,6 +305,11 @@ p {
             font-size: $fs20;
             line-height: 24px;
         }
+        svg {
+            fill: #505050;
+        }
+       
+    
         
     }
 }
@@ -285,6 +338,7 @@ p {
                     font-size: $fs-main;
                     line-height: 130%;                
                     padding-left: 60px;
+                    outline:none;
                 }
                 input::placeholder {
                     color: $gray2-border;
@@ -303,6 +357,9 @@ p {
                     position: absolute;
                     top: 60px;
                     right: 561px;
+                    &:hover {
+                        @include btn-orange-hover;
+                    }
                 }
             }
             span {
@@ -337,6 +394,9 @@ p {
                     font-weight: $regular;
                     line-height: 29px;
                     display: inline-block;
+                    a:hover {
+                        border-bottom: 3px solid $orange;
+                    }
                 }
                 & > li:nth-child(2) {
                     padding-left: 100px;
@@ -365,6 +425,50 @@ p {
                 background-size: contain;
                 vertical-align: -3px;
             }
+    }
+}
+.card-more {
+    height: 70px;
+    width: 100%;
+    background: $white;
+    border: 1px solid #E4E4E4;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+        &:hover {
+            background: $light-pink;
+        }
+    a {
+        vertical-align: -18px;
+        font-weight: $regular;
+        font-size: $fs20;
+        line-height: 24px;
+    }
+}
+.custom-checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    &+label {
+        display: inline-flex;
+        align-items: center;
+        user-select: none;
+    }
+    &+label::before {
+        content: '';
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        flex-shrink: 0;
+        flex-grow: 0;
+        border: none;
+        border-radius: 50%;
+        margin-right: 20px;
+        vertical-align: -5px;
+        background: $gray-checkbox no-repeat center center;
+    }
+    &:checked+label::before {
+        background-color: $orange;
     }
 }
 

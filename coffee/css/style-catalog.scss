@@ -46,14 +46,6 @@
                 height: 526px;
                 box-shadow: 0px 0px 30px rgba(149, 149, 149, 0.25);
                 border-radius: 20px;
-                label {
-                    display: block;
-                    input {
-                        width: 25px;
-                        height: 25px;
-                        background: $orange;
-                    }
-                }
             }
             & > div:first-child {
                 flex-grow: 2;
@@ -65,11 +57,12 @@
                 h5 {
                     padding-bottom: 46px;
                 }
+                .custom-checkbox+label::before {
+                    vertical-align: 0;
+                }
                 label {
                     padding-bottom: 49px;
-                    img {
-                        padding-left: 17px;
-                    }
+                    display: block;
                 }   
             }
             & > div:last-child {
@@ -84,14 +77,11 @@
                     padding-bottom: 30px;
                 }
                 label {
+                    display: block;
                     padding-bottom: 20px;
                     font-weight: $regular;
                     font-size: $fs20;
                     line-height: 24px;
-                    input {
-                        margin-right: 20px;
-                        vertical-align: -5px;
-                    }
                 }
                 .geography {
                     padding-right: 77px;
@@ -126,26 +116,14 @@
             } 
         }
         .cards-main {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            .card {
-                margin-right: 0;
-                margin-bottom: 70px;
-            }
-            .card-more {
-                height: 70px;
-                width: 100%;
-                background: $white;
-                border: 1px solid #E4E4E4;
-                border-radius: 10px;
-                text-align: center;
-                margin-bottom: 128px;
-                a {
-                    vertical-align: -18px;
-                    font-weight: $regular;
-                    font-size: $fs20;
-                    line-height: 24px;
+            padding-bottom: 128px;
+            #card-wrap {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                .card {
+                    margin-right: 0;
+                    margin-bottom: 70px;
                 }
             }
 

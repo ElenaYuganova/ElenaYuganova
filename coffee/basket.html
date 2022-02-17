@@ -15,15 +15,13 @@
                 <img src="img/logo.png" alt="logo">
             </div>
             <ul>
-                <li><a href="catalog-coffee.html">Каталог товаров</a></li>
+                <li><a href="index.html#catalog">Каталог товаров</a></li>
                 <li><a href="#">Блог</a></li>
                 <li><a href="contacts.html">Контакты</a></li>
             </ul>
             <ul>
                 <li>
-                    <a href="#">
-                        <img src="img/search.svg" alt="search" title="Поиск">
-                    </a>
+                    <input class="fs-20" type="text" placeholder="Поиск по товарам">
                 </li>
                 <li>
                     <a href="basket.html">
@@ -98,15 +96,15 @@
             <h5>Доставка</h5>
             <form action="https://fe.it-academy.by/TestForm.php" method="post">
                 <input type="text" name="name" placeholder="Имя">
-                <input type="text" name="surname" placeholder="Фамилия">
-                <input type="tel" name="phone" placeholder="Телефон">
-                <input type="email" name="email" placeholder="Email">
-                <input type="text" name="name-company" placeholder="Название компании (необязательно)">
                 <input type="text" name="country" placeholder="Страна">
+                <input type="text" name="surname" placeholder="Фамилия">
                 <input type="text" name="city" placeholder="Город">
+                <input type="tel" name="phone" placeholder="Телефон">
                 <input type="text" name="street" placeholder="Улица, дом">
-                <input type="number" name="zip-code" placeholder="Почтовый индекс">
-                <input type="text" name="comment" placeholder="Комментарий к заказу (необязательно)">
+                <input type="email" name="email" placeholder="Email">
+                <input type="text" name="zip-code" placeholder="Почтовый индекс">
+                <input type="text" name="name-company" placeholder="Название компании (необязательно)">
+                <input type="text" name="comment" placeholder="Комментарий к заказу (необязательно)">                 
                 <input type="submit" value="Рассчитать доставку">
             </form>
         </div>
@@ -125,16 +123,16 @@
                 <span>Скидка: 54 &#8381; (10%)</span>
                 <div>
                     <span>Доставка: </span>
-                    <label>
-                        <input type="radio" name="delivery" value="1" checked>
+                    <input id="delivery1" class="custom-checkbox" type="radio" name="delivery" value="1" checked>
+                    <label for="delivery1">                        
                         <span>СДЭК - до двери <b> 390 &#8381;</b></span>
                     </label>
-                    <label>
-                        <input type="radio" name="delivery" value="2" >
+                    <input id="delivery2" class="custom-checkbox" type="radio" name="delivery" value="2" >
+                    <label for="delivery2">
                         <span>Почта России <b> 300 &#8381;</b></span>
                     </label>
-                    <label>
-                        <input type="radio" name="delivery" value="3" >
+                    <input id="delivery3" class="custom-checkbox" type="radio" name="delivery" value="3" >
+                    <label for="delivery3">
                         <span>DPD - курьер, 3 дн.<b> 427 &#8381;</b></span>
                     </label>
                 </div>
@@ -169,9 +167,9 @@
         <div class="container">
             <img src="img/logo.png" alt="logo">
             <ul>
-                <li><a href="#">Каталог товаров</a></li>
+                <li><a href="index.html#catalog">Каталог товаров</a></li>
                 <li><a href="#">Блог</a></li>
-                <li><a href="#">Контакты</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
             </ul>
         </div>
     </div> 

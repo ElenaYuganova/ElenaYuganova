@@ -15,15 +15,13 @@
                 <img src="img/logo.png" alt="logo">
             </div>
             <ul>
-                <li><a href="catalog-coffee.html">Каталог товаров</a></li>
+                <li><a href="index.html#catalog">Каталог товаров</a></li>
                 <li><a href="#">Блог</a></li>
                 <li><a href="contacts.html">Контакты</a></li>
             </ul>
             <ul>
                 <li>
-                    <a href="#">
-                        <img src="img/search.svg" alt="search" title="Поиск">
-                    </a>
+                    <input class="fs-20" type="text" placeholder="Поиск по товарам">
                 </li>
                 <li>
                     <a href="basket.html">
@@ -41,9 +39,9 @@
     <div class="card-coffee">
         <div class="container">
             <div class="card-coffee-top">
-                <a href="#">Главная &bull; </a>
-                <a href="#">Каталог товаров &bull; </a>
-                <a href="#">Свежеобжаренный кофе &bull; </a>
+                <a href="index.html">Главная &bull; </a>
+                <a href="index.html#catalog">Каталог товаров &bull; </a>
+                <a href="catalog-coffee.html">Свежеобжаренный кофе &bull; </a>
                 <a href="#">Карточка товара название</a>
             </div>
             <div class="card-coffee-main">
@@ -117,16 +115,15 @@
             </div>
         </div>
     </div>
-    <div class="slider-vertic">
+    <div class="slider-vertic" id="slider">
         <div class="container">
-            <button><a href="#">Описание</a></button>
-            <button><a href="#">Как готовить?</a></button>
-            <button><a href="#">Дополнительно</a></button>
-            <button><a href="#">Отзывы</a></button>
-
+            <button><a href="#one">Описание</a></button>
+            <button><a href="#two">Как готовить?</a></button>
+            <button><a href="#three">Дополнительно</a></button>
+            <button><a href="#four">Отзывы</a></button>
         </div>
     </div>
-    <div class="coffee-info">
+    <div class="coffee-info" id="one">
         <div class="container">
             <div>
                 <div class="taste">
@@ -165,7 +162,7 @@
             </div>
         </div>
     </div>
-    <div class="prepared">
+    <div class="prepared" id="two">
         <div class="container">
             <h4>Как готовить?</h4>
             <div class="sorting-coffee-bottom">
@@ -204,7 +201,7 @@
             </div>
         </div>
     </div>
-    <div class="additional">
+    <div class="additional" id="three">
         <div class="container">
             <h4>Дополнительно</h4>
             <p>Разнообразный и богатый опыт новая модель организационной деятельности позволяет оценить значение позиций, занимаемых участниками в отношении поставленных задач. Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм деятельности в значительной степени обуславливает создание модели развития.
@@ -230,7 +227,7 @@
 
         </div>
     </div>
-    <div class="reviews-top">
+    <div class="reviews-top" id="four">
         <div class="container">
             <h4>Отзывы</h4>
         </div>
@@ -317,15 +314,30 @@
         <div class="container">
             <img src="img/logo.png" alt="logo">
             <ul>
-                <li><a href="#">Каталог товаров</a></li>
+                <li><a href="index.html#catalog">Каталог товаров</a></li>
                 <li><a href="#">Блог</a></li>
-                <li><a href="#">Контакты</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
             </ul>
         </div>
     </div>    
 
 
-            
+   <!--подключили библиотеку jquery.com > jQuery 3.x > jQuery Core 3.6.0 > minified!-->
+   <script
+   src="https://code.jquery.com/jquery-3.6.0.min.js"
+   integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+   crossorigin="anonymous"></script>
+     
+     <script>
+         $(document).ready(function() {
+             $('#slider').on('click', 'a', function(e) { 
+                 e.preventDefault(); 
+                 var id = $(this).attr('href'); 
+                 var top = $(id).offset().top-160; 
+                 $('html, body').animate({scrollTop: top}, 1500); 
+             })
+         })
+     </script>         
     
 </body>
 </html>

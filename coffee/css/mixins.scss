@@ -1,5 +1,6 @@
 @import "variables.scss";
 
+//1й вид кнопок
 @mixin btn-orange {
     background-color: $orange;
     font-weight: $semi-bold;
@@ -8,6 +9,10 @@
     font-family: $ff;
     border: none;
     cursor: pointer;
+}
+
+@mixin btn-orange-hover {
+    background-color: $orange-hover;
 }
 
 @mixin btn-big ($w) {
@@ -34,6 +39,7 @@
     @include btn-orange;
 }
 
+//2й вид кнопок
 @mixin btn-select {
     height: 60px;
     font-family: $ff;
@@ -57,5 +63,37 @@
     border: 1px solid $orange;
     @include btn-select;
 }
+
+//3й вид кнопок
+@mixin btn-show-more {
+    cursor: pointer;
+    border: none;
+    background: none;
+    height: 45px;
+    font-weight: $regular;
+    font-size: $fs20;
+    line-height: 24px;
+}
+
+@mixin btn-show-black {
+    text-decoration-line: underline;
+    padding-left: 30px;
+    padding-right: 30px;
+    @include btn-show-more;
+}
+
+@mixin btn-show-orange {
+    color: $orange;
+    padding-left: 24px;
+    padding-right: 21px;
+    @include btn-show-more;
+}
+
+@mixin btn-show-active {
+    background: $gray-bg3;
+    border-radius: 30px;
+    color: $orange;
+}
+
 
 

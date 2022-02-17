@@ -73,6 +73,7 @@
                 align-items: center;
                 & > img {
                     width: 21px;
+                    cursor: pointer;
                 }
                 & > div {
                     display: flex;
@@ -120,10 +121,13 @@
                 border-radius: 5px;
                 font-weight: $regular;
                 font-size: $fs20;
-                line-height: 24px;
-                
+                line-height: 24px;                
                 padding-left: 60px;
                 margin-bottom: 20px;
+                outline: none;
+                &:hover {
+                    border: 1px solid $orange;
+                }
             }
             input:not(:last-child)::placeholder {
                 color: $gray-text;
@@ -140,6 +144,7 @@
                 cursor: pointer;
                 color: $orange;
                 margin-top: 20px;
+                
             }
         }
     }
@@ -187,6 +192,10 @@
                 font-size: $fs20;
                 line-height: 24px;
                 padding-left: 60px;
+                outline: none;
+                &:hover {
+                    border: 1px solid $orange;
+                }
             }
             & > input::placeholder {
                 color: $gray-text;
@@ -220,22 +229,29 @@
             }
             & > div {
                 margin-bottom: 30px;
-                input {
+                & > label {
+                    padding-left: 109px;
+                    padding-bottom: 10px;
+                    span {
+                        padding-bottom: 0;
+                    }
+                }
+                label:nth-child(3) {
+                    padding-left: 8px;
+                }
+                .custom-checkbox+label::before {
                     width: 16px;
                     height: 16px;
-                }
-                & > label:not(:nth-child(2)) {
-                    display: inline-block;
-                    padding-left: 109px;
-                }
-                label:nth-child(2) {
-                    padding-left: 10px;
+                    margin-right: 10px;
                 }
             }
             button {
                 @include btn-product (100%);
                 height: 70px;
                 font-weight: $medium;
+                &:hover {
+                    background: $orange-hover;
+                }
             }
             p {
                 padding-top: 10px;
