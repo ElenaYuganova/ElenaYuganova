@@ -9,7 +9,7 @@
     <title>Catalog-coffee</title>
 </head>
 <body>
-    <div class="header-top">
+    <div class="header-top header-fixed">
         <div class="container">
             <div>
                 <img src="img/logo.png" alt="logo">
@@ -25,12 +25,12 @@
                 </li>
                 <li>
                     <a href="basket.html">
-                        <img src="img/basket.svg" alt="basket" title="Корзина">
+                        <svg width="37" height="35"><use xlink:href="img/icons.svg#basket"></use></svg>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <img src="img/account.svg" alt="account" title="Вход в аккаунт">
+                        <svg width="33" height="36"><use xlink:href="img/icons.svg#account"></use></svg>
                     </a>
                 </li>
             </ul>
@@ -52,23 +52,23 @@
                     <h5>Степень обжарки</h5>
                     <input id="roast1" class="custom-checkbox" type="radio" name="roast" value="5" checked>
                     <label for="roast1">
-                        <img src="img/5grains.svg" alt="roast">
+                        <svg width="160" height="24"><use xlink:href="img/icons.svg#5grains"></use></svg>
                     </label>
                     <input id="roast2" class="custom-checkbox" type="radio" name="roast" value="4">
                     <label for="roast2">
-                        <img src="img/4grains.svg" alt="roast">
+                        <svg width="126" height="24"><use xlink:href="img/icons.svg#4grains"></use></svg>
                     </label>
                     <input id="roast3" class="custom-checkbox" type="radio" name="roast" value="3">
                     <label for="roast3">
-                        <img src="img/3grains.svg" alt="roast">
+                        <svg width="92" height="24"><use xlink:href="img/icons.svg#3grains"></use></svg>
                     </label>
                     <input id="roast4" class="custom-checkbox" type="radio" name="roast" value="2">
                     <label for="roast4">
-                        <img src="img/2grains.svg" alt="roast">
+                        <svg width="58" height="24"><use xlink:href="img/icons.svg#2grains"></use></svg>
                     </label>
                     <input id="roast5" class="custom-checkbox" type="radio" name="roast" value="1">
                     <label for="roast5">
-                        <img src="img/1grain.svg" alt="roast">
+                        <svg width="24" height="24"><use xlink:href="img/icons.svg#1grain"></use></svg>
                     </label>
                 </div>
                 <div>
@@ -142,35 +142,35 @@
             <div class="sorting-coffee-bottom">
                 <div>
                     <span>Турка</span>
-                    <svg width="82" height="77"><use xlink:href="icons.svg#turka"></use></svg>
+                    <svg width="82" height="77"><use xlink:href="img/icons.svg#turka"></use></svg>
                 </div>
                 <div>
                     <span>Френч-пресс</span>
-                    <svg width="67" height="79"><use xlink:href="icons.svg#press"></use></svg>
+                    <svg width="67" height="79"><use xlink:href="img/icons.svg#press"></use></svg>
                 </div>
                 <div>
                     <span>Мока</span>
-                    <svg width="74" height="84"><use xlink:href="icons.svg#mokka"></use></svg>
+                    <svg width="74" height="84"><use xlink:href="img/icons.svg#mokka"></use></svg>
                 </div>
                 <div>
                     <span>Эспрессо</span>
-                    <svg width="76" height="79"><use xlink:href="icons.svg#espresso"></use></svg>
+                    <svg width="76" height="79"><use xlink:href="img/icons.svg#espresso"></use></svg>
                 </div>
                 <div>
                     <span>Воронка</span>
-                    <svg width="54" height="73"><use xlink:href="icons.svg#funnel"></use></svg>
+                    <svg width="54" height="73"><use xlink:href="img/icons.svg#funnel"></use></svg>
                 </div>
                 <div>
                     <span>Аэропресс</span>
-                    <svg width="41" height="83"><use xlink:href="icons.svg#airpress"></use></svg>
+                    <svg width="41" height="83"><use xlink:href="img/icons.svg#airpress"></use></svg>
                 </div>
                 <div>
                     <span>Чашка</span>
-                    <svg width="67" height="66"><use xlink:href="icons.svg#coffee-cup"></use></svg>
+                    <svg width="67" height="66"><use xlink:href="img/icons.svg#coffee-cup"></use></svg>
                 </div>
                 <div>
                     <span>Автомат</span>
-                    <svg width="64" height="84"><use xlink:href="icons.svg#machine"></use></svg>
+                    <svg width="64" height="84"><use xlink:href="img/icons.svg#machine"></use></svg>
                 </div>
 
             </div>
@@ -179,15 +179,15 @@
     <div class="items">
         <div class="container">
             <div class="sorting">
-                <form method="post" action="https://fe.it-academy.by/TestForm.php">
-                    <span>Сортировка</span>
-                    <select name="sort">
-                        <option value="1">По возрастанию цены</option>
-                        <option value="2" selected>По убыванию цены</option>
-                        <option value="3">По рейтингу</option>
-                        <option value="4">По кислотности</option>
-                    </select>
-                </form>
+                <span id="open">Сортировка</span>
+                <ul id="list">
+                    <li>По возрастанию цены</li>
+                    <li>По убыванию цены</li>
+                    <li>По рейтингу</li>
+                    <li>По кислотности</li>
+                </ul>
+                <div id="shadow"></div>
+                
 
             </div>
             <div class="cards-main">
@@ -256,7 +256,7 @@
             priceSale: "250 &#8381;"
         },
         {
-            imgSale: "img/persent.svg",
+            imgSale: "img/icons.svg#percent",
             choice1: "Популярное",
             choice2: "Новый урожай",
             imgUrl: "img/card01.jpg",
@@ -380,7 +380,7 @@
         var str = "";
         for(let i=0; i<card.length; i++) {
             var item = card[i];
-            var circleImg = item.imgSale ? `<img src="${item.imgSale}" alt="sale">` : '';
+            var circleImg = item.imgSale ? `<svg width="70" height="70"><use xlink:href="${item.imgSale}"></use></svg>` : '';
             str += `<div class="card">
                         <div class="card-top">
                             <div>
@@ -436,7 +436,9 @@
                                 </div>
                             </div>
                         </div>
-                        <h6>${item.title}</h6>
+                        <h6>
+                            <a href="card-product.html">${item.title}</a>
+                        </h6>
                         <p>${item.titleSmall}</p>
                         <div class="price">
                             <span>${item.price}</span>
@@ -448,6 +450,19 @@
         }
     cardWrap.innerHTML = str;
         
+    </script>
+    <script>
+        var shadow = document.getElementById('shadow');
+        var list = document.getElementById('list');
+        var open = document.getElementById('open');
+            shadow.addEventListener('click', function (e) {
+                e.currentTarget.style.display = 'none';
+                list.style.display = 'none';
+            });
+            open.addEventListener('click', function() {
+                shadow.style.display = 'block';
+                list.style.display = 'block';
+            })
     </script>
 
 </body>

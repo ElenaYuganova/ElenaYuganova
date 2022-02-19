@@ -9,7 +9,7 @@
     <title>Basket</title>
 </head>
 <body>
-    <div class="header-top">
+    <div class="header-top header-fixed">
         <div class="container">
             <div>
                 <img src="img/logo.png" alt="logo">
@@ -25,12 +25,12 @@
                 </li>
                 <li>
                     <a href="basket.html">
-                        <img src="img/basket.svg" alt="basket" title="Корзина">
+                        <svg width="37" height="35"><use xlink:href="img/icons.svg#basket"></use></svg>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <img src="img/account.svg" alt="account" title="Вход в аккаунт">
+                        <svg width="33" height="36"><use xlink:href="img/icons.svg#account"></use></svg>
                     </a>
                 </li>
             </ul>
@@ -52,42 +52,11 @@
                     <span>Наименование товара</span>
                     <span>Цена</span>
                     <span>Количество</span>
-                    <span>Скидка (10&percnt;)</span>
+                    <span>Скидка &lpar;10&percnt;&rpar;</span>
                     <span>Итого</span>
                 </div>
-                <div class="basket-line">
-                    <img src="img/delete.svg" alt="delete">
-                    <div>
-                        <img src="img/card01.jpg" alt="card">
-                        <div>
-                            <h6>Columbia Supremo</h6>
-                            <p class="fs-18">Мытая, натуральная, смесь</p>
-                            <p class="fs-18">250 г.</p>
-                        </div>
-                    </div>
-                    <span>270 &#8381;</span>
-                    <div></div>
-                    <span>27 &#8381;</span>
-                    <span>243 &#8381;</span>
-                </div>
-                <div class="basket-line">
-                    <img src="img/delete.svg" alt="delete">
-                    <div>
-                        <img src="img/card01.jpg" alt="card">
-                        <div>
-                            <h6>Columbia Supremo</h6>
-                            <p class="fs-18">Мытая, натуральная, смесь</p>
-                            <p class="fs-18">250 г.</p>
-                        </div>
-                    </div>
-                    <span>270 &#8381;</span>
-                    <div></div>
-                    <span>27 &#8381;</span>
-                    <span>243 &#8381;</span>
-                </div>
-               
-
-               
+                <!--здесь цикл с карточками-->
+                <div id="card-wrap2"></div>
             </div>
         </div>
     </div>
@@ -173,6 +142,87 @@
             </ul>
         </div>
     </div> 
+
+    <script>
+        var cardWrap2 = document.getElementById("card-wrap2");
+       
+        var card = [
+        {
+            imgUrl: "img/card01.jpg",
+            title: "Colombia Supremo",
+            titleDescr: "Мытая, натуральная, смесь",
+            weight: "250 г.",
+            price: "270 &#8381;", 
+            sale: "27 &#8381;",
+            sum: "243 &#8381;" 
+        },
+        {
+            imgUrl: "img/card01.jpg",
+            title: "Colombia Supremo",
+            titleDescr: "Мытая, натуральная, смесь",
+            weight: "250 г.",
+            price: "270 &#8381;", 
+            sale: "27 &#8381;",
+            sum: "243 &#8381;" 
+        },
+        ]
+        
+        var str = "";
+        for(let i=0; i<card.length; i++) {
+            var item = card[i];
+                str += `<div class="basket-line">
+                        <svg width="25" height="25"><use xlink:href="img/icons.svg#delete"></use></svg>
+                        <div>
+                            <img src="${item.imgUrl}" alt="card">
+                            <div>
+                                <h6>${item.title}</h6>
+                                <p class="fs-18">${item.titleDescr}</p>
+                                <p class="fs-18">${item.weight}</p>
+                            </div>
+                        </div>
+                        <span>${item.price}</span>
+                        <div class="counter">
+                            <span id="minus">-</span>
+                            <p id="res"></p>
+                            <span id="plus">+</span>
+                        </div>
+                        <span>${item.sale}</span>
+                        <span>${item.sum}</span>
+                    </div>`;    
+        }
+    cardWrap2.innerHTML = str;
+        
+    </script>
+
+    <script >
+        var minus = document.getElementById("minus");
+        var plus = document.getElementById("plus");
+        var res = document.getElementById("res");
+        
+        let count = 1;
+    
+        minus.addEventListener('click', function (){
+            if(count <= 1) {
+                return;
+            }
+            count--;
+            render();
+        });
+    
+        plus.addEventListener('click', function (){
+            count++;
+            render();
+        });
+    
+        render();
+        function render() {
+            res.innerText = count.toString();
+        }
+
+    </script>
+
+
+
 
 </body>
 </html>

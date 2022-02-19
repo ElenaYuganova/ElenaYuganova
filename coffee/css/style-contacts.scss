@@ -1,12 +1,5 @@
 @import "style-common.scss";
 
-.header-top {
-    background: $white;
-    box-shadow: 0px 5px 20px rgba(157, 157, 157, 0.25);
-    position: fixed;
-    z-index: 10;
-    width: 100%;
-}
 .contacts {
     background: url(../img/background12-pink.svg) center 895px no-repeat;
     padding-top: 160px;
@@ -62,7 +55,7 @@
                         transition: transform 0.5s;
                         transform: scale(1.3);
                         @include btn-active (180px);
-                        height: 50px;
+                        height: 48px;
                         margin-top: 7px;
                         margin-left: 25px;
                         & > p {

@@ -4,7 +4,6 @@
     background: url(../img/background1.svg) no-repeat top right,
                 url(../img/grains2.png) no-repeat 0 1550px,
                 url(../img/background2.svg) no-repeat 0 1050px;
-    
     .header {
         .container {
             position: relative;
@@ -123,21 +122,23 @@
                 }
             }
             .cards-main {
-                padding-right: 135px;
-                padding-left: 275px;
+                padding-right: 130px;
+                padding-left: 270px;
                 position: relative;
                 .card {
                     margin-top: 40px;
                     margin-bottom: 20px;
                     margin-left: auto;
                     margin-right: auto;
+                    box-shadow: 0px 0px 13px rgba(146, 146, 146, 0.15);;
                 }
                 
                 .slick-prev {
                     border: none;
-                    background: url(../img/arrow-left.svg) no-repeat center left;
-                    width: 70px;
-                    height: 70px;
+                    //background: url("../img/icons.svg#arrow") no-repeat center left;
+                    background: url(../img/arrow.svg) no-repeat center left;
+                    width: 71px;
+                    height: 71px;
                     color: transparent;
                     position: absolute;
                     top: 50%;
@@ -145,7 +146,8 @@
                 }
                 .slick-next {
                     border: none;
-                    background: url(../img/arrow-right.svg) no-repeat center right;
+                    background: url(../img/arrow.svg) no-repeat center right;
+                    transform: rotate(180deg);
                     width: 71px;
                     height: 71px;
                     color: transparent;
@@ -202,10 +204,11 @@
                     &:last-child {
                         padding-bottom: 68px;
                     }
-                    img {
-                        padding-right: 50px;
+                    svg {
+                        flex-shrink: 0;
                     }
                     div {
+                        margin-left: 50px;
                         p {
                             padding-top: 20px;
                         }
@@ -343,7 +346,7 @@
     }
 }
 .networks {
-    background: url(../img/svg-editor-image.svg) center repeat-y;
+    background: url(../img/background-pink-small.svg) center repeat-y;
     & > div {
         background: url(../img/background-orange-center.svg) no-repeat center;
         background-position-y: 450px;
@@ -383,7 +386,7 @@
                         margin-right: 20px;
                         border-radius: 10px;
                     }
-                    & > img:last-child {
+                    & > svg:last-child {
                         position: absolute;
                         right: 0;
                         top: 360px;

@@ -12,6 +12,9 @@ body {
     font-family: $ff;
     font-size: $fs-main;
     color: $black;
+    width: 1904px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .container {
     margin: 0 auto;
@@ -94,9 +97,18 @@ p {
         ul:nth-child(3) {
             height: 59px;
             padding-top: 9px;
+            & > li {
+                svg {
+                    fill: transparent;
+                    stroke: $black;
+                }
+            }
             & > li:nth-child(2) {
                 padding-left: 53px;
                 padding-right: 53px;
+            }
+            & > li:nth-child(3) {
+                padding-right: 0;
             }
             & > li:nth-child(1) {
                 position: relative;
@@ -129,6 +141,25 @@ p {
             }
         }
     }
+}
+.header-fixed {
+    background: $white;
+    box-shadow: 0px 5px 20px rgba(157, 157, 157, 0.25);
+    position: fixed;
+    z-index: 10;
+    width: 1904px;
+    .container {
+        ul:nth-child(3) {
+            li {
+                svg:hover {
+                    stroke: $orange;
+                }
+                input:hover {
+                    background: url(../img/search-orange.svg) no-repeat top left;
+                }
+            }
+        }
+    } 
 }
 .card {
         width: 400px;
@@ -469,6 +500,27 @@ p {
     }
     &:checked+label::before {
         background-color: $orange;
+    }
+}
+.counter {
+    background: $gray-select;
+    border: 1px solid #D6D6D6;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    span {
+        font-size: $fs-main;
+        line-height: 30px;
+        color: $gray2-border;
+        &:hover {
+            color: $black;
+        }
+    }
+    & > p {
+        font-weight: $medium;
+        font-size: $fs20;
+        line-height: 24px;
     }
 }
 

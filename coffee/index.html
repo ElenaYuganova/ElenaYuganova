@@ -27,12 +27,12 @@
                 </li>
                 <li>
                     <a href="basket.html">
-                        <img src="img/basket.svg" alt="basket" title="Корзина">
+                        <svg width="37" height="35"><use xlink:href="img/icons.svg#basket"></use></svg>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <img src="img/account.svg" alt="account" title="Вход в аккаунт">
+                        <svg width="33" height="36"><use xlink:href="img/icons.svg#account"></use></svg>
                     </a>
                 </li>
             </ul>
@@ -90,7 +90,7 @@
             <h3>Товары со скидкой</h3>
             <p>Наша компания предлагает покупать товар со скидкой не только в дни распродаж 
                 или в течение действия ограниченных предложений, но и пользоваться скидками постоянно!</p>
-            <!--card-wrap2 передается информация из цикла-->
+            
             <div class="cards-main" id="card-wrap2"></div>
             <button>
                 <a href="#">Смотреть все</a>
@@ -113,21 +113,21 @@
                 <div class="present-body-descr">
                     
                     <div>
-                        <img src="img/cup.svg" alt="cup">
+                        <svg width="84" height="84"><use xlink:href="img/icons.svg#cup"></use></svg>
                         <div>
                             <h5>Всегда свежая обжарка</h5>
                             <p>Подбор степени обжарки под каждый сорт кофе. Всегда свежая обжарка</p>
                         </div>
                     </div>
                     <div>
-                        <img src="img/sale.svg" alt="sale">
+                        <svg width="84" height="84"><use xlink:href="img/icons.svg#sale"></use></svg>
                         <div>
                             <h5>Лучшие цены на продукцию</h5>
                             <p>Благодаря крупным объемам производства мы даем лучшие цены на нашу продукцию</p>
                         </div>
                     </div>
                     <div>
-                        <img src="img/assistant.svg" alt="assistant">
+                        <svg width="84" height="84"><use xlink:href="img/icons.svg#assistant"></use></svg>
                         <div>
                             <h5>Консультации 24/7</h5>
                             <p>Наши специалисты готовы всегда помочь 
@@ -218,7 +218,7 @@
                 <div class="networks-top">
                     <h3>Мы в инстаграм</h3>
                     <a href="#">
-                        <img src="img/instagram.svg" alt="instagram">
+                        <svg width="86" height="86"><use xlink:href="img/icons.svg#instagram"></use></svg>
                     </a>
                 </div>
                 <div class="networks-body">
@@ -231,7 +231,7 @@
                         <img src="img/foto-space.jpg" alt="foto">
                         <img src="img/foto-space.jpg" alt="foto">
                         <img src="img/foto-space.jpg" alt="foto">
-                        <img src="img/arrow-right-white.svg" alt="arrow">
+                        <svg width="70" height="70"><use xlink:href="img/icons.svg#arrow-white"></use></svg>
                     </div>
 
                 </div>
@@ -299,7 +299,19 @@
    
     var card = [
     {
-        imgSale: "img/persent.svg",
+        imgSale: "img/icons.svg#percent",
+        choice1: "Популярное",
+        choice2: "Скидки",
+        imgUrl: "img/card01.jpg",
+        rating: 4.0,
+        reviews: "(32 отзыва)",
+        title: "Colombia Supremo",
+        titleSmall: "Свежеобжаренный кофе - описание товара, вкус, аромат",
+        price: "", 
+        priceSale: "250 &#8381;",
+    },
+    {
+        imgSale: "img/icons.svg#percent",
         choice1: "Популярное",
         choice2: "Скидки",
         imgUrl: "img/card01.jpg",
@@ -311,19 +323,7 @@
         priceSale: "250 &#8381;"
     },
     {
-        imgSale: "img/persent.svg",
-        choice1: "Популярное",
-        choice2: "Скидки",
-        imgUrl: "img/card01.jpg",
-        rating: 4.0,
-        reviews: "(32 отзыва)",
-        title: "Colombia Supremo",
-        titleSmall: "Свежеобжаренный кофе - описание товара, вкус, аромат",
-        price: "", 
-        priceSale: "250 &#8381;"
-    },
-    {
-        imgSale: "img/persent.svg",
+        imgSale: "img/icons.svg#percent",
         choice1: "Популярное",
         choice2: "Скидки",
         imgUrl: "img/card01.jpg",
@@ -335,7 +335,7 @@
         priceSale: "250 &#8381;"
     },
     {
-        imgSale: "img/persent.svg",
+        imgSale: "img/icons.svg#percent",
         choice1: "Популярное",
         choice2: "Скидки",
         imgUrl: "img/card01.jpg",
@@ -347,7 +347,7 @@
         priceSale: "250 &#8381;"
     },
     {
-        imgSale: "img/persent.svg",
+        imgSale: "img/icons.svg#percent",
         choice1: "Популярное",
         choice2: "Скидки",
         imgUrl: "img/card01.jpg",
@@ -359,7 +359,7 @@
         priceSale: "250 &#8381;"
     },
     {
-        imgSale: "img/persent.svg",
+        imgSale: "img/icons.svg#percent",
         choice1: "Популярное",
         choice2: "Скидки",
         imgUrl: "img/card01.jpg",
@@ -379,7 +379,7 @@
                         <div class="card">
                             <div class="card-top">
                                 <div>
-                                    <img src="${item.imgSale}" alt="sale">
+                                    <svg width="70" height="70"><use xlink:href="${item.imgSale}"></use></svg>
                                 </div>
                                 <div>
                                     <span>${item.choice1}</span>
@@ -399,7 +399,7 @@
                                 </a>
                                 <div>
                                     <div class="stars">
-                                        <span class="star full"></span><span class="star full"></span><span class="star full"></span><span class="star full"></span><span class="star"></span>
+                                        <span class="star full"></span><span class="star full"></span><span class="star full"></span><span class="star full"></span><span class="star"></span>                                        
                                     </div>
                                     <div class="rating">
                                         <span>${item.rating}</span><span>${item.reviews}</span>
@@ -431,7 +431,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <h6>${item.title}</h6>
+                            <h6>
+                                <a href="card-product.html">${item.title}</a>
+                            </h6>
                             <p>${item.titleSmall}</p>
                             <div class="price">
                                 <span>${item.price}</span>

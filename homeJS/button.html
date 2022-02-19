@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+    </style>
+</head>
+<body>
+    <div class="counter">
+        <span id="minus">-</span>
+        <p id="res"></p>
+        <span id="plus">+</span>
+    </div>
+
+
+  <script >
+    var minus = document.getElementById("minus");
+    var plus = document.getElementById("plus");
+    var res = document.getElementById("res");
+
+    let count = 1;
+
+    minus.addEventListener('click', function (){
+        if(count <= 1) {
+            return;
+        }
+        count--;
+        render();
+    });
+
+    plus.addEventListener('click', function (){
+        count++;
+        render();
+    });
+
+    render();
+    function render() {
+        res.innerText = count.toString();
+    }
+
+</script>
+</body>
+</html>

@@ -9,7 +9,7 @@
     <title>Card-product</title>
 </head>
 <body>
-    <div class="header-top">
+    <div class="header-top header-fixed">
         <div class="container">
             <div>
                 <img src="img/logo.png" alt="logo">
@@ -25,12 +25,12 @@
                 </li>
                 <li>
                     <a href="basket.html">
-                        <img src="img/basket.svg" alt="basket" title="Корзина">
+                        <svg width="37" height="35"><use xlink:href="img/icons.svg#basket"></use></svg>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <img src="img/account.svg" alt="account" title="Вход в аккаунт">
+                        <svg width="33" height="36"><use xlink:href="img/icons.svg#account"></use></svg>
                     </a>
                 </li>
             </ul>
@@ -42,7 +42,7 @@
                 <a href="index.html">Главная &bull; </a>
                 <a href="index.html#catalog">Каталог товаров &bull; </a>
                 <a href="catalog-coffee.html">Свежеобжаренный кофе &bull; </a>
-                <a href="#">Карточка товара название</a>
+                <a href="#">Карточка товара Colombia Supremo</a>
             </div>
             <div class="card-coffee-main">
                 <div class="card-coffee-pict">
@@ -95,16 +95,20 @@
                     </div>
                     <div class="descr-bottom">
                         <div>
-                            <label>
-                                <input type="radio" name="weight" value="250">250 г.
-                            </label>
-                            <label>
-                                <input type="radio" name="weight" value="1000">1000 г.
-                            </label>
+                            <input id="weight1" class="custom-checkbox" type="radio" name="weight" value="250" checked>
+                            <label for="weight1">250 г.</label>
+                            <input id="weight2" class="custom-checkbox" type="radio" name="weight" value="1000">
+                            <label for="weight2">1000 г.</label>
                         </div>
                         <div>
-                            <button> <a href="basket.html">Купить за 250 &#8381;</a>
-                                </button> 
+                            <div class="counter">
+                                <span id="minus">-</span>
+                                <p id="res"></p>
+                                <span id="plus">+</span>
+                            </div>
+                            <button>
+                                <a href="basket.html">Купить за 250 &#8381;</a>
+                            </button> 
                         </div>                      
                     </div>
 
@@ -168,36 +172,37 @@
             <div class="sorting-coffee-bottom">
                 <div>
                     <span>Турка</span>
-                    <img src="img/turka.svg" alt="method">
+                    <svg width="82" height="77"><use xlink:href="img/icons.svg#turka"></use></svg>
                 </div>
                 <div>
                     <span>Френч-пресс</span>
-                    <img src="img/french-press.svg" alt="method">
+                    <svg width="67" height="79"><use xlink:href="img/icons.svg#press"></use></svg>
                 </div>
                 <div>
                     <span>Мока</span>
-                    <img src="img/mokka.svg" alt="method">
+                    <svg width="74" height="84"><use xlink:href="img/icons.svg#mokka"></use></svg>
                 </div>
                 <div>
                     <span>Эспрессо</span>
-                    <img src="img/espresso.svg" alt="method">
+                    <svg width="76" height="79"><use xlink:href="img/icons.svg#espresso"></use></svg>
                 </div>
                 <div>
                     <span>Воронка</span>
-                    <img src="img/voronka.svg" alt="method">
+                    <svg width="54" height="73"><use xlink:href="img/icons.svg#funnel"></use></svg>
                 </div>
                 <div>
                     <span>Аэропресс</span>
-                    <img src="img/airpress.svg" alt="method">
+                    <svg width="41" height="83"><use xlink:href="img/icons.svg#airpress"></use></svg>
                 </div>
                 <div>
                     <span>Чашка</span>
-                    <img src="img/coffee-cup.svg" alt="method">
+                    <svg width="67" height="66"><use xlink:href="img/icons.svg#coffee-cup"></use></svg>
                 </div>
                 <div>
                     <span>Автомат</span>
-                    <img src="img/machine.svg" alt="method">
+                    <svg width="64" height="84"><use xlink:href="img/icons.svg#machine"></use></svg>
                 </div>
+
             </div>
         </div>
     </div>
@@ -245,7 +250,7 @@
                     <span>21.12.2020</span>
                 </div>
                 <div>
-                    <img src="img/review.svg" alt="logo-review">
+                    <img src="img/review.jpg" alt="logo-review">
                     <div>
                         <span>Ирина</span> <br>
                         <span>г. Москва</span>
@@ -263,7 +268,7 @@
                     <span>21.12.2020</span>
                 </div>
                 <div>
-                    <img src="img/review.svg" alt="logo-review">
+                    <img src="img/review.jpg" alt="logo-review">
                     <div>
                         <span>Ирина</span> <br>
                         <span>г. Москва</span>
@@ -281,7 +286,7 @@
                     <span>21.12.2020</span>
                 </div>
                 <div>
-                    <img src="img/review.svg" alt="logo-review">
+                    <img src="img/review.jpg" alt="logo-review">
                     <div>
                         <span>Ирина</span> <br>
                         <span>г. Москва</span>
@@ -337,7 +342,34 @@
                  $('html, body').animate({scrollTop: top}, 1500); 
              })
          })
-     </script>         
+     </script>  
+     
+     <script >
+        var minus = document.getElementById("minus");
+        var plus = document.getElementById("plus");
+        var res = document.getElementById("res");
+    
+        let count = 1;
+    
+        minus.addEventListener('click', function (){
+            if(count <= 1) {
+                return;
+            }
+            count--;
+            render();
+        });
+    
+        plus.addEventListener('click', function (){
+            count++;
+            render();
+        });
+    
+        render();
+        function render() {
+            res.innerText = count.toString();
+        }
+    
+    </script>
     
 </body>
 </html>
