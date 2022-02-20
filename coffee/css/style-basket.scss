@@ -1,7 +1,7 @@
 @import "style-common.scss";
 
 .basket {
-    background: url(../img/background-pink-1000.svg) top no-repeat;
+    background: url(../img/background-pink-small.svg) top repeat-y;
     padding-top: 160px;
     .container {
         .basket-top {
@@ -263,3 +263,5 @@
         }
     }
 }
+
+@import "media-basket.scss";

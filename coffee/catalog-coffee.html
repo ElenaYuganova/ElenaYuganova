@@ -85,7 +85,7 @@
                         <input id="geo5" class="custom-checkbox" type="radio" name="geography" value="5">
                         <label for="geo5">Азия</label>
                         <input id="geo6" class="custom-checkbox" type="radio" name="geography" value="6">
-                        <label for="geo5"> Центр. Америка</label>
+                        <label for="geo5">Центр. Америка</label>
                         <input id="geo7" class="custom-checkbox" type="radio" name="geography" value="7">
                         <label for="geo7">Лат. Америка</label>
                     </div>
@@ -95,32 +95,32 @@
                             <input id="sour1" class="custom-checkbox" type="radio" name="sour" value="1" checked>
                             <label for="sour1">Низкая</label>  
                             <input id="sour2" class="custom-checkbox" type="radio" name="sour" value="2">  
-                            <label for="sour3"> Средняя</label>    
+                            <label for="sour3">Средняя</label>    
                             <input id="sour3" class="custom-checkbox" type="radio" name="sour" value="3">
                             <label for="sour3">Высокая</label>  
                         </div>
                         <div class="processing">
                             <h6>Способ <br> обработки</h6>
                             <input id="proces1" class="custom-checkbox" type="radio" name="processing" value="1" checked>
-                            <label for="proces1"> Сухая</label>   
+                            <label for="proces1">Сухая</label>   
                             <input id="proces2" class="custom-checkbox" type="radio" name="processing" value="2">
                             <label for="proces2">Мытая</label>  
                             <input id="proces3" class="custom-checkbox" type="radio" name="processing" value="3">  
-                            <label for="proces3"> Прочие</label>  
+                            <label for="proces3">Прочие</label>  
                         </div>
                     </div>
                     <div class="special">
                         <h6>Особые</h6>
                         <input id="special1" class="custom-checkbox"  type="radio" name="special" value="1" checked>
-                        <label for="special1"> Популярное</label>    
+                        <label for="special1">Популярное</label>    
                         <input id="special2" class="custom-checkbox"  type="radio" name="special" value="2">
-                        <label for="special2"> Новый урожай</label> 
+                        <label for="special2">Новый урожай</label> 
                         <input id="special3" class="custom-checkbox"  type="radio" name="special" value="3">   
                         <label for="special3">Ваш выбор</label>    
                         <input id="special4" class="custom-checkbox"  type="radio" name="special" value="4">
-                        <label for="special4"> Микролот</label>   
+                        <label for="special4">Микролот</label>   
                         <input id="special5" class="custom-checkbox"  type="radio" name="special" value="5"> 
-                        <label for="special5"> Сорт недели</label>    
+                        <label for="special5">Сорт недели</label>    
                         <input id="special6" class="custom-checkbox"  type="radio" name="special" value="6">
                         <label for="special6">Скидки</label>  
                         <input id="special7" class="custom-checkbox"  type="radio" name="special" value="7">  
@@ -129,7 +129,7 @@
                     <div class="sort">
                         <h6>Вид кофе</h6>
                         <input id="sort1" class="custom-checkbox" type="radio" name="sort" value="1" checked>
-                        <label for="sort1"> Арабика</label>    
+                        <label for="sort1">Арабика</label>    
                         <input id="sort2" class="custom-checkbox" type="radio" name="sort" value="2">
                         <label for="sort2">Робуста</label> 
                         <input id="sort3" class="custom-checkbox" type="radio" name="sort" value="3">   
@@ -172,7 +172,6 @@
                     <span>Автомат</span>
                     <svg width="64" height="84"><use xlink:href="img/icons.svg#machine"></use></svg>
                 </div>
-
             </div>
         </div>
     </div>
@@ -187,14 +186,12 @@
                     <li>По кислотности</li>
                 </ul>
                 <div id="shadow"></div>
-                
-
             </div>
             <div class="cards-main">
                 <!--card-wrap передается информация из цикла-->
                 <div id="card-wrap"></div>
                 <div class="card-more">
-                        <a href="#">Показать еще</a>
+                    <a href="#">Показать еще</a>
                 </div>
             </div>
         </div>
@@ -227,243 +224,8 @@
         </div>
     </div>
 
-    <script>
-        var cardWrap = document.getElementById("card-wrap");
-       
-        var card = [
-        {
-            imgSale: "",
-            choice1: "Популярное",
-            choice2: "Новый урожай",
-            imgUrl: "img/card01.jpg",
-            rating: 4.0,
-            reviews: "(32 отзыва)",
-            title: "Colombia Supremo",
-            titleSmall: "Свежеобжаренный кофе - описание товара, вкус, аромат",
-            price: "", 
-            priceSale: "250 &#8381;"
-        },
-        {
-            imgSale: "",
-            choice1: "Популярное",
-            choice2: "Новый урожай",
-            imgUrl: "img/card01.jpg",
-            rating: 4.0,
-            reviews: "(32 отзыва)",
-            title: "Colombia Supremo",
-            titleSmall: "Свежеобжаренный кофе - описание товара, вкус, аромат",
-            price: "", 
-            priceSale: "250 &#8381;"
-        },
-        {
-            imgSale: "img/icons.svg#percent",
-            choice1: "Популярное",
-            choice2: "Новый урожай",
-            imgUrl: "img/card01.jpg",
-            rating: 4.0,
-            reviews: "(32 отзыва)",
-            title: "Colombia Supremo",
-            titleSmall: "Свежеобжаренный кофе - описание товара, вкус, аромат",
-            price: "350 &#8381;", 
-            priceSale: "250 &#8381;"
-        },
-        {
-            imgSale: "",
-            choice1: "Популярное",
-            choice2: "Новый урожай",
-            imgUrl: "img/card01.jpg",
-            rating: 4.0,
-            reviews: "(32 отзыва)",
-            title: "Colombia Supremo",
-            titleSmall: "Свежеобжаренный кофе - описание товара, вкус, аромат",
-            price: "", 
-            priceSale: "250 &#8381;"
-        },
-        {
-            imgSale: "",
-            choice1: "Популярное",
-            choice2: "Новый урожай",
-            imgUrl: "img/card01.jpg",
-            rating: 4.0,
-            reviews: "(32 отзыва)",
-            title: "Colombia Supremo",
-            titleSmall: "Свежеобжаренный кофе - описание товара, вкус, аромат",
-            price: "", 
-            priceSale: "250 &#8381;"
-        },
-        {
-            imgSale: "",
-            choice1: "Популярное",
-            choice2: "Новый урожай",
-            imgUrl: "img/card01.jpg",
-            rating: 4.0,
-            reviews: "(32 отзыва)",
-            title: "Colombia Supremo",
-            titleSmall: "Свежеобжаренный кофе - описание товара, вкус, аромат",
-            price: "", 
-            priceSale: "250 &#8381;"
-        },
-        {
-            imgSale: "",
-            choice1: "Популярное",
-            choice2: "Новый урожай",
-            imgUrl: "img/card01.jpg",
-            rating: 4.0,
-            reviews: "(32 отзыва)",
-            title: "Colombia Supremo",
-            titleSmall: "Свежеобжаренный кофе - описание товара, вкус, аромат",
-            price: "350 &#8381;", 
-            priceSale: "250 &#8381;"
-        },
-        {
-            imgSale: "",
-            choice1: "Популярное",
-            choice2: "Новый урожай",
-            imgUrl: "img/card01.jpg",
-            rating: 4.0,
-            reviews: "(32 отзыва)",
-            title: "Colombia Supremo",
-            titleSmall: "Свежеобжаренный кофе - описание товара, вкус, аромат",
-            price: "350 &#8381;", 
-            priceSale: "250 &#8381;"
-        },
-        {
-            imgSale: "",
-            choice1: "Популярное",
-            choice2: "Новый урожай",
-            imgUrl: "img/card01.jpg",
-            rating: 4.0,
-            reviews: "(32 отзыва)",
-            title: "Colombia Supremo",
-            titleSmall: "Свежеобжаренный кофе - описание товара, вкус, аромат",
-            price: "350 &#8381;", 
-            priceSale: "250 &#8381;"
-        },
-        {
-            imgSale: "",
-            choice1: "Популярное",
-            choice2: "Новый урожай",
-            imgUrl: "img/card01.jpg",
-            rating: 4.0,
-            reviews: "(32 отзыва)",
-            title: "Colombia Supremo",
-            titleSmall: "Свежеобжаренный кофе - описание товара, вкус, аромат",
-            price: "350 &#8381;", 
-            priceSale: "250 &#8381;"
-        },
-        {
-            imgSale: "",
-            choice1: "Популярное",
-            choice2: "Новый урожай",
-            imgUrl: "img/card01.jpg",
-            rating: 4.0,
-            reviews: "(32 отзыва)",
-            title: "Colombia Supremo",
-            titleSmall: "Свежеобжаренный кофе - описание товара, вкус, аромат",
-            price: "350 &#8381;", 
-            priceSale: "250 &#8381;"
-        },
-        {
-            imgSale: "",
-            choice1: "Популярное",
-            choice2: "Новый урожай",
-            imgUrl: "img/card01.jpg",
-            rating: 4.0,
-            reviews: "(32 отзыва)",
-            title: "Colombia Supremo",
-            titleSmall: "Свежеобжаренный кофе - описание товара, вкус, аромат",
-            price: "350 &#8381;", 
-            priceSale: "250 &#8381;"
-        }
-        ]
-        
-        var str = "";
-        for(let i=0; i<card.length; i++) {
-            var item = card[i];
-            var circleImg = item.imgSale ? `<svg width="70" height="70"><use xlink:href="${item.imgSale}"></use></svg>` : '';
-            str += `<div class="card">
-                        <div class="card-top">
-                            <div>
-                                ${circleImg}
-                            </div>
-                            <div>
-                                <span>${item.choice1}</span>
-                                <span>${item.choice2}</span>
-                            </div>
-                            <form method="post" action="https://fe.it-academy.by/TestForm.php">
-                                <select name="weight-item">
-                                    <option value="250">250г.</option>
-                                    <option value="500">500г.</option>
-                                    <option value="1000">1000г.</option>
-                                </select>
-                            </form>
-                        </div>
-                        <div class="card-body">
-                            <a href="card-product.html">
-                                    <img src="${item.imgUrl}" alt="coffee">
-                            </a>
-                            <div>
-                                <div class="stars">
-                                    <span class="star full"></span><span class="star full"></span><span class="star full"></span><span class="star full"></span><span class="star"></span>
-                                </div>
-                                <div class="rating">
-                                    <span>${item.rating}</span><span>${item.reviews}</span>
-                                </div>
-                                <div class="grains">
-                                    <span class="grain full"></span>
-                                    <span class="grain full"></span>
-                                    <span class="grain full"></span>
-                                    <span class="grain full"></span>
-                                    <span class="grain"></span>
-                                </div>
-                                <div class="specification">
-                                    <p>Кислинка</p> 
-                                    <p>
-                                        <span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round"></span><span class="round"></span><span class="round"></span>
-                                    </p>
-                                </div>
-                                <div class="specification">
-                                    <p>Горчинка</p>
-                                    <p>
-                                        <span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round"></span><span class="round"></span><span class="round"></span>
-                                    </p>
-                                </div>
-                                <div class="specification">
-                                    <p>Насыщенность</p>
-                                    <p>                                
-                                        <span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round full"></span><span class="round"></span><span class="round"></span><span class="round"></span>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <h6>
-                            <a href="card-product.html">${item.title}</a>
-                        </h6>
-                        <p>${item.titleSmall}</p>
-                        <div class="price">
-                            <span>${item.price}</span>
-                            <span>${item.priceSale}</span>
-                        </div>
-                        <button><a href="basket.html">В корзину</a>
-                        </button>
-                    </div>`;    
-        }
-    cardWrap.innerHTML = str;
-        
-    </script>
-    <script>
-        var shadow = document.getElementById('shadow');
-        var list = document.getElementById('list');
-        var open = document.getElementById('open');
-            shadow.addEventListener('click', function (e) {
-                e.currentTarget.style.display = 'none';
-                list.style.display = 'none';
-            });
-            open.addEventListener('click', function() {
-                shadow.style.display = 'block';
-                list.style.display = 'block';
-            })
-    </script>
+    <!--Подключили свой файл JS-->
+    <script type="text/javascript" src="JS/catalog.js"></script>
 
 </body>
 </html>

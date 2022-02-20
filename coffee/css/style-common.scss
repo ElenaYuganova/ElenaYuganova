@@ -1,7 +1,6 @@
 @import "../font/stylesheet.css";
 @import "variables.scss";
 @import "mixins.scss";
-@import "media.scss"; //потом переместить в конец документа, чтобы сработыли медиа
 
 * {
     margin: 0;
@@ -12,10 +11,12 @@ body {
     font-family: $ff;
     font-size: $fs-main;
     color: $black;
-    width: 1904px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
+    overflow-x: hidden;
 }
+
 .container {
     margin: 0 auto;
     width: $container-width;
@@ -147,14 +148,14 @@ p {
     box-shadow: 0px 5px 20px rgba(157, 157, 157, 0.25);
     position: fixed;
     z-index: 10;
-    width: 1904px;
+    width: 100%;
     .container {
         ul:nth-child(3) {
             li {
                 svg:hover {
                     stroke: $orange;
                 }
-                input:hover {
+                input:hover:not(:focus) {
                     background: url(../img/search-orange.svg) no-repeat top left;
                 }
             }
@@ -192,9 +193,7 @@ p {
                     font-size: $fs-card;
                     line-height: 22px;
                     color: $orange;
-                }
-                span:first-child {
-                    color: transparent;
+                    height: 27px;
                 }
             }
             form {
@@ -213,7 +212,10 @@ p {
         }
         .card-body {
             display: flex;
-            margin-top: 20px;
+            margin-top: 10px;
+            a {
+                margin-right: 16px;
+            }
             div {
                 & > .stars {
                     margin-top: 20px;
@@ -221,16 +223,15 @@ p {
                         display: inline-block;
                         width: 25px;
                         height: 25px;
-                        padding-right: 2px;
+                        margin-right: 2px;
                         background: url(../img/star-gray.svg) no-repeat center;
                     }
                         .star.full {
                             background: url(../img/star-orange.svg) no-repeat center;
                         }
                 }
-                img {
-                    padding-right: 16px;
-                }
+            
+                
                 .rating {
                     span:first-child {
                         font-weight: $semi-bold;
@@ -254,7 +255,7 @@ p {
                         display: inline-block;
                         width: 20px;
                         height: 19px;
-                    // padding-right: 2px;
+                        margin-right: 5px;
                         background: url(../img/grain-gray.svg) no-repeat center;
                         background-size: contain;
                     }
@@ -523,6 +524,8 @@ p {
         line-height: 24px;
     }
 }
+
+
 
 
 

@@ -1,3 +1,442 @@
+@media all and (max-width: 1660px) {
+  .container {
+    width: 1210px; }
 
+  .bg {
+    width: 100%; }
+    .bg .header-top .container ul:nth-child(3) > li:nth-child(1) input:focus {
+      width: 760px; }
+    .bg .header .container .header-descr {
+      padding-top: 60px; }
+    .bg .header .container .header-pict img:first-child {
+      right: -140px;
+      top: 120px; }
+    .bg .header .container .header-pict img:nth-child(2) {
+      right: -92px;
+      top: 194px; }
+    .bg .catalogs .cards .card-type-products {
+      width: auto; }
+      .bg .catalogs .cards .card-type-products:not(:last-child) {
+        margin-right: 10px; }
+      .bg .catalogs .cards .card-type-products button {
+        width: 250px;
+        height: 60px;
+        font-size: 25px;
+        line-height: 30px;
+        background-color: #F9B300;
+        font-weight: 700;
+        color: #FFFFFF;
+        border-radius: 5px;
+        font-family: "Gilroy", sans-serif;
+        border: none;
+        cursor: pointer; }
+      .bg .catalogs .cards .card-type-products h6 {
+        padding-left: 20px;
+        padding-right: 20px; }
+    .bg .catalogs .cards .card-type-products:hover h6 {
+      font-weight: 700;
+      font-size: 25px;
+      line-height: 31px; }
+    .bg .catalogs .cards .card-type-products:hover img {
+      left: 0px; }
+    .bg .catalogs .cards div.card-type-products:nth-child(4):hover > h6 {
+      padding-left: 70px;
+      padding-right: 70px; }
+    .bg .discount-items .container > p {
+      width: 800px; }
+    .bg .discount-items .container .cards-main {
+      padding-left: 45px;
+      padding-right: 45px; }
+      .bg .discount-items .container .cards-main .slick-prev {
+        left: 0px;
+        width: 40px;
+        height: 40px;
+        background-size: contain; }
+      .bg .discount-items .container .cards-main .slick-next {
+        width: 40px;
+        height: 40px;
+        background-size: contain; }
+    .bg .discount-items .container .card {
+      padding-left: 20px;
+      padding-right: 20px; }
+      .bg .discount-items .container .card .card-body a {
+        margin-right: 0px; }
+      .bg .discount-items .container .card button {
+        margin-left: 40px; }
+
+  .present .present-top .container h3 {
+    margin-right: 75px; }
+  .present .present-body .container .present-body-pict img:first-child {
+    top: -55px;
+    width: 566px; }
+  .present .present-body .container .present-body-pict img:last-child {
+    bottom: 214px;
+    width: 393px; }
+  .present .present-body .container .present-body-descr {
+    margin-left: 550px; }
+
+  .inform p {
+    width: 1050px; }
+
+  .news div div .container .news-first-str > div,
+  .news div div .container .news-second-str > div {
+    padding-bottom: 30px; }
+  .news div div .container .news-first-str > div:first-child,
+  .news div div .container .news-second-str > div:first-child {
+    height: auto;
+    padding-left: 40px;
+    padding-right: 40px; }
+    .news div div .container .news-first-str > div:first-child img,
+    .news div div .container .news-second-str > div:first-child img {
+      display: none; }
+  .news div div .container .news-first-str > div:last-child,
+  .news div div .container .news-second-str > div:last-child {
+    padding-left: 40px;
+    padding-right: 40px;
+    height: auto; }
+
+  .networks .container .networks-body > div:last-child img:nth-child(3),
+  .networks .container .networks-body > div:last-child img:nth-child(4) {
+    display: none; }
+
+  .subscribe .container p {
+    width: 650px; }
+  .subscribe .container .subscribe-form {
+    padding-top: 60px;
+    padding-bottom: 20px;
+    position: relative; }
+    .subscribe .container .subscribe-form input {
+      width: 680px; }
+    .subscribe .container .subscribe-form button {
+      right: 530px; }
+  .subscribe .container span {
+    width: 500px;
+    display: inline-block; }
+  .subscribe .container .subscribe-pict img {
+    top: -520px; } }
+@media all and (max-width: 1250px) {
+  .container {
+    width: 900px; }
+
+  .bg {
+    background: none; }
+    .bg .header-top {
+      background: #FFFFFF;
+      box-shadow: 0px 5px 20px rgba(157, 157, 157, 0.25);
+      position: fixed;
+      z-index: 10;
+      width: 100%; }
+      .bg .header-top .container div {
+        display: none; }
+      .bg .header-top .container ul > li:nth-child(2) {
+        padding-left: 53px;
+        padding-right: 53px; }
+      .bg .header-top .container ul:nth-child(3) > li:nth-child(1) input:focus {
+        width: 735px; }
+      .bg .header-top .container ul:nth-child(3) > li svg:hover {
+        stroke: #F9B300; }
+      .bg .header-top .container ul:nth-child(3) > li input:hover:not(:focus) {
+        background: url(../img/search-orange.svg) no-repeat top left; }
+    .bg .header {
+      padding-top: 160px; }
+      .bg .header .container .header-descr h1 {
+        font-size: 50px; }
+      .bg .header .container .header-descr button {
+        width: 320px;
+        height: 60px;
+        font-size: 25px;
+        line-height: 30px;
+        background-color: #F9B300;
+        font-weight: 700;
+        color: #FFFFFF;
+        border-radius: 5px;
+        font-family: "Gilroy", sans-serif;
+        border: none;
+        cursor: pointer;
+        margin-top: 10px;
+        margin-bottom: 320px; }
+      .bg .header .container .header-pict img:first-child {
+        width: 80%;
+        right: -48px;
+        top: 268px; }
+      .bg .header .container .header-pict img:nth-child(2) {
+        width: 66%;
+        right: -12px;
+        top: 320px; }
+    .bg .catalogs h3 {
+      font-size: 40px; }
+    .bg .catalogs .cards {
+      flex-wrap: wrap;
+      justify-content: space-around; }
+      .bg .catalogs .cards .card-type-products {
+        width: 400px;
+        margin-bottom: 20px; }
+        .bg .catalogs .cards .card-type-products:hover img {
+          left: 52px; }
+    .bg .discount-items .container {
+      text-align: right; }
+      .bg .discount-items .container h3 {
+        font-size: 40px; }
+      .bg .discount-items .container > p {
+        width: auto; }
+
+  .present .present-top {
+    background: url(../img/background3-pink.svg) no-repeat 0 -60px; }
+    .present .present-top .container {
+      text-align: left; }
+      .present .present-top .container h3 {
+        font-size: 40px;
+        margin-right: 0;
+        width: auto; }
+  .present .present-body .container .present-body-pict img {
+    display: none; }
+  .present .present-body .container .present-body-descr {
+    margin-left: 0;
+    width: auto; }
+
+  .inform div div .container h3 {
+    font-size: 40px;
+    padding-top: 95px; }
+  .inform div div .container p {
+    width: auto; }
+  .inform div div .container > button {
+    width: 320px;
+    height: 60px;
+    font-size: 25px;
+    line-height: 30px;
+    background-color: #F9B300;
+    font-weight: 700;
+    color: #FFFFFF;
+    border-radius: 5px;
+    font-family: "Gilroy", sans-serif;
+    border: none;
+    cursor: pointer; }
+
+  .news > div > div .container .news-top h3 {
+    font-size: 40px; }
+  .news > div > div .container .news-first-str,
+  .news > div > div .container .news-second-str {
+    display: flex;
+    flex-wrap: wrap; }
+    .news > div > div .container .news-first-str > div,
+    .news > div > div .container .news-second-str > div {
+      width: 100%; }
+    .news > div > div .container .news-first-str > div:first-child,
+    .news > div > div .container .news-second-str > div:first-child {
+      margin-right: 0; }
+    .news > div > div .container .news-first-str > div:last-child p,
+    .news > div > div .container .news-second-str > div:last-child p {
+      width: auto; }
+  .news > div > div .container .news-first-str > div:first-child {
+    margin-bottom: 20px; }
+  .news > div > div .container .news-second-str > div:first-child {
+    margin-left: 0;
+    margin-top: 20px; }
+
+  .networks > div .container .networks-body {
+    padding-bottom: 60px; }
+    .networks > div .container .networks-body > div:first-child > img:first-child {
+      display: none; }
+    .networks > div .container .networks-body > div:first-child > img:last-child {
+      top: -25px;
+      left: -340px; }
+    .networks > div .container .networks-body > div:last-child {
+      margin-left: 380px; }
+      .networks > div .container .networks-body > div:last-child img {
+        width: 70%; }
+      .networks > div .container .networks-body > div:last-child > svg:last-child {
+        top: 290px; }
+
+  .subscribe .container h3 {
+    font-size: 40px;
+    padding-top: 120px; }
+  .subscribe .container .subscribe-form button {
+    right: 170px; }
+  .subscribe .container .subscribe-pict img {
+    display: none; }
+
+  .footer .container {
+    margin-top: 90px;
+    margin-bottom: 50px; }
+    .footer .container ul {
+      padding-top: 41px; }
+      .footer .container ul > li:nth-child(2) {
+        padding-left: 60px;
+        padding-right: 60px; } }
+@media all and (max-width: 940px) {
+  .container {
+    width: 600px; }
+
+  .bg .header-top .container {
+    height: 110px; }
+    .bg .header-top .container ul {
+      font-size: 20px;
+      line-height: 25px; }
+      .bg .header-top .container ul > li:nth-child(2) {
+        padding-left: 30px;
+        padding-right: 30px; }
+    .bg .header-top .container ul:nth-child(3) > li:nth-child(1) input:focus {
+      width: 482px; }
+    .bg .header-top .container ul:nth-child(3) > li:nth-child(2) {
+      padding-left: 30px;
+      padding-right: 30px; }
+  .bg .header {
+    padding-top: 110px; }
+    .bg .header .container .header-descr h1 {
+      font-size: 35px;
+      padding-bottom: 20px; }
+    .bg .header .container .header-descr p {
+      font-size: 20px;
+      line-height: 24px; }
+    .bg .header .container .header-descr button {
+      width: 250px;
+      height: 48px;
+      font-size: 18px;
+      line-height: 22px;
+      background-color: #F9B300;
+      font-weight: 700;
+      color: #FFFFFF;
+      border-radius: 5px;
+      font-family: "Gilroy", sans-serif;
+      border: none;
+      cursor: pointer;
+      margin-bottom: 170px; }
+    .bg .header .container .header-pict img:first-child {
+      width: 68%;
+      right: -48px;
+      top: 228px; }
+    .bg .header .container .header-pict img:nth-child(2) {
+      width: 55%;
+      right: -26px;
+      top: 261px; }
+  .bg .catalogs h3 {
+    font-size: 30px;
+    margin-bottom: 30px; }
+  .bg .discount-items .container {
+    text-align: left; }
+    .bg .discount-items .container h3 {
+      font-size: 30px; }
+    .bg .discount-items .container > p {
+      font-size: 20px;
+      line-height: 24px; }
+    .bg .discount-items .container button {
+      margin-bottom: 30px; }
+    .bg .discount-items .container .cards-main {
+      padding-left: 70px;
+      padding-right: 70px; }
+      .bg .discount-items .container .cards-main .slick-prev {
+        width: 50px;
+        height: 50px; }
+      .bg .discount-items .container .cards-main .slick-next {
+        width: 50px;
+        height: 50px; }
+    .bg .discount-items .container .card {
+      padding-left: 30px;
+      padding-right: 30px; }
+      .bg .discount-items .container .card .card-body a {
+        margin-right: 15px; }
+      .bg .discount-items .container .card button {
+        margin-left: 100px; }
+
+  .present .present-top {
+    background: #FFF7E1; }
+    .present .present-top .container {
+      padding-top: 30px;
+      padding-bottom: 20px; }
+      .present .present-top .container h3 {
+        font-size: 30px; }
+  .present .present-body .container .present-body-descr h5 {
+    font-size: 25px; }
+  .present .present-body .container .present-body-descr p {
+    font-size: 20px;
+    line-height: 25px; }
+  .present .present-body .container .present-body-descr div:last-child {
+    padding-bottom: 0; }
+
+  .inform div div .container h3 {
+    font-size: 30px;
+    padding-top: 115px;
+    padding-bottom: 30px; }
+  .inform div div .container p {
+    font-size: 20px;
+    line-height: 24px; }
+  .inform div div .container > button {
+    width: 250px;
+    height: 48px;
+    font-size: 18px;
+    line-height: 22px;
+    background-color: #F9B300;
+    font-weight: 700;
+    color: #FFFFFF;
+    border-radius: 5px;
+    font-family: "Gilroy", sans-serif;
+    border: none;
+    cursor: pointer;
+    margin-top: 40px; }
+
+  .news > div > div .container .news-top h3 {
+    font-size: 30px;
+    padding-top: 0; }
+  .news > div > div .container .news-top button {
+    margin-top: 5px;
+    font-size: 20px; }
+  .news > div > div .container .news-first-str h6,
+  .news > div > div .container .news-second-str h6 {
+    font-size: 30px; }
+  .news > div > div .container .news-second-str {
+    padding-bottom: 50px; }
+
+  .networks > div {
+    background: #F5F5F5; }
+    .networks > div .container .networks-top {
+      padding-bottom: 20px;
+      padding-top: 20px; }
+      .networks > div .container .networks-top h3 {
+        font-size: 30px; }
+    .networks > div .container .networks-body {
+      padding-bottom: 0; }
+      .networks > div .container .networks-body > div:first-child > img:last-child {
+        display: none; }
+      .networks > div .container .networks-body > div:last-child img {
+        display: none; }
+      .networks > div .container .networks-body > div:last-child > svg:last-child {
+        display: none; }
+
+  .subscribe {
+    background: url(../img/background8-gray.svg) no-repeat center top, url(../img/background6-orange.svg) no-repeat center 21px; }
+    .subscribe .container h3 {
+      font-size: 30px;
+      padding-top: 120px;
+      padding-bottom: 30px; }
+    .subscribe .container p {
+      font-size: 20px; }
+    .subscribe .container span {
+      font-size: 12px; }
+    .subscribe .container .subscribe-form button {
+      right: 0;
+      height: 60px;
+      font-size: 20px; }
+    .subscribe .container .subscribe-form input {
+      width: 100%;
+      height: 60px;
+      font-size: 20px; }
+    .subscribe .container .subscribe-pict img {
+      display: none; }
+
+  .footer .container {
+    margin-top: 40px;
+    margin-bottom: 30px; }
+    .footer .container img {
+      width: 150px; }
+    .footer .container ul {
+      padding-top: 17px; }
+      .footer .container ul li {
+        font-size: 20px; }
+      .footer .container ul > li:nth-child(2) {
+        padding-left: 40px;
+        padding-right: 40px; } }
+@media all and (max-width: 640px) {
+  .container {
+    width: 320px; } }
 
 /*# sourceMappingURL=media.css.map */

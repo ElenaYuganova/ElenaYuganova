@@ -1,6 +1,10 @@
 @import "style-common.scss";
 
-.bg-right {
+.bg {
+    //width: 1904px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
     background: url(../img/background1.svg) no-repeat top right,
                 url(../img/grains2.png) no-repeat 0 1550px,
                 url(../img/background2.svg) no-repeat 0 1050px;
@@ -126,10 +130,11 @@
                 padding-left: 270px;
                 position: relative;
                 .card {
+                    height: 652px;
                     margin-top: 40px;
                     margin-bottom: 20px;
-                    margin-left: auto;
-                    margin-right: auto;
+                    margin-left: 10px;
+                    margin-right: 10px;
                     box-shadow: 0px 0px 13px rgba(146, 146, 146, 0.15);;
                 }
                 
@@ -160,253 +165,258 @@
         }
     }
 }
-.present {
-    .present-top {
-        background: url(../img/background3-pink.svg) no-repeat top;
-        .container {
-            padding-top: 117px;
-            padding-bottom: 47px;
-            text-align: right;
-            h3 {
-                width: 585px;
-                text-align: left;
-                display: inline-block;
-                margin-right: 235px;
-            }
-        }
-    }
-    .present-body {
-        background: url(../img/background3-pink-center.svg) center repeat-y;  
-        .container {
-            display: flex;
-            .present-body-pict {
-                position: relative;
-                img {
-                    position: absolute;
-                }
-                img:first-child {
-                    left: 0;
-                    top: -55px;
-                }
-                img:last-child {
-                    left: 0;
-                    bottom: 54px;
-                }
-            }
-            .present-body-descr {
-                margin-left: 840px;
-                width: 650px;
-                & > div {
-                    padding-top: 35px;
-                    padding-bottom: 25px;
-                    display: flex;
-                    align-items: flex-start;
-                    &:last-child {
-                        padding-bottom: 68px;
-                    }
-                    svg {
-                        flex-shrink: 0;
-                    }
-                    div {
-                        margin-left: 50px;
-                        p {
-                            padding-top: 20px;
-                        }
-                    }
-                }
-            }
-        
-        }
-    }
-}
-.inform {
-    background: url(../img/image\ 10.png) center no-repeat;
-    background-position-y: -524px;
-    & > div {
-        background: url(../img/background4-pink.svg) no-repeat top;
-        & > div {
-            background: url(../img/background5-white.svg) no-repeat bottom;
-            .container {
-                h3 {
-                    color: $white;
-                    padding-top: 217px;
-                    padding-bottom: 100px;
-                    font-weight: $bold;
-                }
-                p {
-                    color: $white;
-                    width: 1245px;
-                }
-                p:nth-child(3) {
-                    padding: 40px 0;
-                }
-                & > button {
-                    @include btn-big (400px);
-                    margin-top: 100px;
-                    margin-bottom: 153px;
-                    &:hover {
-                        @include btn-orange-hover;
-                    }
-                }
-            }
-        }
-    }
-    
-    
-}
-.news {
-    & > div {
-        background: url(../img/background3-pink-center.svg) no-repeat center;
-        background-position-y: 435px;
-        & > div {
+    .present {
+        .present-top {
             background: url(../img/background3-pink.svg) no-repeat top;
-            background-position-y: 152px;
+            //width: 100%;
+            //margin-left: auto;
+            //margin-right: auto;
             .container {
-                .news-top {
-                    display: flex;
-                    justify-content: space-between;
-                    h3 {
-                        display: inline-block;
-                        padding-top: 36px;
-                        padding-bottom: 60px;
-                    }
-                    & > button {
-                        @include btn-show-black;
-                        font-size: $fs-main;
-                        height: 52px;
-                        margin-top: 50px;
-                        &:hover {
-                            @include btn-show-active;
-                        }
-                    }
-                }
-                .news-first-str,
-                .news-second-str {
-                    display: flex;
-                    & > div {
-                        background: $white;
-                        box-shadow: 0px 0px 30px rgba(146, 146, 146, 0.2);
-                        border-radius: 20px;
-                        button {
-                            @include btn-show-orange;
-                            &:hover {
-                                @include btn-show-active;
-                            }
-                        }
-                        p {
-                            font-weight: $regular;
-                            font-size: $fs20;
-                            line-height: 130%;
-                        }
-                    }
-                    & > div:first-child {
-                        display: flex;
-                        margin-right: 20px;
-                        height: 400px;
-                        flex-grow: 3;
-                        img {
-                            padding-right: 84px;
-                            border-radius: 20px;
-                        }
-                        h6 {
-                            padding-top: 40px;
-                            padding-bottom: 30px;
-                        }
-                        p {
-                            padding-bottom: 27px;
-                            padding-right: 81px;
-                        }
-                    }
-                    & > div:last-child {
-                        height: 400px;
-                        flex-grow: 2;
-                        padding-left: 140px;
-                        padding-right: 112px;
-                        h6 {
-                            padding-top: 60px;
-                            padding-bottom: 40px;
-                        }
-                        p {
-                            padding-bottom: 50px;
-                            width: 428px;
-                        }
-                    } 
-                }
-                .news-second-str {
-                    padding-top: 20px;
-                    padding-bottom: 85px;
-                    & > div:first-child {
-                        order: 2;
-                        margin-left: 20px;
-                        margin-right: 0;
-                    }
+                padding-top: 117px;
+                padding-bottom: 47px;
+                text-align: right;
+                h3 {
+                    width: 585px;
+                    text-align: left;
+                    display: inline-block;
+                    margin-right: 235px;
                 }
             }
         }
-    }
-}
-.networks {
-    background: url(../img/background-pink-small.svg) center repeat-y;
-    & > div {
-        background: url(../img/background-orange-center.svg) no-repeat center;
-        background-position-y: 450px;
-        .container {
-            .networks-top {
+        .present-body {
+            background: url(../img/background3-pink-center.svg) center repeat-y;  
+            .container {
                 display: flex;
-                padding-bottom: 70px;
-                h3 {
-                    padding-right: 54px;
-                    padding-top: 7px;
-                }
-            }
-            .networks-body {
-                display: flex;
-                padding-bottom: 120px;
-                
-                & > div:first-child {
+                .present-body-pict {
                     position: relative;
                     img {
                         position: absolute;
                     }
-                    & > img:first-child {
-                        top: -57px;
-                        left: -122px;
+                    img:first-child {
+                        left: 0;
+                        top: -55px;
                     }
-                    & > img:last-child {
-                        top: 100px;
-                        left: -122px;
-                    }
-                }
-                & > div:last-child {
-                    flex-wrap: wrap;
-                    margin-left: 700px;
-                    position: relative;
-                    img:not(:last-child){
-                        margin-bottom: 20px;
-                        margin-right: 20px;
-                        border-radius: 10px;
-                    }
-                    & > svg:last-child {
-                        position: absolute;
-                        right: 0;
-                        top: 360px;
+                    img:last-child {
+                        left: 0;
+                        bottom: 54px;
                     }
                 }
-                
+                .present-body-descr {
+                    margin-left: 840px;
+                    width: 650px;
+                    & > div {
+                        padding-top: 35px;
+                        padding-bottom: 25px;
+                        display: flex;
+                        align-items: flex-start;
+                        &:last-child {
+                            padding-bottom: 68px;
+                        }
+                        svg {
+                            flex-shrink: 0;
+                        }
+                        div {
+                            margin-left: 50px;
+                            p {
+                                padding-top: 20px;
+                            }
+                        }
+                    }
+                }
+            
             }
         }
     }
-}
-.subscribe {
-    background: url(../img/background6-orange.svg) no-repeat center top;
-    .container {
-        h3 {
-            padding-top: 150px;
+    .inform {
+        background: url(../img/image\ 10.png) center no-repeat;
+        background-position-y: -524px;
+        & > div {
+            background: url(../img/background4-pink.svg) no-repeat top;
+            & > div {
+                background: url(../img/background5-white.svg) no-repeat bottom;
+                .container {
+                    h3 {
+                        color: $white;
+                        padding-top: 217px;
+                        padding-bottom: 100px;
+                        font-weight: $bold;
+                    }
+                    p {
+                        color: $white;
+                        width: 1245px;
+                    }
+                    p:nth-child(3) {
+                        padding: 40px 0;
+                    }
+                    & > button {
+                        @include btn-big (400px);
+                        margin-top: 100px;
+                        margin-bottom: 153px;
+                        &:hover {
+                            @include btn-orange-hover;
+                        }
+                    }
+                }
+            }
         }
-        .subscribe-pict {
-            img {
-                top: -660px;
+        
+        
+    }
+    .news {
+        & > div {
+            background: url(../img/background3-pink-center.svg) no-repeat center;
+            background-position-y: 435px;
+            & > div {
+                background: url(../img/background3-pink.svg) no-repeat top;
+                background-position-y: 152px;
+                .container {
+                    .news-top {
+                        display: flex;
+                        justify-content: space-between;
+                        h3 {
+                            display: inline-block;
+                            padding-top: 36px;
+                            padding-bottom: 60px;
+                        }
+                        & > button {
+                            @include btn-show-black;
+                            font-size: $fs-main;
+                            height: 52px;
+                            margin-top: 50px;
+                            &:hover {
+                                @include btn-show-active;
+                            }
+                        }
+                    }
+                    .news-first-str,
+                    .news-second-str {
+                        display: flex;
+                        & > div {
+                            background: $white;
+                            box-shadow: 0px 0px 30px rgba(146, 146, 146, 0.2);
+                            border-radius: 20px;
+                            button {
+                                @include btn-show-orange;
+                                &:hover {
+                                    @include btn-show-active;
+                                }
+                            }
+                            p {
+                                font-weight: $regular;
+                                font-size: $fs20;
+                                line-height: 130%;
+                            }
+                        }
+                        & > div:first-child {
+                            display: flex;
+                            margin-right: 20px;
+                            height: 400px;
+                            flex-grow: 3;
+                            img {
+                                padding-right: 84px;
+                                border-radius: 20px;
+                            }
+                            h6 {
+                                padding-top: 40px;
+                                padding-bottom: 30px;
+                            }
+                            p {
+                                padding-bottom: 27px;
+                                padding-right: 81px;
+                            }
+                        }
+                        & > div:last-child {
+                            height: 400px;
+                            flex-grow: 2;
+                            padding-left: 140px;
+                            padding-right: 112px;
+                            h6 {
+                                padding-top: 60px;
+                                padding-bottom: 40px;
+                            }
+                            p {
+                                padding-bottom: 50px;
+                                width: 428px;
+                            }
+                        } 
+                    }
+                    .news-second-str {
+                        padding-top: 20px;
+                        padding-bottom: 85px;
+                        & > div:first-child {
+                            order: 2;
+                            margin-left: 20px;
+                            margin-right: 0;
+                        }
+                    }
+                }
             }
         }
     }
-}
+    .networks {
+        background: url(../img/background-pink-small.svg) center repeat-y;
+        & > div {
+            background: url(../img/background-orange-center.svg) no-repeat center;
+            background-position-y: 450px;
+            .container {
+                .networks-top {
+                    display: flex;
+                    padding-bottom: 70px;
+                    h3 {
+                        padding-right: 54px;
+                        padding-top: 7px;
+                    }
+                }
+                .networks-body {
+                    display: flex;
+                    padding-bottom: 120px;
+                    
+                    & > div:first-child {
+                        position: relative;
+                        img {
+                            position: absolute;
+                        }
+                        & > img:first-child {
+                            top: -57px;
+                            left: -122px;
+                        }
+                        & > img:last-child {
+                            top: 100px;
+                            left: -122px;
+                        }
+                    }
+                    & > div:last-child {
+                        flex-wrap: wrap;
+                        margin-left: 700px;
+                        position: relative;
+                        img:not(:last-child){
+                            margin-bottom: 20px;
+                            margin-right: 20px;
+                            border-radius: 10px;
+                        }
+                        & > svg:last-child {
+                            position: absolute;
+                            right: 0;
+                            top: 360px;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+    .subscribe {
+        background: url(../img/background6-orange.svg) no-repeat center top;
+        .container {
+            h3 {
+                padding-top: 150px;
+            }
+            .subscribe-pict {
+                img {
+                    top: -660px;
+                }
+            }
+        }
+    }
+
+@import "media.scss";
