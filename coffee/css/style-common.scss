@@ -74,6 +74,9 @@ p {
         justify-content: space-between;
         align-items: center;
         height: 160px;
+        #menu {
+            display: none;
+         }
         ul {
             li {
                 display: inline-block;
@@ -150,6 +153,9 @@ p {
     z-index: 10;
     width: 100%;
     .container {
+        #menu {
+           display: none;
+        }
         ul:nth-child(3) {
             li {
                 svg:hover {

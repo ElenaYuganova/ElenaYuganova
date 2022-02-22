@@ -437,6 +437,324 @@
         padding-right: 40px; } }
 @media all and (max-width: 640px) {
   .container {
-    width: 320px; } }
+    width: 320px; }
+
+  .bg .header-top .container {
+    height: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    position: relative; }
+    .bg .header-top .container ul:nth-child(2) {
+      display: none;
+      position: absolute;
+      top: 60px;
+      background: #FFFFFF;
+      box-shadow: 0px 0px 30px rgba(146, 146, 146, 0.2);
+      border-radius: 10px;
+      padding: 10px; }
+      .bg .header-top .container ul:nth-child(2) li:nth-child(2) {
+        padding-left: 0;
+        padding-right: 0;
+        display: block; }
+    .bg .header-top .container ul:nth-child(3) > li:nth-child(1) input:focus {
+      width: 482px; }
+    .bg .header-top .container ul:nth-child(3) > li:nth-child(2) {
+      padding-left: 30px;
+      padding-right: 30px; }
+    .bg .header-top .container #menu {
+      display: inline-block;
+      order: -1; }
+      .bg .header-top .container #menu img {
+        height: 40px; }
+  .bg .header {
+    padding-top: 90px; }
+    .bg .header .container .header-descr h1 {
+      font-size: 25px;
+      line-height: 29px; }
+    .bg .header .container .header-descr p {
+      font-size: 18px;
+      line-height: 22px;
+      width: 100%;
+      padding-bottom: 20px; }
+    .bg .header .container .header-descr p:nth-child(3) {
+      width: 185px; }
+    .bg .header .container .header-descr button {
+      margin-top: 80px;
+      margin-bottom: 30px; }
+    .bg .header .container .header-pict img:first-child {
+      top: 160px; }
+    .bg .header .container .header-pict img:nth-child(2) {
+      top: 181px; }
+  .bg .catalogs {
+    margin-bottom: 30px; }
+    .bg .catalogs #humb_button_2 {
+      width: 100%;
+      background-color: #F6F6F6;
+      border: 1px solid #C9C9C9;
+      height: 60px;
+      font-family: "Gilroy", sans-serif;
+      font-weight: 600;
+      font-size: 25px;
+      line-height: 30px;
+      color: #F9B300;
+      border-radius: 5px;
+      cursor: pointer;
+      height: 70px;
+      text-align: center;
+      margin-bottom: 40px;
+      margin-top: 20px; }
+      .bg .catalogs #humb_button_2:hover {
+        width: 100%;
+        background-color: #FFF7E1;
+        border: 1px solid #F9B300;
+        height: 60px;
+        font-family: "Gilroy", sans-serif;
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 30px;
+        color: #F9B300;
+        border-radius: 5px;
+        cursor: pointer;
+        height: 70px; }
+    .bg .catalogs #catalogs {
+      display: none; }
+    .bg .catalogs .cards .card-type-products {
+      width: 100%;
+      height: 380px;
+      padding-top: 15px; }
+      .bg .catalogs .cards .card-type-products h6 {
+        font-size: 18px;
+        line-height: 22px;
+        padding-top: 0; }
+      .bg .catalogs .cards .card-type-products button {
+        width: 250px;
+        height: 48px;
+        font-size: 18px;
+        line-height: 22px;
+        background-color: #F9B300;
+        font-weight: 700;
+        color: #FFFFFF;
+        border-radius: 5px;
+        font-family: "Gilroy", sans-serif;
+        border: none;
+        cursor: pointer;
+        margin-top: 20px; }
+    .bg .catalogs .cards .card-type-products:hover h6 {
+      font-size: 20px;
+      padding-top: 225px; }
+    .bg .catalogs .cards .card-type-products:hover img {
+      position: absolute;
+      left: 11px; }
+  .bg .discount-items .container h3 {
+    font-size: 25px;
+    line-height: 29px;
+    margin-bottom: 20px; }
+  .bg .discount-items .container > p {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 30px; }
+  .bg .discount-items .container > button {
+    margin-bottom: 30px;
+    text-align: center;
+    margin-top: 0;
+    margin-right: 0; }
+  .bg .discount-items .container .cards-main {
+    padding-left: 0;
+    padding-right: 0; }
+    .bg .discount-items .container .cards-main .slick-prev,
+    .bg .discount-items .container .cards-main .slick-next {
+      display: none !important; }
+    .bg .discount-items .container .cards-main .card {
+      height: auto;
+      padding-left: 20px;
+      padding-right: 20px; }
+      .bg .discount-items .container .cards-main .card h6 {
+        font-size: 20px;
+        line-height: 24px;
+        margin-top: 10px; }
+      .bg .discount-items .container .cards-main .card p {
+        font-size: 18px;
+        line-height: 22px; }
+      .bg .discount-items .container .cards-main .card .price span:first-child {
+        font-size: 18px;
+        line-height: 22px; }
+      .bg .discount-items .container .cards-main .card .price span:last-child {
+        font-size: 20px;
+        line-height: 24px; }
+      .bg .discount-items .container .cards-main .card .card-body a {
+        margin-right: 0; }
+        .bg .discount-items .container .cards-main .card .card-body a img {
+          width: 130px; }
+      .bg .discount-items .container .cards-main .card .card-body div .stars {
+        margin-top: 0; }
+        .bg .discount-items .container .cards-main .card .card-body div .stars .star {
+          margin-right: 0; }
+      .bg .discount-items .container .cards-main .card .card-body div .grains {
+        margin-top: 10px;
+        margin-bottom: 10px; }
+      .bg .discount-items .container .cards-main .card .card-body div .specification {
+        margin-bottom: 9px; }
+      .bg .discount-items .container .cards-main .card button {
+        margin-left: 50px;
+        width: 150px;
+        height: 48px;
+        font-size: 18px;
+        line-height: 22px;
+        background-color: #F9B300;
+        font-weight: 700;
+        color: #FFFFFF;
+        border-radius: 5px;
+        font-family: "Gilroy", sans-serif;
+        border: none;
+        cursor: pointer;
+        margin-top: 0;
+        margin-bottom: 20px; }
+
+  .present .present-top {
+    background: #FFF7E1; }
+    .present .present-top .container {
+      padding-top: 30px;
+      padding-bottom: 20px; }
+      .present .present-top .container h3 {
+        font-size: 25px;
+        line-height: 29px; }
+  .present .present-body .container .present-body-descr h5 {
+    font-size: 20px;
+    line-height: 24px; }
+  .present .present-body .container .present-body-descr p {
+    font-size: 18px;
+    line-height: 22px; }
+  .present .present-body .container .present-body-descr > div {
+    padding-top: 10px;
+    padding-bottom: 10px; }
+    .present .present-body .container .present-body-descr > div div {
+      margin-left: 0; }
+    .present .present-body .container .present-body-descr > div svg {
+      display: none; }
+    .present .present-body .container .present-body-descr > div p {
+      padding-top: 10px; }
+
+  .inform div div .container h3 {
+    font-size: 25px;
+    line-height: 29px;
+    padding-top: 95px;
+    padding-bottom: 20px; }
+  .inform div div .container p {
+    font-size: 16px;
+    line-height: 18px; }
+  .inform div div .container p:nth-child(3) {
+    padding-top: 20px;
+    padding-bottom: 20px; }
+  .inform div div .container > button {
+    margin-top: 20px;
+    margin-bottom: 50px; }
+
+  .news > div {
+    background: none; }
+    .news > div > div {
+      background: none; }
+      .news > div > div .container .news-top #humb_button {
+        width: 100%;
+        background-color: #F6F6F6;
+        border: 1px solid #C9C9C9;
+        height: 60px;
+        font-family: "Gilroy", sans-serif;
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 30px;
+        color: #F9B300;
+        border-radius: 5px;
+        cursor: pointer;
+        padding-bottom: 0;
+        padding-top: 9px;
+        text-align: center;
+        height: 50px;
+        margin-bottom: 30px; }
+        .news > div > div .container .news-top #humb_button:hover {
+          width: 100%;
+          background-color: #FFF7E1;
+          border: 1px solid #F9B300;
+          height: 60px;
+          font-family: "Gilroy", sans-serif;
+          font-weight: 600;
+          font-size: 25px;
+          line-height: 30px;
+          color: #F9B300;
+          border-radius: 5px;
+          cursor: pointer;
+          height: 50px; }
+      .news > div > div .container .news-top button {
+        display: none; }
+      .news > div > div .container #humb_news {
+        display: none; }
+      .news > div > div .container .news-first-str h6,
+      .news > div > div .container .news-second-str h6 {
+        font-size: 20px;
+        line-height: 24px; }
+      .news > div > div .container .news-first-str div:first-child,
+      .news > div > div .container .news-first-str div:last-child,
+      .news > div > div .container .news-second-str div:first-child,
+      .news > div > div .container .news-second-str div:last-child {
+        padding-top: 20px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px; }
+        .news > div > div .container .news-first-str div:first-child p,
+        .news > div > div .container .news-first-str div:last-child p,
+        .news > div > div .container .news-second-str div:first-child p,
+        .news > div > div .container .news-second-str div:last-child p {
+          font-size: 16px;
+          line-height: 18px;
+          padding-bottom: 10px;
+          padding-right: 0px; }
+        .news > div > div .container .news-first-str div:first-child h6,
+        .news > div > div .container .news-first-str div:last-child h6,
+        .news > div > div .container .news-second-str div:first-child h6,
+        .news > div > div .container .news-second-str div:last-child h6 {
+          padding-top: 0px;
+          padding-bottom: 10px; }
+      .news > div > div .container .news-second-str {
+        padding-bottom: 50px; }
+
+  .networks > div .container .networks-top {
+    padding-bottom: 20px;
+    padding-top: 20px; }
+    .networks > div .container .networks-top h3 {
+      font-size: 25px;
+      line-height: 29px;
+      padding-top: 26px;
+      padding-right: 40px; }
+
+  .subscribe .container h3 {
+    font-size: 25px;
+    line-height: 29px;
+    padding-bottom: 20px; }
+  .subscribe .container p {
+    font-size: 16px;
+    width: 100%; }
+  .subscribe .container span {
+    width: 100%; }
+  .subscribe .container .subscribe-form {
+    padding-top: 20px;
+    padding-bottom: 90px; }
+    .subscribe .container .subscribe-form button {
+      top: 90px;
+      width: 100%;
+      height: 50px; }
+    .subscribe .container .subscribe-form input {
+      padding-left: 20px;
+      height: 50px; }
+  .subscribe .container .subscribe-pict img {
+    display: none; }
+
+  .footer .container {
+    margin-top: 30px; }
+    .footer .container img {
+      display: none; }
+    .footer .container ul li {
+      font-size: 18px; }
+    .footer .container ul > li:nth-child(2) {
+      padding-left: 23px;
+      padding-right: 23px; } }
 
 /*# sourceMappingURL=media.css.map */

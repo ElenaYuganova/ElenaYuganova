@@ -1,0 +1,351 @@
+@import "variables.scss";
+@import "mixins.scss";
+
+@media all and (max-width: 1660px) {
+    .container {
+        width: 1210px;
+    }
+    .header-top {
+        .container {
+            ul:nth-child(3) {
+                 & > li:nth-child(1) {
+                    input:focus {
+                        width: 760px;
+                    } 
+                }
+            }
+        }
+    }
+    .contacts {
+        .container {
+            .contacts-middle {
+                .contacts-map {
+                    iframe {
+                        width: 700px;
+                    }
+                }
+            }
+        }
+    }
+    .subscribe {
+        .container {
+            p {
+                width: 650px;
+            }
+            .subscribe-form {
+                padding-top: 60px;
+                padding-bottom: 20px;
+                position: relative;
+                input {
+                    width: 680px;
+                }
+                button {
+                    right: 530px;
+                }
+            }
+            span {
+                width: 500px;
+                display: inline-block;
+            }
+            .subscribe-pict {
+                img {
+                    top: -520px;
+                }
+            }
+        }
+    } 
+    .footer {
+        .container {
+            margin-top: 120px;
+            margin-bottom: 60px;
+        }
+    }
+}
+
+@media all and (max-width: 1250px) {
+    .container {
+        width: 900px;
+    }
+    .header-top {
+        .container {
+            div {
+                display: none;
+            }
+            ul {
+                & > li:nth-child(2) {
+                    padding-left: 53px;
+                    padding-right: 53px;
+                } 
+            }
+            ul:nth-child(3) {
+                & > li:nth-child(1) {
+                    input:focus {
+                        width: 735px;
+                    } 
+                }
+            }
+        }
+    }
+    .contacts {
+        background-position-y: 855px;
+        .container {
+            .contacts-top {
+                margin-bottom: 50px;
+            }
+            .contacts-middle {
+                display: block;
+                padding-bottom: 30px;
+                .contacts-inform {
+                    width: 100%;
+                    h5 {
+                        padding-top: 30px;
+                    }
+                    p {
+                        padding-top: 10px;
+                    }
+                }
+                .contacts-map {
+                    margin-top: 30px;
+                    iframe {
+                        width: 100%;    
+                        height: 350px;                     
+                    }
+                }
+            }
+        }
+    }
+    .subscribe {
+        .container {
+            h3 {
+                font-size: $fs-h4;
+                padding-top: 120px;
+            }
+            .subscribe-form {
+                button {
+                    right: 170px;
+                }
+            }
+            .subscribe-pict {
+                img {
+                    display: none;
+                }
+            }
+        }
+    } 
+    .footer {
+        .container {
+            margin-top: 90px;
+            margin-bottom: 50px;
+            ul {
+                padding-top: 41px;
+                & > li:nth-child(2) {
+                    padding-left: 60px;
+                    padding-right: 60px;
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 940px) {
+    .container {
+        width: 600px;
+    }
+    .header-top {
+        .container {
+            height: 110px;
+            ul {
+                font-size: $fs20;
+                line-height: 25px;
+                & > li:nth-child(2) {
+                    padding-left: 30px;
+                    padding-right: 30px;
+                } 
+            }
+            ul:nth-child(3) {
+                & > li:nth-child(1) {
+                    input:focus {
+                        width: 482px;
+                    } 
+                }
+                & > li:nth-child(2) {
+                    padding-left: 30px;
+                    padding-right: 30px;
+                }
+            }
+        }
+    }
+    .contacts {
+        padding-top: 110px;
+    }
+    .subscribe {
+        .container {
+            h3 {
+                font-size: $fs30;
+                padding-top: 120px;
+                padding-bottom: 30px;
+            }
+            p {
+                font-size: $fs20;
+            }
+            span {
+                font-size: $fs12;
+            }
+            .subscribe-form {
+                button {
+                    right: 0;
+                    height: 60px;
+                    font-size: $fs20;
+                }
+                input {
+                    width: 100%;
+                    height: 60px;
+                    font-size: $fs20;
+                }
+            }
+            .subscribe-pict {
+                img {
+                    display: none;
+                }
+            }
+        }
+    } 
+    .footer {
+        .container {
+            margin-top: 40px;
+            margin-bottom: 30px;
+            img {
+                width: 150px;
+            }
+            ul {
+                padding-top: 17px;
+                li {
+                    font-size: $fs20;
+                }
+                & > li:nth-child(2) {
+                    padding-left: 40px;
+                    padding-right: 40px;
+                }
+            }
+        }
+    }
+    
+}
+
+@media all and (max-width: 640px) {
+    .container {
+        width: 320px;
+    }
+    .header-top {
+        .container {
+            height: 90px;
+            ul:nth-child(2) {
+                display: none;
+            }
+            ul:nth-child(3) {
+                & > li:nth-child(1) {
+                    input:focus {
+                        width: 482px;
+                    } 
+                }
+                & > li:nth-child(2) {
+                    padding-left: 30px;
+                    padding-right: 30px;
+                }
+            }
+        }
+    }
+    .contacts {
+        background-position-y: 775px;
+        padding-top: 90px;
+        .container {
+            .contacts-top {
+                margin-bottom: 30px;
+                div:first-child {
+                    padding-top: 30px;
+                    padding-bottom: 30px;
+                }
+                div:nth-child(2) {
+                    button,
+                    button:first-child {
+                        font-size: $fs-card;
+                    }
+                }
+            }
+            .contacts-middle  {
+                .contacts-inform {
+                    & > h5 {
+                        font-size: $fs-main;
+                        line-height: 29px;
+                        padding-top: 10px;
+                    }
+                    p {
+                        font-size: $fs-card;
+                        line-height: 22px;
+                    }
+                    a:hover {
+                        height: 27px;
+                        width: 165px;
+                        p {
+                            padding-top: 2px;
+                        }
+                    }
+                } 
+            }
+        }
+    }
+
+
+
+    .subscribe {
+        .container {
+            h3 {
+                font-size: $fs-main;
+                line-height: 29px;
+                padding-bottom: 20px;
+            }
+            p {
+                font-size: $fs16;
+                width: 100%;
+            }
+            span {
+                width: 100%;
+            }
+            .subscribe-form {
+                padding-top: 20px;
+                padding-bottom: 90px;
+                button {
+                    top: 90px;
+                    width: 100%;
+                    height: 50px;
+                }
+                input {
+                    padding-left: 20px;
+                    height: 50px;
+                }
+            }
+            .subscribe-pict {
+                img {
+                    display: none;
+                }
+            }
+        }
+    } 
+    .footer {
+        .container {
+            margin-top: 30px;
+            img {
+                display: none;
+            }
+            ul {
+                li {
+                    font-size: $fs-card;
+                }
+                & > li:nth-child(2) {
+                    padding-left: 23px;
+                    padding-right: 23px;
+                }
+            }
+        }
+    }
+}

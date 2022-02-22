@@ -727,4 +727,401 @@
     .container {
         width: 320px;
     }
+    .bg {
+        .header-top {
+            .container {
+                height: auto;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                position: relative;
+                ul:nth-child(2) {
+                    li:nth-child(2) {
+                        padding-left: 0;
+                        padding-right: 0;
+                        display: block;
+                    }
+                    display: none;
+                    position: absolute;
+                    top: 60px;
+                    background: $white;
+                    box-shadow: 0px 0px 30px rgba(146, 146, 146, 0.2);
+                    border-radius: 10px;
+                    padding: 10px;
+
+                }
+                ul:nth-child(3) {
+                    & > li:nth-child(1) {
+                        input:focus {
+                            width: 482px;
+                        } 
+                    }
+                    & > li:nth-child(2) {
+                        padding-left: 30px;
+                        padding-right: 30px;
+                    }
+                }
+                #menu {
+                    display: inline-block;
+                    order: -1;
+                    img {
+                        height: 40px;
+                    }
+                }
+            }
+        }
+        .header {
+            padding-top: 90px;
+            .container {
+                .header-descr {
+                    h1 {                        
+                        font-size: $fs-main;
+                        line-height: 29px;
+                    }
+                    p {
+                        font-size: $fs-card;
+                        line-height: 22px;
+                        width: 100%;
+                        padding-bottom: 20px;
+                    }
+                    p:nth-child(3) {
+                        width: 185px;
+                    }
+                    button {
+                        margin-top: 80px;
+                        margin-bottom: 30px;
+                    }
+                    
+                }
+                .header-pict {
+                    img:first-child {
+                        top: 160px;
+                    }
+                    img:nth-child(2) {
+                        top: 181px;
+                    }
+                }
+            }
+        }
+        .catalogs {
+            margin-bottom: 30px;
+            #humb_button_2 {
+                @include btn-not-active (100%);
+                height: 70px;
+                text-align: center;
+                margin-bottom: 40px;
+                margin-top: 20px;
+                &:hover {
+                    @include btn-active (100%);
+                    height: 70px;
+                }
+            }
+            #catalogs {
+                display: none;
+            }
+            .cards {
+                .card-type-products {
+                    width: 100%;
+                    height: 380px;
+                    padding-top: 15px;
+                    h6 {
+                        font-size: $fs-card;
+                        line-height: 22px;
+                        padding-top: 0;
+                    }
+                    button {
+                        @include btn-card (250px);
+                        margin-top: 20px;
+                    }
+                }
+                .card-type-products:hover {
+                    h6 {
+                        font-size: $fs20;
+                        padding-top: 225px;
+                    }
+                    img {
+                        position: absolute;
+                        left: 11px;
+                    }
+                }
+            }
+        }
+        .discount-items {
+            .container {
+                h3 {
+                    font-size: $fs-main;
+                    line-height: 29px;
+                    margin-bottom: 20px;
+                }
+                & > p {
+                    font-size: $fs-card;
+                    line-height: 22px;
+                    margin-bottom: 30px;
+                }
+                & > button {
+                    margin-bottom: 30px;
+                    text-align: center;
+                    margin-top: 0;
+                    margin-right: 0;
+                }
+                .cards-main {
+                    padding-left: 0;
+                    padding-right: 0;
+                    .slick-prev,
+                    .slick-next {
+                        display: none !important;
+                    }
+                    .card {
+                        height: auto;
+                        padding-left: 20px;
+                        padding-right: 20px;
+                        h6 {
+                            font-size: $fs20;
+                            line-height: 24px;
+                            margin-top: 10px;
+                        }
+                        p {
+                            font-size: $fs-card;
+                            line-height: 22px;
+                        }
+                        .price {
+                            span:first-child {
+                                font-size: $fs-card;
+                                line-height: 22px;
+                            }
+                            span:last-child {
+                                font-size: $fs20;
+                                line-height: 24px;
+                            }
+                        } 
+                        .card-body {
+                            a {
+                                margin-right: 0;
+                                img {
+                                    width: 130px;
+                                }
+                            }
+                            div {
+                                .stars {
+                                    margin-top: 0;
+                                    .star {
+                                        margin-right: 0;
+                                    }
+                                }
+                                .grains {
+                                    margin-top: 10px;
+                                    margin-bottom: 10px;
+                                }
+                                .specification {
+                                    margin-bottom: 9px;
+                                }
+                            }
+                        }
+                        button {
+                            margin-left: 50px;
+                            @include btn-card (150px);
+                            margin-top: 0;
+                            margin-bottom: 20px;
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+    .present {
+        .present-top {
+            background: $light-pink;
+            .container {
+                padding-top: 30px;
+                padding-bottom: 20px;
+                h3 {
+                   font-size: $fs-main;
+                   line-height: 29px;
+                }
+            }
+        }
+        .present-body {
+            .container {
+                .present-body-descr {
+                    h5 {
+                        font-size: $fs20;
+                        line-height: 24px;
+                    }
+                    p {
+                        font-size: $fs-card;
+                        line-height: 22px;
+                    }
+                    & > div {
+                        padding-top: 10px;
+                        padding-bottom: 10px;
+                        div {
+                            margin-left: 0;
+                        }
+                        svg {
+                            display: none;
+                        }
+                        p {
+                            padding-top: 10px;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+    .inform {
+        div {
+            div {
+                .container {
+                    h3 {
+                        font-size: $fs-main;
+                        line-height: 29px;
+                        padding-top: 95px;
+                        padding-bottom: 20px;
+                    }
+                    p {
+                        font-size: $fs16;
+                        line-height: 18px;
+                    }  
+                    p:nth-child(3) {
+                        padding-top: 20px;
+                        padding-bottom: 20px;
+                    }
+                    & > button {
+                        margin-top: 20px;
+                        margin-bottom: 50px;
+                        
+                    }
+                }
+            }   
+        }
+               
+    }
+    .news {
+        & > div {
+            background: none;
+            & > div {
+                background: none;
+                .container {
+                    .news-top {
+                        #humb_button {
+                            @include btn-not-active (100%);
+                            padding-bottom: 0;
+                            padding-top: 9px;
+                            text-align: center;
+                            height: 50px;
+                            margin-bottom: 30px;
+                            &:hover {
+                                @include btn-active (100%);
+                                height: 50px;
+
+                            }
+                        }
+                        button {
+                            display: none;
+                        }
+                    }
+                    #humb_news {
+                        display: none;
+                    }
+                    .news-first-str,
+                    .news-second-str {
+                        h6 {
+                            font-size: $fs20;
+                            line-height: 24px;
+                            
+                        }
+                        div:first-child,
+                        div:last-child {
+                            padding-top: 20px;
+                            padding-bottom: 10px;
+                            padding-left: 20px;
+                            padding-right: 20px;
+                            p {
+                                font-size: $fs16;
+                                line-height: 18px;
+                                padding-bottom: 10px;
+                                padding-right: 0px;
+                            }
+                            h6 {
+                                padding-top: 0px;
+                                padding-bottom: 10px;
+                            }
+                        }
+                    }
+                    .news-second-str {
+                        padding-bottom: 50px;
+                    }
+                }
+            }
+        }
+    }
+    .networks {
+        & > div {
+            .container {
+                .networks-top {
+                    padding-bottom: 20px;
+                    padding-top: 20px;
+                    h3 {
+                        font-size: $fs-main;
+                        line-height: 29px;
+                        padding-top: 26px;
+                        padding-right: 40px;
+                    }
+                }
+            }
+        }
+    }
+
+    .subscribe {
+        .container {
+            h3 {
+                font-size: $fs-main;
+                line-height: 29px;
+                padding-bottom: 20px;
+            }
+            p {
+                font-size: $fs16;
+                width: 100%;
+            }
+            span {
+                width: 100%;
+            }
+            .subscribe-form {
+                padding-top: 20px;
+                padding-bottom: 90px;
+                button {
+                    top: 90px;
+                    width: 100%;
+                    height: 50px;
+                }
+                input {
+                    padding-left: 20px;
+                    height: 50px;
+                }
+            }
+            .subscribe-pict {
+                img {
+                    display: none;
+                }
+            }
+        }
+    } 
+    .footer {
+        .container {
+            margin-top: 30px;
+            img {
+                display: none;
+            }
+            ul {
+                li {
+                    font-size: $fs-card;
+                }
+                & > li:nth-child(2) {
+                    padding-left: 23px;
+                    padding-right: 23px;
+                }
+            }
+        }
+    }
 }
