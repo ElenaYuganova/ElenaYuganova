@@ -6,6 +6,32 @@ $(document).ready(function() {
         $('html, body').animate({scrollTop: top}, 1500); 
     });
 
+    $('#menu').click(function(){
+        $('#header').slideToggle(300);      
+        return false;
+    });
+
+    $('#humb_button').click(function(){
+        $('#one').slideToggle(1000);      
+        return false;
+    });
+
+    $('#humb_button_2').click(function(){
+        $('#two').slideToggle(1000);      
+        return false;
+    });
+
+    $('#humb_button_3').click(function(){
+        $('#three').slideToggle(1000);      
+        return false;
+    });
+
+    $('#humb_button_4').click(function(){
+        $('#four_2').slideToggle(1000);      
+        return false;
+    });
+
+
 });
 
 

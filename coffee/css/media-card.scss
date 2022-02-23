@@ -1,0 +1,623 @@
+@import "variables.scss";
+@import "mixins.scss";
+@import "media-common.scss";
+
+@media all and (max-width: 1660px) {
+    .card-coffee {
+        .container {
+            .card-coffee-main {
+                padding-top: 50px;
+                padding-left: 70px;
+                .card-coffee-pict {
+                    margin-bottom: 50px;
+                }
+                .card-coffee-descr {
+                    width: 640px;
+                    padding-left: 70px;
+                    .descr-top {
+                        div:nth-child(6) {
+                            right: 10px;
+                        }
+                    }
+                    .descr-middle {
+                        .specification:nth-child(3) {
+                            padding-left: 70px;
+                            padding-right: 70px;
+                        }
+                        p {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .slider-vertic {
+        margin-top: -130px;
+        .container {
+            padding-top: 240px;
+            button {
+                width: 280px;
+            }
+            button:hover {
+                width: 280px;
+            }
+        }
+    }
+    .coffee-info {
+        .container {
+            & > div:first-child {
+                & > div {
+                    padding-left: 60px;
+                    padding-right: 30px;
+                }
+                .specific {
+                    div {
+                        margin-right: 50px;
+                    }
+                }
+            }
+            & > div:nth-child(2) {
+                margin-bottom: 80px;
+                img {
+                    margin-left: 50px;
+                    margin-bottom: 0px;
+                    height: 100%;
+                }
+            }
+        }
+    }
+    .prepared {
+        .container {
+            h4 {
+                margin-top: 50px;
+                margin-bottom: 60px;
+            }
+            .sorting-coffee-bottom {
+                margin-bottom: 100px;
+            }
+        }
+        
+    }
+    .additional {
+        .container {
+            margin-bottom: 50px;
+            img {
+                width: 100%;
+            }
+            p {
+                width: 100%;
+            }
+        }
+    }
+    .reviews-main {
+        .container {
+            .review-card {
+                & > div:first-child {
+                    & > span:last-child {
+                        right: 80px;
+                    }
+                }
+            }   
+        }
+    }
+}
+
+@media all and (max-width: 1250px) {
+    .card-coffee {
+        .container {
+            .card-coffee-main {
+                padding-top: 30px;
+                padding-left: 40px;
+                padding-bottom: 30px;
+                .card-coffee-pict {
+                    margin-bottom: 30px;
+                    img:last-child {
+                        display: none;
+                    }
+                    img:first-child {
+                        width: 200px;
+                    }
+                }
+                .card-coffee-descr {
+                    width: 610px;
+                    padding-left: 30px;
+                    .stars {
+                        margin-top: 20px;
+                        margin-bottom: 20px;
+                    }
+                    .descr-top {
+                        div:nth-child(6) {
+                            right: 10px;
+                        }
+                    }
+                    .descr-middle {
+                        .specification {
+                            margin-top: 30px;
+                            margin-bottom: 30px;
+                        }
+                        .specification:nth-child(3) {
+                            padding-left: 70px;
+                            padding-right: 70px;
+                        }
+                        p {
+                            width: 100%;
+                        }
+                    }
+                    .descr-bottom {
+                        div:first-child {
+                            label {
+                                margin-bottom: 30px;
+                            }
+                        } 
+                        div:nth-child(2) {
+                            .counter,
+                            button {
+                                height: 60px;
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+    .slider-vertic {
+        margin-top: 0px;
+        .container {
+            padding-bottom: 77px;
+            padding-top: 70px;
+            button {
+                width: 210px;
+            }
+            button:hover {
+                width: 210px;
+            }
+        }
+    }
+    .coffee-info {
+        .container {
+            & > div:first-child {
+                & > div {
+                    padding-left: 30px;
+                    padding-right: 30px;
+                }
+                .taste {
+                    padding-top: 30px;
+                    p::before {
+                        padding-right: 90px;
+                    }
+                }
+                .specific {
+                    padding-top: 30px;
+                    div {
+                        margin-right: 0;
+                        p:last-child {
+                            width: auto;
+                        }
+                    }
+                }
+            }
+            & > div:nth-child(2) {
+                margin-bottom: 50px;
+                img {
+                   display: none;
+                }
+            }
+        }
+    }
+    .prepared {
+        .container {
+            h4 {
+                margin-bottom: 50px;
+            }
+        }
+        
+    }
+    .reviews-top {
+        height: 195px;
+        .container {
+            h4 {
+                padding-top: 0;
+            }
+        }
+    }
+    .reviews-main {
+        .container {
+            .review-card {
+                padding-top: 30px;
+                & > div:first-child {
+                    padding-left: 30px;
+                    padding-bottom: 20px;
+                    & > span:last-child {
+                        right: 80px;
+                    }
+                }
+                div:nth-child(2) {
+                    margin-top: 0;
+                    margin-bottom: 30px;
+                    img {
+                        margin-left: 30px;
+                    }
+                }
+            }   
+        }
+    }
+}
+
+@media all and (max-width: 940px) {
+    .card-coffee {
+        padding-top: 110px;
+        .container {
+            .card-coffee-main {
+                .card-coffee-pict {
+                    img:first-child {
+                        display: none;
+                    }
+                }
+                .card-coffee-descr {
+                    width: 520px;
+                    padding-left: 0px;
+                    .descr-top {
+                        h4 {
+                            font-size: $fs35;
+                        }
+                    }
+                    .descr-middle {
+                        .specification:nth-child(3) {
+                            padding-left: 50px;
+                            padding-right: 50px;
+                        }
+                    }
+                }
+            }
+        }
+    } 
+    .slider-vertic {
+        .container {
+            flex-wrap: wrap;
+            button {
+                width: 290px;
+                margin-bottom: 20px;
+            }
+            button:hover {
+                width: 290px;
+            }
+        }
+    }
+    .coffee-info {
+        .container {
+            & > div:first-child {
+                flex-direction: column;
+                & > div {
+                    
+                    padding-left: 30px;
+                    padding-right: 30px;
+                }
+                .taste {
+                    padding-bottom: 50px;
+                    margin-bottom: 20px;
+                    h5 {
+                        margin-bottom: 30px;
+                    }
+                    p {
+                        display: inline;
+                    }
+                    p:not(:nth-child(2)) {
+                        padding-left: 40px;
+                    }
+                    p:not(:nth-child(2))::before {
+                        display: none;
+                    }
+                }
+                .specific {
+                    padding-bottom: 30px;
+                    margin-left: 0;
+                    div {
+                        margin-right: 0;
+                        p {
+                            font-size: $fs20;
+                        }
+                    }
+                }
+            }
+            & > div:nth-child(2) {
+                margin-top: 30px;
+                p {
+                    font-size: $fs20;
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+    .prepared {
+        .container {
+            h4 {
+                margin-bottom: 50px;
+                font-size: $fs35;
+            }
+            .sorting-coffee-bottom {
+                margin-bottom: 50px;
+            }
+        }
+        
+    }
+    .additional {
+        .container {
+            margin-bottom: 50px;
+            h4 {
+                font-size: $fs35;
+                margin-bottom: 30px;
+            }
+            h5 {
+                margin-top: 30px;
+                margin-bottom: 30px;
+            }
+            img {
+                margin-top: 30px;
+            }
+            p {
+                font-size: $fs20;
+                line-height: 24px;
+            }
+        }
+    }
+    .reviews-top {
+        height: 165px;
+        .container {
+            h4 {
+                font-size: $fs35;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 640px) {
+    .card-coffee {
+        padding-top: 90px;
+        .container {
+            .card-coffee-top {
+                line-height: 22px;
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+            .card-coffee-main {
+                padding-top: 20px;
+                padding-left: 20px;
+                padding-bottom: 20px;
+                .card-coffee-descr {
+                    width: 280px;
+                    p {
+                        font-size: $fs-card;
+                        line-height: 22px;
+                    }
+                    .descr-top {
+                        h4 {
+                            font-size: $fs-main;
+                            line-height: 29px;
+                            padding-bottom: 10px;
+                        }
+                        .grains {
+                            margin-bottom: 10px;
+                            .grain {
+                                margin-right: 0px;
+                            }
+                        }
+                        .stars {
+                            margin-top: 10px;
+                            margin-bottom: 0;
+                            .star {
+                                margin-right: 0;
+                            }
+                        }
+                        .rating {
+                            margin-bottom: 10px;
+                            span:first-child {
+                                font-size: $fs20;
+                                line-height: 24px;
+                                padding-right: 10px;
+                                padding-left: 10px;
+                            }
+                        }
+                        div:nth-child(6) {
+                            font-size: $fs16;
+                            line-height: 18px;
+                            right: 0;
+                            top: 0;
+                        }
+                    }
+                    .descr-middle {
+                        .specification {
+                            margin-top: 10px;
+                            margin-bottom: 0px;
+                        }
+                        .specification:nth-child(3) {
+                            padding-left: 0px;
+                            padding-right: 20px;
+                        }
+                    }
+                   .descr-bottom {
+                        & > div:first-child {
+                            margin-top: 20px;
+                            label {
+                                font-size: $fs20;
+                                line-height: 24px;
+                                margin-right: 10px;
+                                margin-bottom: 20px;
+                            }
+                            .custom-checkbox {
+                                &+label::before {
+                                    width: 20px;
+                                    height: 20px;
+                                    margin-right: 10px;
+                                    vertical-align: 0;
+                                }
+                            }
+                        }
+                        & > div:nth-child(2) {
+                            button {
+                                height: 50px;
+                                a {
+                                    font-size: $fs-card;
+                                }
+                            }
+                            .counter {
+                                height: 50px;
+                                p {
+                                    font-size: $fs20;
+                                }
+                            }
+                        } 
+                   }
+                }  
+                    
+            }
+        }
+    } 
+    .slider-vertic {
+        margin-top: -50px;
+        .container {
+            padding-top: 100px;
+            padding-bottom: 30px;
+            button {
+                width: 100%;
+                font-size: $fs20;
+                height: 50px;
+                margin-bottom: 20px;
+            }
+            button:hover {
+                font-size: $fs20;
+                height: 50px;
+                width: 100%;
+            }
+        }
+    }
+    .coffee-info {
+        display: none;
+        .container {
+            & > div:first-child {
+                flex-direction: column;
+                & > div {
+                    
+                    padding-left: 30px;
+                    padding-right: 30px;
+                }
+                h5 {
+                    font-size: $fs-main;
+                    line-height: 29px;
+                }
+                .taste {
+                    padding-bottom: 0;
+                    margin-bottom: 20px;
+                    h5 {
+                        
+                        margin-bottom: 10px;
+                    }
+                    p {
+                        display: block;
+                        font-size: $fs20;
+                        padding-top: 0;
+
+                    }
+                    p::before {
+                        padding-bottom: 85px;
+                    }
+                    p:not(:nth-child(2)) {
+                        padding-left: 90px;
+                    }
+                    p:last-child {
+                        padding-bottom: 30px;
+                    }
+                }
+                .specific {
+                    div {
+                        p {
+                            font-size: $fs16;
+                        }
+                    }
+                }
+            }
+            & > div:nth-child(2) {
+                margin-top: 30px;
+                p {
+                    font-size: $fs-card;
+                    line-height: 22px;
+                }
+            }
+        }
+    }
+    .prepared {
+        display: none;
+        border-top: none;
+        border-bottom: none;
+        .container {
+            h4 {
+                margin-bottom: 30px;
+                margin-top: 30px;
+                font-size: $fs-main;
+                line-height: 29px;
+            }
+            .sorting-coffee-bottom {
+                margin-bottom: 30px;
+            }
+        }
+        
+    }
+    .additional {
+        display: none;
+        .container {
+            margin-bottom: 30px;
+            h4 {
+                font-size: $fs-main;
+                margin-bottom: 10px;
+                margin-top: 30px;
+            }
+            h5 {
+                font-size: $fs-main;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            img {
+                margin-top: 10px;
+            }
+            p {
+                font-size: $fs-card;
+                line-height: 22px;
+            }
+        }
+    }
+    .reviews-top {
+        display: none;
+        height: 165px;
+        .container {
+             h4 {
+                font-size: $fs-main;
+            }
+        }
+    }
+    .reviews-main {
+        display: none;
+        padding-top: 120px;
+        .container {
+            .review-card {
+                padding-top: 30px;
+                line-height: 22px;
+                span {
+                    font-size: $fs-card;
+                }
+                & > div:first-child {
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    & > span:last-child {
+                        right: 30px;
+                        top: 4px;
+                    }
+                    p {
+                        font-size: $fs20;
+                    }
+                }
+            }   
+        }
+    }
+    
+}

@@ -346,9 +346,6 @@ p {
         svg {
             fill: #505050;
         }
-       
-    
-        
     }
 }
 .subscribe {
@@ -519,10 +516,7 @@ p {
     span {
         font-size: $fs-main;
         line-height: 30px;
-        color: $gray2-border;
-        &:hover {
-            color: $black;
-        }
+        color: $black;
     }
     & > p {
         font-weight: $medium;

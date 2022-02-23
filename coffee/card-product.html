@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.2, minimum-scale=1.0">
-    <link rel="stylesheet" href="css/style-common.css">
     <link rel="stylesheet" href="css/style-card.css">
     <title>Card-product</title>
 </head>
@@ -14,7 +13,7 @@
             <div>
                 <img src="img/logo.png" alt="logo">
             </div>
-            <ul>
+            <ul id="header">
                 <li><a href="index.html#catalog">Каталог товаров</a></li>
                 <li><a href="#">Блог</a></li>
                 <li><a href="contacts.html">Контакты</a></li>
@@ -34,6 +33,9 @@
                     </a>
                 </li>
             </ul>
+            <div id="menu">
+                <img src="img/humb.svg" alt="menu">
+            </div>
         </div>
     </div>
     <div class="card-coffee">
@@ -42,7 +44,7 @@
                 <a href="index.html">Главная &bull; </a>
                 <a href="index.html#catalog">Каталог товаров &bull; </a>
                 <a href="catalog-coffee.html">Свежеобжаренный кофе &bull; </a>
-                <a href="#">Карточка товара Colombia Supremo</a>
+                <a href="#">Colombia Supremo</a>
             </div>
             <div class="card-coffee-main">
                 <div class="card-coffee-pict">
@@ -121,10 +123,10 @@
     </div>
     <div class="slider-vertic" id="slider">
         <div class="container">
-            <button><a href="#one">Описание</a></button>
-            <button><a href="#two">Как готовить?</a></button>
-            <button><a href="#three">Дополнительно</a></button>
-            <button><a href="#four">Отзывы</a></button>
+            <button id="humb_button"><a href="#one">Описание</a></button>
+            <button id="humb_button_2"><a href="#two">Как готовить?</a></button>
+            <button id="humb_button_3"><a href="#three">Дополнительно</a></button>
+            <button id="humb_button_4"><a href="#four">Отзывы</a></button>
         </div>
     </div>
     <div class="coffee-info" id="one">
@@ -233,70 +235,61 @@
         </div>
     </div>
     <div class="reviews-top" id="four">
-        <div class="container">
-            <h4>Отзывы</h4>
-        </div>
+            <div class="container">
+                <h4>Отзывы</h4>
+            </div>
     </div>
-    <div class="reviews-main">
-        <div class="container">
-            <div class="review-card">
-                <div>
-                    <p>Отличный вкус!</p>
-                    <div class="stars">
-                        <span class="star full"></span><span class="star full"></span><span class="star full"></span><span class="star full"></span><span class="star"></span>
-                    </div>
-                    <span>Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие 
-                       <br> в формировании соответствующий условий активизации.</span>
-                    <span>21.12.2020</span>
-                </div>
-                <div>
-                    <img src="img/review.jpg" alt="logo-review">
+    <div class="reviews-main" id="four_2">
+            <div class="container">
+                <div class="review-card">
                     <div>
-                        <span>Ирина</span> <br>
-                        <span>г. Москва</span>
+                        <p>Отличный вкус!</p>
+                        <span>Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие 
+                        <br> в формировании соответствующий условий активизации.</span>
+                        <span>21.12.2020</span>
                     </div>
-                </div>
-            </div>
-            <div class="review-card">
-                <div>
-                    <p>Отличный вкус!</p>
-                    <div class="stars">
-                        <span class="star full"></span><span class="star full"></span><span class="star full"></span><span class="star full"></span><span class="star"></span>
-                    </div>
-                    <span>Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие 
-                       <br> в формировании соответствующий условий активизации.</span>
-                    <span>21.12.2020</span>
-                </div>
-                <div>
-                    <img src="img/review.jpg" alt="logo-review">
                     <div>
-                        <span>Ирина</span> <br>
-                        <span>г. Москва</span>
+                        <img src="img/review.jpg" alt="logo-review">
+                        <div>
+                            <span>Ирина</span> <br>
+                            <span>г. Москва</span>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="review-card">
-                <div>
-                    <p>Отличный вкус!</p>
-                    <div class="stars">
-                        <span class="star full"></span><span class="star full"></span><span class="star full"></span><span class="star full"></span><span class="star"></span>
-                    </div>
-                    <span>Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие 
-                       <br> в формировании соответствующий условий активизации.</span>
-                    <span>21.12.2020</span>
-                </div>
-                <div>
-                    <img src="img/review.jpg" alt="logo-review">
+                <div class="review-card">
                     <div>
-                        <span>Ирина</span> <br>
-                        <span>г. Москва</span>
+                        <p>Отличный вкус!</p>
+                        <span>Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие 
+                        <br> в формировании соответствующий условий активизации.</span>
+                        <span>21.12.2020</span>
+                    </div>
+                    <div>
+                        <img src="img/review.jpg" alt="logo-review">
+                        <div>
+                            <span>Ирина</span> <br>
+                            <span>г. Москва</span>
+                        </div>
                     </div>
                 </div>
+                <div class="review-card">
+                    <div>
+                        <p>Отличный вкус!</p>
+                        <span>Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие 
+                        <br> в формировании соответствующий условий активизации.</span>
+                        <span>21.12.2020</span>
+                    </div>
+                    <div>
+                        <img src="img/review.jpg" alt="logo-review">
+                        <div>
+                            <span>Ирина</span> <br>
+                            <span>г. Москва</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-more">
+                    <a href="#">Показать еще</a>
+                </div>
             </div>
-            <div class="card-more">
-                <a href="#">Показать еще</a>
-            </div>
-        </div>
     </div>
     <div class="subscribe">
         <div class="container">

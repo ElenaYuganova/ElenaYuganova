@@ -5,6 +5,21 @@ $(document).ready(function() {
         var top = $(id).offset().top; 
         $('html, body').animate({scrollTop: top}, 1500); 
     });
+
+    $('#humb_button').click(function(){
+        $('#humb_news').slideToggle(1000);      
+        return false;
+    });
+
+    $('#humb_button_2').click(function(){
+        $('#catalogs').slideToggle(1000);      
+        return false;
+    });
+
+    $('#menu').click(function(){
+        $('#header').slideToggle(300);      
+        return false;
+    });
      
     initCards();
 

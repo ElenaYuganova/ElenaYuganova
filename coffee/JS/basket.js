@@ -1,3 +1,11 @@
+$(document).ready(function() { //чтобы сначала закгрузился документ, а уже в самом конце script
+
+    $('#menu').click(function(){
+        $('#header').slideToggle(300);      
+        return false;
+    });
+});
+
 var cardWrap2 = document.getElementById("card-wrap2");
        
         var card = [
