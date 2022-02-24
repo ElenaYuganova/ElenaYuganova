@@ -37,11 +37,15 @@ var cardWrap2 = document.getElementById("card-wrap2");
                 str += `<div class="basket-line">
                         <svg width="25" height="25"><use xlink:href="img/icons.svg#delete"></use></svg>
                         <div>
-                            <img src="${item.imgUrl}" alt="card">
+                            <a href="card-product.html">
+                                <img src="${item.imgUrl}" alt="card">
+                            </a>    
                             <div>
-                                <h6>${item.title}</h6>
-                                <p class="fs-18">${item.titleDescr}</p>
-                                <p class="fs-18">${item.weight}</p>
+                                <a href="card-product.html">
+                                    <h6>${item.title}</h6>
+                                    <p class="fs-18">${item.titleDescr}</p>
+                                    <p class="fs-18">${item.weight}</p>
+                                </a>
                             </div>
                         </div>
                         <span>${item.price}</span>

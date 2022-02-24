@@ -384,7 +384,7 @@
         border: none;
         cursor: pointer;
         margin-top: 10px;
-        margin-bottom: 320px; }
+        margin-bottom: 360px; }
       .bg .header .container .header-pict img:first-child {
         width: 80%;
         right: -48px;
@@ -401,6 +401,8 @@
       .bg .catalogs .cards .card-type-products {
         width: 400px;
         margin-bottom: 20px; }
+        .bg .catalogs .cards .card-type-products:not(:last-child) {
+          margin-right: 0; }
         .bg .catalogs .cards .card-type-products:hover img {
           left: 52px; }
     .bg .discount-items .container {
@@ -440,29 +442,39 @@
     border-radius: 5px;
     font-family: "Gilroy", sans-serif;
     border: none;
-    cursor: pointer; }
+    cursor: pointer;
+    margin-top: 80px;
+    margin-bottom: 193px; }
 
-  .news > div > div .container .news-top h3 {
-    font-size: 40px; }
-  .news > div > div .container .news-first-str,
-  .news > div > div .container .news-second-str {
-    display: flex;
-    flex-wrap: wrap; }
-    .news > div > div .container .news-first-str > div,
-    .news > div > div .container .news-second-str > div {
-      width: 100%; }
-    .news > div > div .container .news-first-str > div:first-child,
+  .news > div {
+    background-size: cover; }
+    .news > div > div .container .news-top h3 {
+      font-size: 40px;
+      padding-top: 0; }
+    .news > div > div .container .news-top button {
+      margin-top: 10px; }
+    .news > div > div .container .news-first-str,
+    .news > div > div .container .news-second-str {
+      display: flex;
+      flex-wrap: wrap; }
+      .news > div > div .container .news-first-str > div,
+      .news > div > div .container .news-second-str > div {
+        width: 100%; }
+      .news > div > div .container .news-first-str > div:first-child,
+      .news > div > div .container .news-second-str > div:first-child {
+        margin-right: 0; }
+      .news > div > div .container .news-first-str > div:last-child p,
+      .news > div > div .container .news-second-str > div:last-child p {
+        width: auto; }
+    .news > div > div .container .news-first-str > div:first-child {
+      margin-bottom: 20px; }
     .news > div > div .container .news-second-str > div:first-child {
-      margin-right: 0; }
-    .news > div > div .container .news-first-str > div:last-child p,
-    .news > div > div .container .news-second-str > div:last-child p {
-      width: auto; }
-  .news > div > div .container .news-first-str > div:first-child {
-    margin-bottom: 20px; }
-  .news > div > div .container .news-second-str > div:first-child {
-    margin-left: 0;
-    margin-top: 20px; }
+      margin-left: 0;
+      margin-top: 20px; }
 
+  .networks > div .container .networks-top {
+    padding-top: 20px;
+    padding-bottom: 50px; }
   .networks > div .container .networks-body {
     padding-bottom: 60px; }
     .networks > div .container .networks-body > div:first-child > img:first-child {
@@ -475,7 +487,7 @@
       .networks > div .container .networks-body > div:last-child img {
         width: 70%; }
       .networks > div .container .networks-body > div:last-child > svg:last-child {
-        top: 290px; } }
+        top: 330px; } }
 @media all and (max-width: 940px) {
   .bg .header {
     padding-top: 110px; }
@@ -584,7 +596,7 @@
     padding-bottom: 50px; }
 
   .networks > div {
-    background: #F5F5F5; }
+    background: #FFF7E1; }
     .networks > div .container .networks-top {
       padding-bottom: 20px;
       padding-top: 20px; }
@@ -600,7 +612,7 @@
         display: none; }
 
   .subscribe {
-    background: url(../img/background8-gray.svg) no-repeat center top, url(../img/background6-orange.svg) no-repeat center 21px; } }
+    background: url(../img/background4-pink.svg) no-repeat center top, url(../img/background6-orange.svg) no-repeat center 21px; } }
 @media all and (max-width: 640px) {
   .bg .header {
     padding-top: 90px; }
@@ -704,6 +716,14 @@
     .bg .discount-items .container .cards-main .slick-prev,
     .bg .discount-items .container .cards-main .slick-next {
       display: none !important; }
+    .bg .discount-items .container .cards-main .card {
+      padding-left: 20px;
+      padding-right: 20px;
+      height: auto; }
+      .bg .discount-items .container .cards-main .card .card-body a {
+        margin-right: 0; }
+      .bg .discount-items .container .cards-main .card button {
+        margin-left: 50px; }
 
   .present .present-top {
     background: #FFF7E1; }

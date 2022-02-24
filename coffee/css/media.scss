@@ -199,7 +199,7 @@
                     button {
                         @include btn-product (320px);
                         margin-top: 10px;
-                        margin-bottom: 320px;
+                        margin-bottom: 360px;
                     }
                     
                 }
@@ -227,13 +227,14 @@
                 .card-type-products {
                     width: 400px;
                     margin-bottom: 20px;
+                    &:not(:last-child) {
+                        margin-right: 0;
+                    }
                     &:hover {
                         img {
                             left: 52px;
                         }
                     }
-                    
-
                 }
             }
         }
@@ -288,6 +289,8 @@
                     }  
                     & > button {
                         @include btn-product (320px);
+                        margin-top: 80px;
+                        margin-bottom: 193px;
                         
                     }
                 }
@@ -297,11 +300,16 @@
     }
     .news {
         & > div {
+            background-size: cover;
             & > div {
                 .container {
                     .news-top {
                         h3 {
                             font-size: $fs-h4;
+                            padding-top: 0;
+                        }
+                        button {
+                            margin-top: 10px;
                         }
                     }
                     .news-first-str,
@@ -338,6 +346,10 @@
     .networks {
         & > div {
             .container {
+                .networks-top {
+                    padding-top: 20px;
+                    padding-bottom: 50px;
+                }
                 .networks-body {
                     padding-bottom: 60px;
                     & > div:first-child {
@@ -355,7 +367,7 @@
                             width: 70%;
                         }
                         & > svg:last-child {
-                            top: 290px;
+                            top: 330px;
                         }
                     }
                     
@@ -524,7 +536,7 @@
     }
     .networks {
         & > div {
-            background: $gray-bg;
+            background: $light-pink;
             .container {
                 .networks-top {
                     padding-bottom: 20px;
@@ -554,7 +566,7 @@
         }
     }
     .subscribe {
-        background: url(../img/background8-gray.svg) no-repeat center top,
+        background: url(../img/background4-pink.svg) no-repeat center top,
                     url(../img/background6-orange.svg) no-repeat center 21px;
     } 
 }
@@ -665,6 +677,19 @@
                     .slick-prev,
                     .slick-next {
                         display: none !important;
+                    }
+                    .card {
+                        .card-body {
+                            a {
+                                margin-right: 0;
+                            }
+                        }
+                        padding-left: 20px;
+                        padding-right: 20px;
+                        height: auto;
+                        button {
+                            margin-left: 50px;
+                        }
                     }
                 }
                 
