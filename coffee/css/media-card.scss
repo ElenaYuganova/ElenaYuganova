@@ -478,7 +478,7 @@
         margin-top: -50px;
         .container {
             padding-top: 100px;
-            padding-bottom: 30px;
+            padding-bottom: 50px;
             button {
                 width: 100%;
                 font-size: $fs20;
@@ -493,7 +493,9 @@
         }
     }
     .coffee-info {
-        display: none;
+        &:not(.show) {
+            display: none;
+        } 
         .container {
             & > div:first-child {
                 flex-direction: column;
@@ -547,7 +549,9 @@
         }
     }
     .prepared {
-        display: none;
+        &:not(.show) {
+            display: none;
+        }
         border-top: none;
         border-bottom: none;
         .container {
@@ -564,7 +568,9 @@
         
     }
     .additional {
-        display: none;
+        &:not(.show) {
+            display: none;
+        }
         .container {
             margin-bottom: 30px;
             h4 {
@@ -586,38 +592,43 @@
             }
         }
     }
-    .reviews-top {
-        display: none;
-        height: 165px;
-        .container {
-             h4 {
-                font-size: $fs-main;
+    #four {
+        &:not(.show) {
+            display: none;
+        }
+        .reviews-top {
+            background: $gray-bg;
+            height:auto;
+            .container {
+                 h4 {
+                    font-size: $fs-main;
+                }
+            }
+        }
+        .reviews-main {
+            padding-top: 120px;
+            .container {
+                .review-card {
+                    padding-top: 30px;
+                    line-height: 22px;
+                    span {
+                        font-size: $fs-card;
+                    }
+                    & > div:first-child {
+                        padding-left: 20px;
+                        padding-right: 20px;
+                        & > span:last-child {
+                            right: 30px;
+                            top: 4px;
+                        }
+                        p {
+                            font-size: $fs20;
+                        }
+                    }
+                }   
             }
         }
     }
-    .reviews-main {
-        display: none;
-        padding-top: 120px;
-        .container {
-            .review-card {
-                padding-top: 30px;
-                line-height: 22px;
-                span {
-                    font-size: $fs-card;
-                }
-                & > div:first-child {
-                    padding-left: 20px;
-                    padding-right: 20px;
-                    & > span:last-child {
-                        right: 30px;
-                        top: 4px;
-                    }
-                    p {
-                        font-size: $fs20;
-                    }
-                }
-            }   
-        }
-    }
+    
     
 }

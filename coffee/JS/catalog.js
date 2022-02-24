@@ -1,3 +1,13 @@
+$(document).ready(function() {
+
+    $('#menu').click(function(){
+        $('#header').slideToggle(300);      
+        return false;
+    });
+
+});
+
+
 function getStarsHtml(rating) {
     var html = [];
     //добавляем в массив данные с помощью push

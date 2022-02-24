@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.2, minimum-scale=1.0">
-    <link rel="stylesheet" href="css/style-common.css">
     <link rel="stylesheet" href="css/style-catalog.css">
     <title>Catalog-coffee</title>
 </head>
@@ -14,7 +13,7 @@
             <div>
                 <img src="img/logo.png" alt="logo">
             </div>
-            <ul>
+            <ul id="header">
                 <li><a href="index.html#catalog">Каталог товаров</a></li>
                 <li><a href="#">Блог</a></li>
                 <li><a href="contacts.html">Контакты</a></li>
@@ -34,6 +33,9 @@
                     </a>
                 </li>
             </ul>
+            <div id="menu">
+                <img src="img/humb.svg" alt="menu">
+            </div>
         </div>
     </div>
     <div class="sorting-coffee">
@@ -223,6 +225,12 @@
             </ul>
         </div>
     </div>
+
+    <!--подключили библиотеку jquery.com > jQuery 3.x > jQuery Core 3.6.0 > minified!-->
+   <script
+   src="https://code.jquery.com/jquery-3.6.0.min.js"
+   integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+   crossorigin="anonymous"></script>
 
     <!--Подключили свой файл JS-->
     <script type="text/javascript" src="JS/catalog.js"></script>

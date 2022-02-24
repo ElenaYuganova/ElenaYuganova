@@ -1,3 +1,206 @@
 @import "variables.scss";
 @import "mixins.scss";
 @import "media-common.scss";
+
+@media all and (max-width: 1660px) {
+    .sorting-coffee {
+        .container {
+            .sorting-coffee-top {
+                img {
+                    top: 14px;
+                    right: -48px;
+                    width: 50%;
+                }
+                h2 {
+                    font-size: $fs-h3;
+                }
+            }
+            .sorting-coffee-middle {
+                & > div {
+                    height: auto;
+                }
+                & > div:first-child {
+                    padding-left: 75px;
+                    h5 {
+                        padding-bottom: 20px;
+                        width: 210px;
+                    }
+                    label {
+                        padding-bottom: 42px;
+                    }
+                }
+                & > div:last-child {
+                    padding-left: 55px;
+                    padding-right: 20px;
+                    padding-top: 50px;
+                    justify-content: space-between;
+                    background: $white;
+                    .geography {
+                        padding-right: 0;
+                    }
+                    .sour {
+                        padding-right: 0;
+                    }
+                    .special {
+                        padding-right: 0;
+                    }
+                }
+            }
+            
+        }
+    } 
+}
+
+@media all and (max-width: 1250px) {
+    .sorting-coffee {
+        .container {
+            .sorting-coffee-top {
+                img {
+                    top: 64px;
+                    right: -8px;
+                    width: 50%;
+                }
+                h2 {
+                    line-height: 55px;
+                    width: 500px;
+                }
+            }
+            .sorting-coffee-middle {
+                display: block;
+    
+                & > div:first-child {
+                    background: $white;
+                    padding-left: 35px;
+                    padding-top: 40px;
+                    padding-bottom: 40px;
+                    margin-right: 0;
+                    margin-bottom: 20px;
+                    h5 {
+                        width: 100%;
+                    }
+                    label {
+                        display: inline;
+                        padding-bottom: 0;
+                        padding-right: 33px;
+                    }
+                }
+            }  
+        }
+    } 
+    .items {
+        margin-top: -165px;
+        .container {
+            .cards-main {
+                #card-wrap {
+                    justify-content: space-around;
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 940px) {
+    .sorting-coffee {
+        padding-top: 110px;
+        .container {
+            .sorting-coffee-top {
+                div {
+                    padding-bottom: 90px;
+                }
+                img {
+                    top: 224px;
+                }
+                h2 {
+                    padding-bottom: 176px;
+                }
+            }
+            .sorting-coffee-middle {
+                display: block;
+                & > div:first-child {
+                    font-size: $fs-main;
+                    line-height: 29px;
+                    padding-bottom: 10px;
+                    h5 {
+                        width: 100%;
+                    }
+                    label {
+                        display: block;
+                        padding-bottom: 20px;
+                        
+                    }
+                }
+                & > div:last-child {
+                    padding-left: 30px;
+                    padding-top: 30px;
+                    flex-wrap: wrap;
+                    .geography {
+                        padding-right: 0;
+                    }
+                    div:nth-child(2) {
+                        padding-right: 70px;
+                        padding-bottom: 15px;
+                    }
+                }
+            }  
+        }
+    } 
+}
+
+@media all and (max-width: 640px) {
+    .sorting-coffee {
+        padding-top: 90px;
+        .container {
+            .sorting-coffee-top {
+                div {
+                    line-height: 22px;
+                    padding-bottom: 50px;
+                }
+                img {
+                    top: 190px;
+                    width: 70%;
+                }
+                h2 {
+                    width: 100%;
+                    font-size: $fs35;
+                    line-height: 39px;
+                    padding-bottom: 176px;
+                }
+            }
+            .sorting-coffee-middle {
+                display: block;
+                & > div:first-child {
+                    padding-left: 20px;
+                    padding-top: 20px;
+                    h5 {
+                        width: 100%;
+                        font-size: $fs20;
+                        line-height: 24px;
+                    }
+                    label {
+                        display: block;
+                        padding-bottom: 10px;
+                        
+                    }
+                }
+                & > div:last-child {
+                    padding-left: 20px;
+                    padding-top: 20px;
+                    h6 {
+                        font-size: $fs20;
+                        line-height: 24px;
+                        padding-bottom: 10px;
+                        padding-top: 10px;
+                    }
+                    label {
+                        font-size: $fs-card;
+                        line-height: 22px;
+                        padding-bottom: 10px;
+                    }
+                    div:nth-child(2) {
+                        padding-bottom: 0px;
+                    }
+                }
+            }  
+        }
+    } 
+}
